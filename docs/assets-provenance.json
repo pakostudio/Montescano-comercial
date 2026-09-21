@@ -1,0 +1,3146 @@
+[
+  {
+    "sku": "TASAC3521",
+    "image": "/products/tasac3521.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 1,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 18
+  },
+  {
+    "sku": "TASAD3521",
+    "image": "/products/tasad3521.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 1,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 27
+  },
+  {
+    "sku": "TASPC3521",
+    "image": "/products/taspc3521.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 1,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 19
+  },
+  {
+    "sku": "TASPD3521",
+    "image": "/products/taspd3521.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 1,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 26
+  },
+  {
+    "sku": "TASPC3520",
+    "image": "/products/taspc3520.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 1,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 21
+  },
+  {
+    "sku": "TASPD3520",
+    "image": "/products/taspd3520.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 1,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 22
+  },
+  {
+    "sku": "TACB3525",
+    "image": "/products/tacb3525.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 1,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 28
+  },
+  {
+    "sku": "TADB3525",
+    "image": "/products/tadb3525.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 1,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 29
+  },
+  {
+    "sku": "TACB3519",
+    "image": "/products/tacb3519.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 1,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 32
+  },
+  {
+    "sku": "TADB3519",
+    "image": "/products/tadb3519.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 1,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 33
+  },
+  {
+    "sku": "TACB3519B",
+    "image": "/products/tacb3519b.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 1,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 32
+  },
+  {
+    "sku": "TADB3519A",
+    "image": "/products/tadb3519a.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 1,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 33
+  },
+  {
+    "sku": "TASTC3521",
+    "image": "/products/tastc3521.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 1,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 20
+  },
+  {
+    "sku": "TASTD3521",
+    "image": "/products/tastd3521.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 1,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 25
+  },
+  {
+    "sku": "TASTC3520",
+    "image": "/products/tastc3520.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 1,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 23
+  },
+  {
+    "sku": "TASTD3520",
+    "image": "/products/tastd3520.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 1,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 24
+  },
+  {
+    "sku": "TTCB3525",
+    "image": "/products/ttcb3525.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 1,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 30
+  },
+  {
+    "sku": "TTDB3525",
+    "image": "/products/ttdb3525.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 1,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 31
+  },
+  {
+    "sku": "TTCB3519",
+    "image": "/products/ttcb3519.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 1,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 16
+  },
+  {
+    "sku": "TTDB3519",
+    "image": "/products/ttdb3519.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 1,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 17
+  },
+  {
+    "sku": "TTCB3525A",
+    "image": "/products/ttcb3525a.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 2,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 47
+  },
+  {
+    "sku": "TTDB3525B",
+    "image": "/products/ttdb3525b.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 2,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 51
+  },
+  {
+    "sku": "TTCB3525B",
+    "image": "/products/ttcb3525b.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 2,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 48
+  },
+  {
+    "sku": "TTDB3525A",
+    "image": "/products/ttdb3525a.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 2,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 50
+  },
+  {
+    "sku": "TTCB3519A",
+    "image": "/products/ttcb3519a.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 2,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 52
+  },
+  {
+    "sku": "TTDB3519A",
+    "image": "/products/ttdb3519a.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 2,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 53
+  },
+  {
+    "sku": "TASRC3520",
+    "image": "/products/tasrc3520.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 2,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 42
+  },
+  {
+    "sku": "TASRD3520",
+    "image": "/products/tasrd3520.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 2,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 43
+  },
+  {
+    "sku": "TAGC3525",
+    "image": "/products/tagc3525.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 2,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 44
+  },
+  {
+    "sku": "TAGD3525",
+    "image": "/products/tagd3525.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 2,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 45
+  },
+  {
+    "sku": "TAGC3519",
+    "image": "/products/tagc3519.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 2,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 46
+  },
+  {
+    "sku": "TAGD3519",
+    "image": "/products/tagd3519.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 2,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 49
+  },
+  {
+    "sku": "TAGC3519A",
+    "image": "/products/tagc3519a.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 2,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 46
+  },
+  {
+    "sku": "TAGD3519B",
+    "image": "/products/tagd3519b.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 2,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 49
+  },
+  {
+    "sku": "TAICB64",
+    "image": "/products/taicb64.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 2,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 37
+  },
+  {
+    "sku": "TAIDB64",
+    "image": "/products/taidb64.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 2,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 39
+  },
+  {
+    "sku": "TAICB1396",
+    "image": "/products/taicb1396.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 2,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 36
+  },
+  {
+    "sku": "TAIDB1396",
+    "image": "/products/taidb1396.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 2,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 38
+  },
+  {
+    "sku": "TACB7088",
+    "image": "/products/tacb7088.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 3,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 61
+  },
+  {
+    "sku": "TADB7088",
+    "image": "/products/tadb7088.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 3,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 63
+  },
+  {
+    "sku": "TTCB6985",
+    "image": "/products/ttcb6985.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 3,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 60
+  },
+  {
+    "sku": "TTDB6985",
+    "image": "/products/ttdb6985.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 3,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 62
+  },
+  {
+    "sku": "TACB9002",
+    "image": "/products/tacb9002.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 3,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 68
+  },
+  {
+    "sku": "TADB9002",
+    "image": "/products/tadb9002.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 3,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 65
+  },
+  {
+    "sku": "ASCB5626",
+    "image": "/products/ascb5626.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 3,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 66
+  },
+  {
+    "sku": "ASDB5626",
+    "image": "/products/asdb5626.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 3,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 67
+  },
+  {
+    "sku": "TACB9002A",
+    "image": "/products/tacb9002a.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 3,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 68
+  },
+  {
+    "sku": "TADP9002A",
+    "image": "/products/tadp9002a.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 3,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 69
+  },
+  {
+    "sku": "TACB3519A",
+    "image": "/products/tacb3519a.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 3,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 76
+  },
+  {
+    "sku": "TACB3519C",
+    "image": "/products/tacb3519c.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 3,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 77
+  },
+  {
+    "sku": "TACB3525A",
+    "image": "/products/tacb3525a.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 3,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 71
+  },
+  {
+    "sku": "TACB3525B",
+    "image": "/products/tacb3525b.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 3,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 72
+  },
+  {
+    "sku": "TACB3525C",
+    "image": "/products/tacb3525c.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 3,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 73
+  },
+  {
+    "sku": "TAGC3525A",
+    "image": "/products/tagc3525a.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 3,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 74
+  },
+  {
+    "sku": "TAGC3525B",
+    "image": "/products/tagc3525b.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 3,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 75
+  },
+  {
+    "sku": "TAGC3519B",
+    "image": "/products/tagc3519b.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 3,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 70
+  },
+  {
+    "sku": "TTCB3519B",
+    "image": "/products/ttcb3519b.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 4,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 92
+  },
+  {
+    "sku": "TAFC5036",
+    "image": "/products/tafc5036.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 4,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 87
+  },
+  {
+    "sku": "TAIC1231",
+    "image": "/products/taic1231.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 4,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 85
+  },
+  {
+    "sku": "TAFC5332",
+    "image": "/products/tafc5332.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 4,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 88
+  },
+  {
+    "sku": "TACA2314",
+    "image": "/products/taca2314.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 4,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 83
+  },
+  {
+    "sku": "TAFC5333",
+    "image": "/products/tafc5333.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 4,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 89
+  },
+  {
+    "sku": "TAFCB60",
+    "image": "/products/tafcb60.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 4,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 90
+  },
+  {
+    "sku": "TACB2310",
+    "image": "/products/tacb2310.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 4,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 84
+  },
+  {
+    "sku": "TACB1016",
+    "image": "/products/tacb1016.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 4,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 82
+  },
+  {
+    "sku": "TACN1035",
+    "image": "/products/tacn1035.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 4,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 81
+  },
+  {
+    "sku": "TAIC6134",
+    "image": "/products/taic6134.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 4,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 86
+  },
+  {
+    "sku": "TTCB6985A",
+    "image": "/products/ttcb6985a.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 4,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 94
+  },
+  {
+    "sku": "TACB7088A",
+    "image": "/products/tacb7088a.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 4,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 93
+  },
+  {
+    "sku": "TADB3525A",
+    "image": "/products/tadb3525a.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 4,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 96
+  },
+  {
+    "sku": "TADB3525B",
+    "image": "/products/tadb3525b.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 4,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 97
+  },
+  {
+    "sku": "TADB3519B",
+    "image": "/products/tadb3519b.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 4,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 95
+  },
+  {
+    "sku": "TASRD3521",
+    "image": "/products/tasrd3521.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 4,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 91
+  },
+  {
+    "sku": "TTRGD3525",
+    "image": "/products/ttrgd3525.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 5,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 109
+  },
+  {
+    "sku": "TTRGD3525A",
+    "image": "/products/ttrgd3525a.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 5,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 115
+  },
+  {
+    "sku": "TTRGD3525B",
+    "image": "/products/ttrgd3525b.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 5,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 116
+  },
+  {
+    "sku": "TTRGD3519",
+    "image": "/products/ttrgd3519.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 5,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 112
+  },
+  {
+    "sku": "TTDB3519B",
+    "image": "/products/ttdb3519b.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 5,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 110
+  },
+  {
+    "sku": "TTRGD3519B",
+    "image": "/products/ttrgd3519b.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 5,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 112
+  },
+  {
+    "sku": "TTRGD3519A",
+    "image": "/products/ttrgd3519a.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 5,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 111
+  },
+  {
+    "sku": "TAGD3519A",
+    "image": "/products/tagd3519a.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 5,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 119
+  },
+  {
+    "sku": "TAGD3525A",
+    "image": "/products/tagd3525a.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 5,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 113
+  },
+  {
+    "sku": "TAGD3525B",
+    "image": "/products/tagd3525b.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 5,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 114
+  },
+  {
+    "sku": "TAIDB64A",
+    "image": "/products/taidb64a.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 5,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 118
+  },
+  {
+    "sku": "TADA2323",
+    "image": "/products/tada2323.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 5,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 103
+  },
+  {
+    "sku": "TAID0836",
+    "image": "/products/taid0836.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 5,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 107
+  },
+  {
+    "sku": "TADA2321",
+    "image": "/products/tada2321.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 5,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 104
+  },
+  {
+    "sku": "TAID6333",
+    "image": "/products/taid6333.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 5,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 106
+  },
+  {
+    "sku": "TAIDP4167A",
+    "image": "/products/taidp4167a.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 5,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 108
+  },
+  {
+    "sku": "TAIDP8004A",
+    "image": "/products/taidp8004a.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 5,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 105
+  },
+  {
+    "sku": "TAID9025",
+    "image": "/products/taid9025.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 5,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 117
+  },
+  {
+    "sku": "TADB2322",
+    "image": "/products/tadb2322.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 6,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 134
+  },
+  {
+    "sku": "TADB5626",
+    "image": "/products/tadb5626.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 6,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 136
+  },
+  {
+    "sku": "TAID4634",
+    "image": "/products/taid4634.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 6,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 139
+  },
+  {
+    "sku": "TARD2204",
+    "image": "/products/tard2204.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 6,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 131
+  },
+  {
+    "sku": "TATDP6052",
+    "image": "/products/tatdp6052.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 6,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 137
+  },
+  {
+    "sku": "TATD2327",
+    "image": "/products/tatd2327.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 6,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 135
+  },
+  {
+    "sku": "TATDP6052A",
+    "image": "/products/tatdp6052a.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 6,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 137
+  },
+  {
+    "sku": "TTDB6985A",
+    "image": "/products/ttdb6985a.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 6,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 140
+  },
+  {
+    "sku": "TADR2020A",
+    "image": "/products/tadr2020a.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 6,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 138
+  },
+  {
+    "sku": "TADR2207",
+    "image": "/products/tadr2207.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 6,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 132
+  },
+  {
+    "sku": "TAIB2202",
+    "image": "/products/taib2202.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 6,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 130
+  },
+  {
+    "sku": "TAGB2209",
+    "image": "/products/tagb2209.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 6,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 129
+  },
+  {
+    "sku": "TAGD06",
+    "image": "/products/tagd06.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 6,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 126
+  },
+  {
+    "sku": "TAGD1060",
+    "image": "/products/tagd1060.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 6,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 127
+  },
+  {
+    "sku": "TAIGD6068",
+    "image": "/products/taigd6068.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 6,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 125
+  },
+  {
+    "sku": "TAIGD6068A",
+    "image": "/products/taigd6068a.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 6,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 141
+  },
+  {
+    "sku": "TAICB43",
+    "image": "/products/taicb43.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 6,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 142
+  },
+  {
+    "sku": "TACC2317",
+    "image": "/products/tacc2317.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 6,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 133
+  },
+  {
+    "sku": "TAIDA2206",
+    "image": "/products/taida2206.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 6,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 143
+  },
+  {
+    "sku": "TADR1060",
+    "image": "/products/tadr1060.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 6,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 144
+  },
+  {
+    "sku": "TAIDB1090",
+    "image": "/products/taidb1090.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 7,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 151
+  },
+  {
+    "sku": "TADA2325",
+    "image": "/products/tada2325.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 7,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 150
+  },
+  {
+    "sku": "TAID42",
+    "image": "/products/taid42.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 7,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 154
+  },
+  {
+    "sku": "TAIDB76",
+    "image": "/products/taidb76.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 7,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 153
+  },
+  {
+    "sku": "TAIDR1016",
+    "image": "/products/taidr1016.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 7,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 152
+  },
+  {
+    "sku": "TATDP2506",
+    "image": "/products/tatdp2506.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 7,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 149
+  },
+  {
+    "sku": "TARD5008",
+    "image": "/products/tard5008.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 7,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 147
+  },
+  {
+    "sku": "TARD8005",
+    "image": "/products/tard8005.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 7,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 159
+  },
+  {
+    "sku": "TAD9001",
+    "image": "/products/tad9001.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 7,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 158
+  },
+  {
+    "sku": "TAGDB2205",
+    "image": "/products/tagdb2205.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 7,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 148
+  },
+  {
+    "sku": "TAGDD1083",
+    "image": "/products/tagdd1083.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 7,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 157
+  },
+  {
+    "sku": "TADD9008",
+    "image": "/products/tadd9008.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 7,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 156
+  },
+  {
+    "sku": "TAGD7038",
+    "image": "/products/tagd7038.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 7,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 155
+  },
+  {
+    "sku": "TAID67",
+    "image": "/products/taid67.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 7,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 161
+  },
+  {
+    "sku": "TAID69",
+    "image": "/products/taid69.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 7,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 160
+  },
+  {
+    "sku": "TAID41",
+    "image": "/products/taid41.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 7,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 165
+  },
+  {
+    "sku": "TAIDN04",
+    "image": "/products/taidn04.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 7,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 164
+  },
+  {
+    "sku": "TAIDN09",
+    "image": "/products/taidn09.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 7,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 163
+  },
+  {
+    "sku": "TAIDB09",
+    "image": "/products/taidb09.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 7,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 162
+  },
+  {
+    "sku": "TAIB7038A",
+    "image": "/products/taib7038a.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 7,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 166
+  },
+  {
+    "sku": "TAIB7038",
+    "image": "/products/taib7038.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 8,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 170
+  },
+  {
+    "sku": "ASDB7197",
+    "image": "/products/asdb7197.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 8,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 169
+  },
+  {
+    "sku": "WFA03",
+    "image": "/products/wfa03.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 8,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 172
+  },
+  {
+    "sku": "WF03",
+    "image": "/products/wf03.webp",
+    "source_file": "CATALOGO IMAGENES 01 MONTESCANO 0826 SF.pdf",
+    "source_page": 8,
+    "source_hash": "2f0013b404014e9fa6557de1df8564b5f7bc29fdd5af807dd661e6eaba78fb12",
+    "image_xref": 171
+  },
+  {
+    "sku": "VC4403G",
+    "image": "/products/vc4403g.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 1,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 23
+  },
+  {
+    "sku": "VC4403A",
+    "image": "/products/vc4403a.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 1,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 24
+  },
+  {
+    "sku": "VC4403D",
+    "image": "/products/vc4403d.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 1,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 25
+  },
+  {
+    "sku": "VC4331A",
+    "image": "/products/vc4331a.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 1,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 22
+  },
+  {
+    "sku": "VC4331V",
+    "image": "/products/vc4331v.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 1,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 21
+  },
+  {
+    "sku": "VC4331N",
+    "image": "/products/vc4331n.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 1,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 20
+  },
+  {
+    "sku": "V3779AZ",
+    "image": "/products/v3779az.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 1,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 29
+  },
+  {
+    "sku": "V3779CN",
+    "image": "/products/v3779cn.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 1,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 18
+  },
+  {
+    "sku": "V3779NE",
+    "image": "/products/v3779ne.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 1,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 17
+  },
+  {
+    "sku": "VC4405P",
+    "image": "/products/vc4405p.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 1,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 26
+  },
+  {
+    "sku": "VC4405G",
+    "image": "/products/vc4405g.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 1,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 27
+  },
+  {
+    "sku": "VC4405A",
+    "image": "/products/vc4405a.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 1,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 28
+  },
+  {
+    "sku": "VC4059NP",
+    "image": "/products/vc4059np.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 1,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 12
+  },
+  {
+    "sku": "VC4059AZ",
+    "image": "/products/vc4059az.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 1,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 13
+  },
+  {
+    "sku": "VC4059ND",
+    "image": "/products/vc4059nd.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 1,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 31
+  },
+  {
+    "sku": "VC2895N",
+    "image": "/products/vc2895n.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 1,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 30
+  },
+  {
+    "sku": "VC2895G",
+    "image": "/products/vc2895g.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 1,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 15
+  },
+  {
+    "sku": "VC2895A",
+    "image": "/products/vc2895a.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 1,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 19
+  },
+  {
+    "sku": "VC2895GA",
+    "image": "/products/vc2895ga.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 1,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 14
+  },
+  {
+    "sku": "VC3599C",
+    "image": "/products/vc3599c.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 1,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 16
+  },
+  {
+    "sku": "VC3599A",
+    "image": "/products/vc3599a.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 2,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 36
+  },
+  {
+    "sku": "VC3599N",
+    "image": "/products/vc3599n.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 2,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 35
+  },
+  {
+    "sku": "VC4056VD",
+    "image": "/products/vc4056vd.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 2,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 37
+  },
+  {
+    "sku": "VC4056CF",
+    "image": "/products/vc4056cf.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 2,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 38
+  },
+  {
+    "sku": "VC4056AZ",
+    "image": "/products/vc4056az.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 2,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 39
+  },
+  {
+    "sku": "V3872AM",
+    "image": "/products/v3872am.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 2,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 40
+  },
+  {
+    "sku": "V3872AZ",
+    "image": "/products/v3872az.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 2,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 41
+  },
+  {
+    "sku": "V3872RO",
+    "image": "/products/v3872ro.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 2,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 42
+  },
+  {
+    "sku": "V3872GR",
+    "image": "/products/v3872gr.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 2,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 43
+  },
+  {
+    "sku": "V3872NA",
+    "image": "/products/v3872na.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 2,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 44
+  },
+  {
+    "sku": "V3247AZ",
+    "image": "/products/v3247az.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 2,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 45
+  },
+  {
+    "sku": "V3247RO",
+    "image": "/products/v3247ro.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 2,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 46
+  },
+  {
+    "sku": "V3247NE",
+    "image": "/products/v3247ne.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 2,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 47
+  },
+  {
+    "sku": "V3247VO",
+    "image": "/products/v3247vo.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 2,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 48
+  },
+  {
+    "sku": "V3731MG",
+    "image": "/products/v3731mg.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 2,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 49
+  },
+  {
+    "sku": "V3731RO",
+    "image": "/products/v3731ro.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 2,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 50
+  },
+  {
+    "sku": "V3731AZ",
+    "image": "/products/v3731az.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 2,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 51
+  },
+  {
+    "sku": "V3731NA",
+    "image": "/products/v3731na.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 2,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 52
+  },
+  {
+    "sku": "VN5588",
+    "image": "/products/vn5588.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 2,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 34
+  },
+  {
+    "sku": "AB5341",
+    "image": "/products/ab5341.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 2,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 53
+  },
+  {
+    "sku": "RVTC3384",
+    "image": "/products/rvtc3384.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 3,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 56
+  },
+  {
+    "sku": "RVTB3384",
+    "image": "/products/rvtb3384.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 3,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 57
+  },
+  {
+    "sku": "RVTD3384",
+    "image": "/products/rvtd3384.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 3,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 58
+  },
+  {
+    "sku": "RVA3384",
+    "image": "/products/rva3384.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 3,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 59
+  },
+  {
+    "sku": "RVDA3468",
+    "image": "/products/rvda3468.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 3,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 60
+  },
+  {
+    "sku": "RVDV3468",
+    "image": "/products/rvdv3468.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 3,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 61
+  },
+  {
+    "sku": "RVDC3468",
+    "image": "/products/rvdc3468.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 3,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 62
+  },
+  {
+    "sku": "RVTD3468",
+    "image": "/products/rvtd3468.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 3,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 63
+  },
+  {
+    "sku": "RVTB3468",
+    "image": "/products/rvtb3468.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 3,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 64
+  },
+  {
+    "sku": "RVTB3749",
+    "image": "/products/rvtb3749.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 3,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 65
+  },
+  {
+    "sku": "RVTD3749",
+    "image": "/products/rvtd3749.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 3,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 66
+  },
+  {
+    "sku": "RVDC3749",
+    "image": "/products/rvdc3749.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 3,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 67
+  },
+  {
+    "sku": "RVDV5301",
+    "image": "/products/rvdv5301.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 3,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 68
+  },
+  {
+    "sku": "RVDD5301",
+    "image": "/products/rvdd5301.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 3,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 69
+  },
+  {
+    "sku": "RVV5301",
+    "image": "/products/rvv5301.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 3,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 70
+  },
+  {
+    "sku": "RVA5301",
+    "image": "/products/rva5301.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 3,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 71
+  },
+  {
+    "sku": "RVDC3751",
+    "image": "/products/rvdc3751.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 3,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 72
+  },
+  {
+    "sku": "RVDD3751",
+    "image": "/products/rvdd3751.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 3,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 73
+  },
+  {
+    "sku": "RVTB3751",
+    "image": "/products/rvtb3751.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 3,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 74
+  },
+  {
+    "sku": "RVTD3751",
+    "image": "/products/rvtd3751.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 3,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 75
+  },
+  {
+    "sku": "RVD3454",
+    "image": "/products/rvd3454.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 4,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 91
+  },
+  {
+    "sku": "RVR3454",
+    "image": "/products/rvr3454.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 4,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 90
+  },
+  {
+    "sku": "RVPV3549",
+    "image": "/products/rvpv3549.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 4,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 80
+  },
+  {
+    "sku": "RVPA3549",
+    "image": "/products/rvpa3549.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 4,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 81
+  },
+  {
+    "sku": "RVR3549",
+    "image": "/products/rvr3549.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 4,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 88
+  },
+  {
+    "sku": "RVD3549",
+    "image": "/products/rvd3549.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 4,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 89
+  },
+  {
+    "sku": "RVPR3495",
+    "image": "/products/rvpr3495.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 4,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 83
+  },
+  {
+    "sku": "RVPA3495",
+    "image": "/products/rvpa3495.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 4,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 82
+  },
+  {
+    "sku": "RVD3495",
+    "image": "/products/rvd3495.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 4,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 92
+  },
+  {
+    "sku": "RVT3495",
+    "image": "/products/rvt3495.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 4,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 84
+  },
+  {
+    "sku": "RVT3469",
+    "image": "/products/rvt3469.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 4,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 87
+  },
+  {
+    "sku": "RVR3469",
+    "image": "/products/rvr3469.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 4,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 95
+  },
+  {
+    "sku": "RVD3469",
+    "image": "/products/rvd3469.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 4,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 94
+  },
+  {
+    "sku": "RVD06",
+    "image": "/products/rvd06.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 4,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 79
+  },
+  {
+    "sku": "RVTD3494",
+    "image": "/products/rvtd3494.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 4,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 85
+  },
+  {
+    "sku": "RVTR3494",
+    "image": "/products/rvtr3494.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 4,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 86
+  },
+  {
+    "sku": "RVDC3494",
+    "image": "/products/rvdc3494.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 4,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 97
+  },
+  {
+    "sku": "RVDB3494",
+    "image": "/products/rvdb3494.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 4,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 93
+  },
+  {
+    "sku": "RVD2664",
+    "image": "/products/rvd2664.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 4,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 78
+  },
+  {
+    "sku": "RVD2678",
+    "image": "/products/rvd2678.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 4,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 96
+  },
+  {
+    "sku": "RVTD2309",
+    "image": "/products/rvtd2309.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 5,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 100
+  },
+  {
+    "sku": "RVD2301",
+    "image": "/products/rvd2301.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 5,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 102
+  },
+  {
+    "sku": "RVD2302",
+    "image": "/products/rvd2302.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 5,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 104
+  },
+  {
+    "sku": "RVD2663",
+    "image": "/products/rvd2663.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 5,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 105
+  },
+  {
+    "sku": "VA9047",
+    "image": "/products/va9047.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 5,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 107
+  },
+  {
+    "sku": "VG9045",
+    "image": "/products/vg9045.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 5,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 106
+  },
+  {
+    "sku": "VA9055",
+    "image": "/products/va9055.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 5,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 108
+  },
+  {
+    "sku": "VD2203",
+    "image": "/products/vd2203.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 5,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 109
+  },
+  {
+    "sku": "VSCR337",
+    "image": "/products/vscr337.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 5,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 110
+  },
+  {
+    "sku": "VSCA337",
+    "image": "/products/vsca337.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 5,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 112
+  },
+  {
+    "sku": "VSCA349",
+    "image": "/products/vsca349.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 5,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 111
+  },
+  {
+    "sku": "VADA9809",
+    "image": "/products/vada9809.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 5,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 116
+  },
+  {
+    "sku": "VADN9810",
+    "image": "/products/vadn9810.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 5,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 113
+  },
+  {
+    "sku": "VAD2303PT",
+    "image": "/products/vad2303pt.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 5,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 114
+  },
+  {
+    "sku": "VAD2304TQ",
+    "image": "/products/vad2304tq.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 5,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 115
+  },
+  {
+    "sku": "VAD2202AZ",
+    "image": "/products/vad2202az.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 5,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 117
+  },
+  {
+    "sku": "VAD2202VD",
+    "image": "/products/vad2202vd.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 5,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 120
+  },
+  {
+    "sku": "VADF2202DN",
+    "image": "/products/vadf2202dn.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 5,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 118
+  },
+  {
+    "sku": "VADF2202GR",
+    "image": "/products/vadf2202gr.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 5,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 119
+  },
+  {
+    "sku": "RVP2687",
+    "image": "/products/rvp2687.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 6,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 127
+  },
+  {
+    "sku": "RVR15",
+    "image": "/products/rvr15.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 6,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 126
+  },
+  {
+    "sku": "RV2694",
+    "image": "/products/rv2694.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 6,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 128
+  },
+  {
+    "sku": "RVTR2101",
+    "image": "/products/rvtr2101.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 6,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 129
+  },
+  {
+    "sku": "RVRR2681",
+    "image": "/products/rvrr2681.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 6,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 130
+  },
+  {
+    "sku": "RVR2689",
+    "image": "/products/rvr2689.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 6,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 132
+  },
+  {
+    "sku": "RVR2201",
+    "image": "/products/rvr2201.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 6,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 137
+  },
+  {
+    "sku": "RVR2692",
+    "image": "/products/rvr2692.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 6,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 136
+  },
+  {
+    "sku": "RVD2689",
+    "image": "/products/rvd2689.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 6,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 131
+  },
+  {
+    "sku": "RVD2693",
+    "image": "/products/rvd2693.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 6,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 133
+  },
+  {
+    "sku": "RVD9753",
+    "image": "/products/rvd9753.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 6,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 134
+  },
+  {
+    "sku": "RVD2202",
+    "image": "/products/rvd2202.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 6,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 125
+  },
+  {
+    "sku": "VAD9377",
+    "image": "/products/vad9377.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 6,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 139
+  },
+  {
+    "sku": "VAD9376",
+    "image": "/products/vad9376.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 6,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 140
+  },
+  {
+    "sku": "VAD9378",
+    "image": "/products/vad9378.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 6,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 138
+  },
+  {
+    "sku": "VSDN348",
+    "image": "/products/vsdn348.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 6,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 145
+  },
+  {
+    "sku": "VSDL2109",
+    "image": "/products/vsdl2109.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 6,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 143
+  },
+  {
+    "sku": "VSDR218",
+    "image": "/products/vsdr218.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 6,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 142
+  },
+  {
+    "sku": "VSCA218",
+    "image": "/products/vsca218.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 6,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 144
+  },
+  {
+    "sku": "VSDT218",
+    "image": "/products/vsdt218.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 6,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 141
+  },
+  {
+    "sku": "VP5894",
+    "image": "/products/vp5894.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 7,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 148
+  },
+  {
+    "sku": "VN2258",
+    "image": "/products/vn2258.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 7,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 149
+  },
+  {
+    "sku": "VN5895",
+    "image": "/products/vn5895.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 7,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 150
+  },
+  {
+    "sku": "VA2208",
+    "image": "/products/va2208.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 7,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 152
+  },
+  {
+    "sku": "VSCA8835",
+    "image": "/products/vsca8835.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 7,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 153
+  },
+  {
+    "sku": "VC3315GR",
+    "image": "/products/vc3315gr.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 7,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 154
+  },
+  {
+    "sku": "VC3315ND",
+    "image": "/products/vc3315nd.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 7,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 155
+  },
+  {
+    "sku": "VC3315AZ",
+    "image": "/products/vc3315az.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 7,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 156
+  },
+  {
+    "sku": "VDP5824",
+    "image": "/products/vdp5824.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 7,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 157
+  },
+  {
+    "sku": "RVP2686",
+    "image": "/products/rvp2686.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 7,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 158
+  },
+  {
+    "sku": "RVB 04",
+    "image": "/products/rvb-04.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 7,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 159
+  },
+  {
+    "sku": "RVB 2642",
+    "image": "/products/rvb-2642.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 7,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 160
+  },
+  {
+    "sku": "RVR38",
+    "image": "/products/rvr38.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 7,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 165
+  },
+  {
+    "sku": "RVB38",
+    "image": "/products/rvb38.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 7,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 164
+  },
+  {
+    "sku": "RVP38",
+    "image": "/products/rvp38.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 7,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 166
+  },
+  {
+    "sku": "RVA2669",
+    "image": "/products/rva2669.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 7,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 161
+  },
+  {
+    "sku": "RVA5757",
+    "image": "/products/rva5757.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 7,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 163
+  },
+  {
+    "sku": "RVN5756",
+    "image": "/products/rvn5756.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 7,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 162
+  },
+  {
+    "sku": "RVR39",
+    "image": "/products/rvr39.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 7,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 167
+  },
+  {
+    "sku": "RVR2664",
+    "image": "/products/rvr2664.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 8,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 170
+  },
+  {
+    "sku": "RVR2678",
+    "image": "/products/rvr2678.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 8,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 171
+  },
+  {
+    "sku": "RVPD2201",
+    "image": "/products/rvpd2201.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 8,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 172
+  },
+  {
+    "sku": "RVPP2202",
+    "image": "/products/rvpp2202.webp",
+    "source_file": "CATALOGO IMAGENES 02 VIZANTI 0426 SF.pdf",
+    "source_page": 8,
+    "source_hash": "1b883ed2b90ea865f3b1d153306aad1df3fc955f69f66af277d57b0f1dde21ed",
+    "image_xref": 173
+  },
+  {
+    "sku": "VKO2247MV",
+    "image": "/products/vko2247mv.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 1,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 20
+  },
+  {
+    "sku": "VKO2247MT",
+    "image": "/products/vko2247mt.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 1,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 22
+  },
+  {
+    "sku": "VKFT8225",
+    "image": "/products/vkft8225.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 1,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 15
+  },
+  {
+    "sku": "VK8225OST",
+    "image": "/products/vk8225ost.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 1,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 12
+  },
+  {
+    "sku": "VKAM8217",
+    "image": "/products/vkam8217.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 1,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 13
+  },
+  {
+    "sku": "VKCH8217",
+    "image": "/products/vkch8217.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 1,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 17
+  },
+  {
+    "sku": "VKNO8217",
+    "image": "/products/vkno8217.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 1,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 25
+  },
+  {
+    "sku": "VKCA8217",
+    "image": "/products/vkca8217.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 1,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 27
+  },
+  {
+    "sku": "VKSP8217",
+    "image": "/products/vksp8217.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 1,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 31
+  },
+  {
+    "sku": "VKSPE8217",
+    "image": "/products/vkspe8217.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 1,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 29
+  },
+  {
+    "sku": "VK221",
+    "image": "/products/vk221.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 2,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 35
+  },
+  {
+    "sku": "VKA8206EL",
+    "image": "/products/vka8206el.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 2,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 45
+  },
+  {
+    "sku": "VKA8217CB",
+    "image": "/products/vka8217cb.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 2,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 47
+  },
+  {
+    "sku": "VKA8217SC",
+    "image": "/products/vka8217sc.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 2,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 49
+  },
+  {
+    "sku": "VKA8207FL",
+    "image": "/products/vka8207fl.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 2,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 51
+  },
+  {
+    "sku": "VKPR8215R",
+    "image": "/products/vkpr8215r.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 2,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 37
+  },
+  {
+    "sku": "VKPR8215P",
+    "image": "/products/vkpr8215p.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 2,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 39
+  },
+  {
+    "sku": "VKASD8217",
+    "image": "/products/vkasd8217.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 2,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 36
+  },
+  {
+    "sku": "VKDL8217",
+    "image": "/products/vkdl8217.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 2,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 42
+  },
+  {
+    "sku": "VKAAR8217",
+    "image": "/products/vkaar8217.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 3,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 57
+  },
+  {
+    "sku": "VK2122AR",
+    "image": "/products/vk2122ar.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 3,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 58
+  },
+  {
+    "sku": "VKNA8217",
+    "image": "/products/vkna8217.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 3,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 56
+  },
+  {
+    "sku": "VKL8217",
+    "image": "/products/vkl8217.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 3,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 55
+  },
+  {
+    "sku": "VKPL8206",
+    "image": "/products/vkpl8206.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 3,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 63
+  },
+  {
+    "sku": "VK8225OSN",
+    "image": "/products/vk8225osn.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 3,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 64
+  },
+  {
+    "sku": "VKNR8217",
+    "image": "/products/vknr8217.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 3,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 67
+  },
+  {
+    "sku": "VK8225OSV",
+    "image": "/products/vk8225osv.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 3,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 68
+  },
+  {
+    "sku": "VKTB8217",
+    "image": "/products/vktb8217.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 3,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 71
+  },
+  {
+    "sku": "VKFU8220",
+    "image": "/products/vkfu8220.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 3,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 73
+  },
+  {
+    "sku": "VKONP8225",
+    "image": "/products/vkonp8225.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 4,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 77
+  },
+  {
+    "sku": "VKONE8225",
+    "image": "/products/vkone8225.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 4,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 79
+  },
+  {
+    "sku": "VKN8556",
+    "image": "/products/vkn8556.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 4,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 83
+  },
+  {
+    "sku": "VK2207AMP",
+    "image": "/products/vk2207amp.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 4,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 81
+  },
+  {
+    "sku": "VKCO2207",
+    "image": "/products/vkco2207.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 4,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 87
+  },
+  {
+    "sku": "VKUN2207",
+    "image": "/products/vkun2207.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 4,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 85
+  },
+  {
+    "sku": "VK2207AFL",
+    "image": "/products/vk2207afl.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 4,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 90
+  },
+  {
+    "sku": "VK2207ACR",
+    "image": "/products/vk2207acr.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 4,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 89
+  },
+  {
+    "sku": "VKL8206",
+    "image": "/products/vkl8206.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 4,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 93
+  },
+  {
+    "sku": "VKRP2117",
+    "image": "/products/vkrp2117.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 4,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 94
+  },
+  {
+    "sku": "VKUN8220",
+    "image": "/products/vkun8220.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 5,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 99
+  },
+  {
+    "sku": "VKR8201",
+    "image": "/products/vkr8201.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 5,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 98
+  },
+  {
+    "sku": "VK2102SD",
+    "image": "/products/vk2102sd.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 5,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 103
+  },
+  {
+    "sku": "VKAP8217",
+    "image": "/products/vkap8217.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 5,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 102
+  },
+  {
+    "sku": "VKRC8206",
+    "image": "/products/vkrc8206.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 5,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 107
+  },
+  {
+    "sku": "VK222R",
+    "image": "/products/vk222r.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 5,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 106
+  },
+  {
+    "sku": "VKN8557",
+    "image": "/products/vkn8557.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 5,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 111
+  },
+  {
+    "sku": "VKR8556",
+    "image": "/products/vkr8556.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 5,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 110
+  },
+  {
+    "sku": "VKO8217TE",
+    "image": "/products/vko8217te.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 5,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 115
+  },
+  {
+    "sku": "VKO8217BKT",
+    "image": "/products/vko8217bkt.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 5,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 116
+  },
+  {
+    "sku": "VK201",
+    "image": "/products/vk201.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 6,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 121
+  },
+  {
+    "sku": "VKPR8217",
+    "image": "/products/vkpr8217.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 6,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 120
+  },
+  {
+    "sku": "VKAZ8207",
+    "image": "/products/vkaz8207.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 6,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 124
+  },
+  {
+    "sku": "VKBT8217",
+    "image": "/products/vkbt8217.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 6,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 126
+  },
+  {
+    "sku": "VKSPA8217",
+    "image": "/products/vkspa8217.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 6,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 127
+  },
+  {
+    "sku": "VKA8206",
+    "image": "/products/vka8206.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 6,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 128
+  },
+  {
+    "sku": "VKMM8217",
+    "image": "/products/vkmm8217.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 6,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 129
+  },
+  {
+    "sku": "VKR8207",
+    "image": "/products/vkr8207.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 6,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 133
+  },
+  {
+    "sku": "VK2207OGN",
+    "image": "/products/vk2207ogn.webp",
+    "source_file": "CATALOGO IMAGENES 03 VIZANTI KIDS 0426 SF.pdf",
+    "source_page": 6,
+    "source_hash": "483cd9114a3a347968cf1379c96c36c8e318a6787371a6c89d84531c9daca430",
+    "image_xref": 132
+  },
+  {
+    "sku": "VSW54N",
+    "image": "/products/vsw54n.webp",
+    "source_file": "CATALOGO IMAGENES 04 VIZANTI SMART WATCH 0426 SF.pdf",
+    "source_page": 1,
+    "source_hash": "3d2d3d9dd9b3821daa16ea65282733b1dba52e5ee8489bf3392338b722ee2581",
+    "image_xref": 12
+  },
+  {
+    "sku": "VSW54P",
+    "image": "/products/vsw54p.webp",
+    "source_file": "CATALOGO IMAGENES 04 VIZANTI SMART WATCH 0426 SF.pdf",
+    "source_page": 1,
+    "source_hash": "3d2d3d9dd9b3821daa16ea65282733b1dba52e5ee8489bf3392338b722ee2581",
+    "image_xref": 14
+  },
+  {
+    "sku": "VSW54V",
+    "image": "/products/vsw54v.webp",
+    "source_file": "CATALOGO IMAGENES 04 VIZANTI SMART WATCH 0426 SF.pdf",
+    "source_page": 1,
+    "source_hash": "3d2d3d9dd9b3821daa16ea65282733b1dba52e5ee8489bf3392338b722ee2581",
+    "image_xref": 16
+  },
+  {
+    "sku": "VSW54R",
+    "image": "/products/vsw54r.webp",
+    "source_file": "CATALOGO IMAGENES 04 VIZANTI SMART WATCH 0426 SF.pdf",
+    "source_page": 1,
+    "source_hash": "3d2d3d9dd9b3821daa16ea65282733b1dba52e5ee8489bf3392338b722ee2581",
+    "image_xref": 18
+  },
+  {
+    "sku": "SETMN2311",
+    "image": "/products/setmn2311.webp",
+    "source_file": "CATALOGO IMAGENES 05 SETS Montescano y Vizanti 0526 SF.pdf",
+    "source_page": 1,
+    "source_hash": "63c58d6a04725b95cd0c0b6cf5e83ad4214ebd0d9689d676b54f937774ec3198",
+    "image_xref": 27
+  },
+  {
+    "sku": "SETMN2312",
+    "image": "/products/setmn2312.webp",
+    "source_file": "CATALOGO IMAGENES 05 SETS Montescano y Vizanti 0526 SF.pdf",
+    "source_page": 1,
+    "source_hash": "63c58d6a04725b95cd0c0b6cf5e83ad4214ebd0d9689d676b54f937774ec3198",
+    "image_xref": 25
+  },
+  {
+    "sku": "SETMA1016A",
+    "image": "/products/setma1016a.webp",
+    "source_file": "CATALOGO IMAGENES 05 SETS Montescano y Vizanti 0526 SF.pdf",
+    "source_page": 1,
+    "source_hash": "63c58d6a04725b95cd0c0b6cf5e83ad4214ebd0d9689d676b54f937774ec3198",
+    "image_xref": 22
+  },
+  {
+    "sku": "SETMA1016B",
+    "image": "/products/setma1016b.webp",
+    "source_file": "CATALOGO IMAGENES 05 SETS Montescano y Vizanti 0526 SF.pdf",
+    "source_page": 1,
+    "source_hash": "63c58d6a04725b95cd0c0b6cf5e83ad4214ebd0d9689d676b54f937774ec3198",
+    "image_xref": 24
+  },
+  {
+    "sku": "SETMA1016C",
+    "image": "/products/setma1016c.webp",
+    "source_file": "CATALOGO IMAGENES 05 SETS Montescano y Vizanti 0526 SF.pdf",
+    "source_page": 2,
+    "source_hash": "63c58d6a04725b95cd0c0b6cf5e83ad4214ebd0d9689d676b54f937774ec3198",
+    "image_xref": 41
+  },
+  {
+    "sku": "SETMA1005",
+    "image": "/products/setma1005.webp",
+    "source_file": "CATALOGO IMAGENES 05 SETS Montescano y Vizanti 0526 SF.pdf",
+    "source_page": 2,
+    "source_hash": "63c58d6a04725b95cd0c0b6cf5e83ad4214ebd0d9689d676b54f937774ec3198",
+    "image_xref": 38
+  },
+  {
+    "sku": "SETMN6982B",
+    "image": "/products/setmn6982b.webp",
+    "source_file": "CATALOGO IMAGENES 05 SETS Montescano y Vizanti 0526 SF.pdf",
+    "source_page": 2,
+    "source_hash": "63c58d6a04725b95cd0c0b6cf5e83ad4214ebd0d9689d676b54f937774ec3198",
+    "image_xref": 43
+  },
+  {
+    "sku": "SETMN7090C",
+    "image": "/products/setmn7090c.webp",
+    "source_file": "CATALOGO IMAGENES 05 SETS Montescano y Vizanti 0526 SF.pdf",
+    "source_page": 2,
+    "source_hash": "63c58d6a04725b95cd0c0b6cf5e83ad4214ebd0d9689d676b54f937774ec3198",
+    "image_xref": 45
+  },
+  {
+    "sku": "SETMN2201",
+    "image": "/products/setmn2201.webp",
+    "source_file": "CATALOGO IMAGENES 05 SETS Montescano y Vizanti 0526 SF.pdf",
+    "source_page": 3,
+    "source_hash": "63c58d6a04725b95cd0c0b6cf5e83ad4214ebd0d9689d676b54f937774ec3198",
+    "image_xref": 59
+  },
+  {
+    "sku": "SETMN1021",
+    "image": "/products/setmn1021.webp",
+    "source_file": "CATALOGO IMAGENES 05 SETS Montescano y Vizanti 0526 SF.pdf",
+    "source_page": 3,
+    "source_hash": "63c58d6a04725b95cd0c0b6cf5e83ad4214ebd0d9689d676b54f937774ec3198",
+    "image_xref": 58
+  },
+  {
+    "sku": "SETMN9010",
+    "image": "/products/setmn9010.webp",
+    "source_file": "CATALOGO IMAGENES 05 SETS Montescano y Vizanti 0526 SF.pdf",
+    "source_page": 3,
+    "source_hash": "63c58d6a04725b95cd0c0b6cf5e83ad4214ebd0d9689d676b54f937774ec3198",
+    "image_xref": 63
+  },
+  {
+    "sku": "SETMA0045",
+    "image": "/products/setma0045.webp",
+    "source_file": "CATALOGO IMAGENES 05 SETS Montescano y Vizanti 0526 SF.pdf",
+    "source_page": 3,
+    "source_hash": "63c58d6a04725b95cd0c0b6cf5e83ad4214ebd0d9689d676b54f937774ec3198",
+    "image_xref": 56
+  },
+  {
+    "sku": "SETMN9017",
+    "image": "/products/setmn9017.webp",
+    "source_file": "CATALOGO IMAGENES 05 SETS Montescano y Vizanti 0526 SF.pdf",
+    "source_page": 4,
+    "source_hash": "63c58d6a04725b95cd0c0b6cf5e83ad4214ebd0d9689d676b54f937774ec3198",
+    "image_xref": 77
+  },
+  {
+    "sku": "SETMA2313",
+    "image": "/products/setma2313.webp",
+    "source_file": "CATALOGO IMAGENES 05 SETS Montescano y Vizanti 0526 SF.pdf",
+    "source_page": 4,
+    "source_hash": "63c58d6a04725b95cd0c0b6cf5e83ad4214ebd0d9689d676b54f937774ec3198",
+    "image_xref": 73
+  },
+  {
+    "sku": "SETMN2316",
+    "image": "/products/setmn2316.webp",
+    "source_file": "CATALOGO IMAGENES 05 SETS Montescano y Vizanti 0526 SF.pdf",
+    "source_page": 4,
+    "source_hash": "63c58d6a04725b95cd0c0b6cf5e83ad4214ebd0d9689d676b54f937774ec3198",
+    "image_xref": 79
+  },
+  {
+    "sku": "SETMC6985A",
+    "image": "/products/setmc6985a.webp",
+    "source_file": "CATALOGO IMAGENES 05 SETS Montescano y Vizanti 0526 SF.pdf",
+    "source_page": 4,
+    "source_hash": "63c58d6a04725b95cd0c0b6cf5e83ad4214ebd0d9689d676b54f937774ec3198",
+    "image_xref": 74
+  },
+  {
+    "sku": "SETMC6985B",
+    "image": "/products/setmc6985b.webp",
+    "source_file": "CATALOGO IMAGENES 05 SETS Montescano y Vizanti 0526 SF.pdf",
+    "source_page": 5,
+    "source_hash": "63c58d6a04725b95cd0c0b6cf5e83ad4214ebd0d9689d676b54f937774ec3198",
+    "image_xref": 91
+  },
+  {
+    "sku": "SETMN6985C",
+    "image": "/products/setmn6985c.webp",
+    "source_file": "CATALOGO IMAGENES 05 SETS Montescano y Vizanti 0526 SF.pdf",
+    "source_page": 5,
+    "source_hash": "63c58d6a04725b95cd0c0b6cf5e83ad4214ebd0d9689d676b54f937774ec3198",
+    "image_xref": 93
+  },
+  {
+    "sku": "SETMC0001",
+    "image": "/products/setmc0001.webp",
+    "source_file": "CATALOGO IMAGENES 05 SETS Montescano y Vizanti 0526 SF.pdf",
+    "source_page": 5,
+    "source_hash": "63c58d6a04725b95cd0c0b6cf5e83ad4214ebd0d9689d676b54f937774ec3198",
+    "image_xref": 88
+  },
+  {
+    "sku": "SETM002N",
+    "image": "/products/setm002n.webp",
+    "source_file": "CATALOGO IMAGENES 05 SETS Montescano y Vizanti 0526 SF.pdf",
+    "source_page": 5,
+    "source_hash": "63c58d6a04725b95cd0c0b6cf5e83ad4214ebd0d9689d676b54f937774ec3198",
+    "image_xref": 85
+  },
+  {
+    "sku": "SETM002P",
+    "image": "/products/setm002p.webp",
+    "source_file": "CATALOGO IMAGENES 05 SETS Montescano y Vizanti 0526 SF.pdf",
+    "source_page": 6,
+    "source_hash": "63c58d6a04725b95cd0c0b6cf5e83ad4214ebd0d9689d676b54f937774ec3198",
+    "image_xref": 102
+  },
+  {
+    "sku": "SETM002A",
+    "image": "/products/setm002a.webp",
+    "source_file": "CATALOGO IMAGENES 05 SETS Montescano y Vizanti 0526 SF.pdf",
+    "source_page": 6,
+    "source_hash": "63c58d6a04725b95cd0c0b6cf5e83ad4214ebd0d9689d676b54f937774ec3198",
+    "image_xref": 104
+  },
+  {
+    "sku": "SETM003P",
+    "image": "/products/setm003p.webp",
+    "source_file": "CATALOGO IMAGENES 05 SETS Montescano y Vizanti 0526 SF.pdf",
+    "source_page": 6,
+    "source_hash": "63c58d6a04725b95cd0c0b6cf5e83ad4214ebd0d9689d676b54f937774ec3198",
+    "image_xref": 109
+  },
+  {
+    "sku": "SETM003N",
+    "image": "/products/setm003n.webp",
+    "source_file": "CATALOGO IMAGENES 05 SETS Montescano y Vizanti 0526 SF.pdf",
+    "source_page": 6,
+    "source_hash": "63c58d6a04725b95cd0c0b6cf5e83ad4214ebd0d9689d676b54f937774ec3198",
+    "image_xref": 106
+  },
+  {
+    "sku": "SETM004P",
+    "image": "/products/setm004p.webp",
+    "source_file": "CATALOGO IMAGENES 05 SETS Montescano y Vizanti 0526 SF.pdf",
+    "source_page": 7,
+    "source_hash": "63c58d6a04725b95cd0c0b6cf5e83ad4214ebd0d9689d676b54f937774ec3198",
+    "image_xref": 118
+  },
+  {
+    "sku": "SETM004C",
+    "image": "/products/setm004c.webp",
+    "source_file": "CATALOGO IMAGENES 05 SETS Montescano y Vizanti 0526 SF.pdf",
+    "source_page": 7,
+    "source_hash": "63c58d6a04725b95cd0c0b6cf5e83ad4214ebd0d9689d676b54f937774ec3198",
+    "image_xref": 120
+  },
+  {
+    "sku": "SETM004A",
+    "image": "/products/setm004a.webp",
+    "source_file": "CATALOGO IMAGENES 05 SETS Montescano y Vizanti 0526 SF.pdf",
+    "source_page": 7,
+    "source_hash": "63c58d6a04725b95cd0c0b6cf5e83ad4214ebd0d9689d676b54f937774ec3198",
+    "image_xref": 122
+  },
+  {
+    "sku": "SETMCW001A",
+    "image": "/products/setmcw001a.webp",
+    "source_file": "CATALOGO IMAGENES 05 SETS Montescano y Vizanti 0526 SF.pdf",
+    "source_page": 7,
+    "source_hash": "63c58d6a04725b95cd0c0b6cf5e83ad4214ebd0d9689d676b54f937774ec3198",
+    "image_xref": 125
+  },
+  {
+    "sku": "SETVN5637",
+    "image": "/products/setvn5637.webp",
+    "source_file": "CATALOGO IMAGENES 05 SETS Montescano y Vizanti 0526 SF.pdf",
+    "source_page": 9,
+    "source_hash": "63c58d6a04725b95cd0c0b6cf5e83ad4214ebd0d9689d676b54f937774ec3198",
+    "image_xref": 150
+  },
+  {
+    "sku": "SETVA2201",
+    "image": "/products/setva2201.webp",
+    "source_file": "CATALOGO IMAGENES 05 SETS Montescano y Vizanti 0526 SF.pdf",
+    "source_page": 9,
+    "source_hash": "63c58d6a04725b95cd0c0b6cf5e83ad4214ebd0d9689d676b54f937774ec3198",
+    "image_xref": 152
+  },
+  {
+    "sku": "SETVA5850",
+    "image": "/products/setva5850.webp",
+    "source_file": "CATALOGO IMAGENES 05 SETS Montescano y Vizanti 0526 SF.pdf",
+    "source_page": 9,
+    "source_hash": "63c58d6a04725b95cd0c0b6cf5e83ad4214ebd0d9689d676b54f937774ec3198",
+    "image_xref": 147
+  },
+  {
+    "sku": "SETVN5635R",
+    "image": "/products/setvn5635r.webp",
+    "source_file": "CATALOGO IMAGENES 05 SETS Montescano y Vizanti 0526 SF.pdf",
+    "source_page": 9,
+    "source_hash": "63c58d6a04725b95cd0c0b6cf5e83ad4214ebd0d9689d676b54f937774ec3198",
+    "image_xref": 151
+  },
+  {
+    "sku": "SETVC5822",
+    "image": "/products/setvc5822.webp",
+    "source_file": "CATALOGO IMAGENES 05 SETS Montescano y Vizanti 0526 SF.pdf",
+    "source_page": 10,
+    "source_hash": "63c58d6a04725b95cd0c0b6cf5e83ad4214ebd0d9689d676b54f937774ec3198",
+    "image_xref": 162
+  },
+  {
+    "sku": "SETVN5850B",
+    "image": "/products/setvn5850b.webp",
+    "source_file": "CATALOGO IMAGENES 05 SETS Montescano y Vizanti 0526 SF.pdf",
+    "source_page": 10,
+    "source_hash": "63c58d6a04725b95cd0c0b6cf5e83ad4214ebd0d9689d676b54f937774ec3198",
+    "image_xref": 158
+  },
+  {
+    "sku": "SETVN5635B",
+    "image": "/products/setvn5635b.webp",
+    "source_file": "CATALOGO IMAGENES 05 SETS Montescano y Vizanti 0526 SF.pdf",
+    "source_page": 10,
+    "source_hash": "63c58d6a04725b95cd0c0b6cf5e83ad4214ebd0d9689d676b54f937774ec3198",
+    "image_xref": 160
+  },
+  {
+    "sku": "SETVN5850R",
+    "image": "/products/setvn5850r.webp",
+    "source_file": "CATALOGO IMAGENES 05 SETS Montescano y Vizanti 0526 SF.pdf",
+    "source_page": 10,
+    "source_hash": "63c58d6a04725b95cd0c0b6cf5e83ad4214ebd0d9689d676b54f937774ec3198",
+    "image_xref": 159
+  },
+  {
+    "sku": "SETV9811",
+    "image": "/products/setv9811.webp",
+    "source_file": "CATALOGO IMAGENES 05 SETS Montescano y Vizanti 0526 SF.pdf",
+    "source_page": 11,
+    "source_hash": "63c58d6a04725b95cd0c0b6cf5e83ad4214ebd0d9689d676b54f937774ec3198",
+    "image_xref": 166
+  },
+  {
+    "sku": "SETV4002C",
+    "image": "/products/setv4002c.webp",
+    "source_file": "CATALOGO IMAGENES 05 SETS Montescano y Vizanti 0526 SF.pdf",
+    "source_page": 11,
+    "source_hash": "63c58d6a04725b95cd0c0b6cf5e83ad4214ebd0d9689d676b54f937774ec3198",
+    "image_xref": 168
+  },
+  {
+    "sku": "SETV4002G",
+    "image": "/products/setv4002g.webp",
+    "source_file": "CATALOGO IMAGENES 05 SETS Montescano y Vizanti 0526 SF.pdf",
+    "source_page": 11,
+    "source_hash": "63c58d6a04725b95cd0c0b6cf5e83ad4214ebd0d9689d676b54f937774ec3198",
+    "image_xref": 172
+  },
+  {
+    "sku": "SETV2203",
+    "image": "/products/setv2203.webp",
+    "source_file": "CATALOGO IMAGENES 05 SETS Montescano y Vizanti 0526 SF.pdf",
+    "source_page": 11,
+    "source_hash": "63c58d6a04725b95cd0c0b6cf5e83ad4214ebd0d9689d676b54f937774ec3198",
+    "image_xref": 170
+  },
+  {
+    "sku": "SETVN5700",
+    "image": "/products/setvn5700.webp",
+    "source_file": "CATALOGO IMAGENES 05 SETS Montescano y Vizanti 0526 SF.pdf",
+    "source_page": 12,
+    "source_hash": "63c58d6a04725b95cd0c0b6cf5e83ad4214ebd0d9689d676b54f937774ec3198",
+    "image_xref": 175
+  },
+  {
+    "sku": "03NDBP",
+    "image": "/products/03ndbp.webp",
+    "source_file": "CATALOGO IMAGENES 06 PLUMAS MONTESCANO SF.pdf",
+    "source_page": 1,
+    "source_hash": "12cc15eae48d8e7ddaca2f60dcd9a443b5f2b5ae3b00bafed4bd63cc7449a1cd",
+    "image_xref": 18
+  },
+  {
+    "sku": "40BPA",
+    "image": "/products/40bpa.webp",
+    "source_file": "CATALOGO IMAGENES 06 PLUMAS MONTESCANO SF.pdf",
+    "source_page": 1,
+    "source_hash": "12cc15eae48d8e7ddaca2f60dcd9a443b5f2b5ae3b00bafed4bd63cc7449a1cd",
+    "image_xref": 13
+  },
+  {
+    "sku": "311RPN",
+    "image": "/products/311rpn.webp",
+    "source_file": "CATALOGO IMAGENES 06 PLUMAS MONTESCANO SF.pdf",
+    "source_page": 1,
+    "source_hash": "12cc15eae48d8e7ddaca2f60dcd9a443b5f2b5ae3b00bafed4bd63cc7449a1cd",
+    "image_xref": 17
+  },
+  {
+    "sku": "482GBP",
+    "image": "/products/482gbp.webp",
+    "source_file": "CATALOGO IMAGENES 06 PLUMAS MONTESCANO SF.pdf",
+    "source_page": 1,
+    "source_hash": "12cc15eae48d8e7ddaca2f60dcd9a443b5f2b5ae3b00bafed4bd63cc7449a1cd",
+    "image_xref": 23
+  },
+  {
+    "sku": "40BPD",
+    "image": "/products/40bpd.webp",
+    "source_file": "CATALOGO IMAGENES 06 PLUMAS MONTESCANO SF.pdf",
+    "source_page": 1,
+    "source_hash": "12cc15eae48d8e7ddaca2f60dcd9a443b5f2b5ae3b00bafed4bd63cc7449a1cd",
+    "image_xref": 12
+  },
+  {
+    "sku": "40RPD",
+    "image": "/products/40rpd.webp",
+    "source_file": "CATALOGO IMAGENES 06 PLUMAS MONTESCANO SF.pdf",
+    "source_page": 1,
+    "source_hash": "12cc15eae48d8e7ddaca2f60dcd9a443b5f2b5ae3b00bafed4bd63cc7449a1cd",
+    "image_xref": 14
+  },
+  {
+    "sku": "40BPRPD",
+    "image": "/products/40bprpd.webp",
+    "source_file": "CATALOGO IMAGENES 06 PLUMAS MONTESCANO SF.pdf",
+    "source_page": 1,
+    "source_hash": "12cc15eae48d8e7ddaca2f60dcd9a443b5f2b5ae3b00bafed4bd63cc7449a1cd",
+    "image_xref": 15
+  },
+  {
+    "sku": "499BPP",
+    "image": "/products/499bpp.webp",
+    "source_file": "CATALOGO IMAGENES 06 PLUMAS MONTESCANO SF.pdf",
+    "source_page": 1,
+    "source_hash": "12cc15eae48d8e7ddaca2f60dcd9a443b5f2b5ae3b00bafed4bd63cc7449a1cd",
+    "image_xref": 21
+  },
+  {
+    "sku": "655AZBP",
+    "image": "/products/655azbp.webp",
+    "source_file": "CATALOGO IMAGENES 06 PLUMAS MONTESCANO SF.pdf",
+    "source_page": 1,
+    "source_hash": "12cc15eae48d8e7ddaca2f60dcd9a443b5f2b5ae3b00bafed4bd63cc7449a1cd",
+    "image_xref": 22
+  },
+  {
+    "sku": "906BPR",
+    "image": "/products/906bpr.webp",
+    "source_file": "CATALOGO IMAGENES 06 PLUMAS MONTESCANO SF.pdf",
+    "source_page": 1,
+    "source_hash": "12cc15eae48d8e7ddaca2f60dcd9a443b5f2b5ae3b00bafed4bd63cc7449a1cd",
+    "image_xref": 16
+  },
+  {
+    "sku": "7188PBP",
+    "image": "/products/7188pbp.webp",
+    "source_file": "CATALOGO IMAGENES 06 PLUMAS MONTESCANO SF.pdf",
+    "source_page": 1,
+    "source_hash": "12cc15eae48d8e7ddaca2f60dcd9a443b5f2b5ae3b00bafed4bd63cc7449a1cd",
+    "image_xref": 24
+  },
+  {
+    "sku": "7506TTRP",
+    "image": "/products/7506ttrp.webp",
+    "source_file": "CATALOGO IMAGENES 06 PLUMAS MONTESCANO SF.pdf",
+    "source_page": 1,
+    "source_hash": "12cc15eae48d8e7ddaca2f60dcd9a443b5f2b5ae3b00bafed4bd63cc7449a1cd",
+    "image_xref": 20
+  },
+  {
+    "sku": "630AZBP",
+    "image": "/products/630azbp.webp",
+    "source_file": "CATALOGO IMAGENES 06 PLUMAS MONTESCANO SF.pdf",
+    "source_page": 2,
+    "source_hash": "12cc15eae48d8e7ddaca2f60dcd9a443b5f2b5ae3b00bafed4bd63cc7449a1cd",
+    "image_xref": 28
+  }
+]

@@ -1,0 +1,16 @@
+import fs from 'node:fs';
+const records=JSON.parse(fs.readFileSync('.audit/catalog/records.json','utf8'));
+const q=x=>x==null?'NULL':`'${String(x).replaceAll("'","''")}'`;
+const statements=[`insert into montescano.brands(name,slug) values ('Montescano','montescano'),('Vizanti','vizanti') on conflict(slug) do nothing;`, `insert into montescano.categories(name,slug,sort_order) values ('Montescano','montescano',1),('Vizanti','vizanti',2),('Vizanti Kids','kids',3),('Smart Watch','smart-watch',4),('Sets','sets',5),('Plumas','plumas',6) on conflict(slug) do nothing;`];
+for(const r of records){
+ statements.push(`insert into montescano.products(sku,slug,brand_id,category_id,name,description,gender,availability_status,review_status,is_public,source_file,source_page) values(${q(r.sku)},${q(r.slug)},(select id from montescano.brands where name=${q(r.brand)}),(select id from montescano.categories where slug=${q(r.family)}),${q(r.sku)},${q(r.description)},${q(r.gender)},'on_request',${q(r.review_status)},${r.is_public},${q(r.source_file)},${q(r.source_page)}) on conflict(slug) do update set description=excluded.description,gender=excluded.gender,brand_id=excluded.brand_id,is_public=excluded.is_public;`);
+ if(r.image)statements.push(`insert into montescano.product_images(product_id,storage_path,source_file,source_page,source_hash,alt_text,width,height,is_approved) select id,${q(r.image)},${q(r.source_file)},${q(r.source_page)},${q(r.source_hash)},${q(r.brand+' '+r.sku)},${r.width},${r.height},${r.is_public} from montescano.products p where slug=${q(r.slug)} and not exists(select 1 from montescano.product_images i where i.product_id=p.id and i.storage_path=${q(r.image)});`);
+}
+statements.push(`insert into montescano.commercial_collections(slug,name,is_public) values ('seleccion-montescano','Selección Montescano',true),('seleccion-vizanti','Selección Vizanti',true),('regalos','Regalos corporativos',true) on conflict(slug) do nothing;`);
+statements.push(`insert into montescano.collection_products(collection_id,product_id) select c.id,p.id from montescano.products p join montescano.categories cat on cat.id=p.category_id join montescano.commercial_collections c on (c.slug='seleccion-montescano' and cat.slug='montescano') or (c.slug='seleccion-vizanti' and cat.slug='vizanti') or (c.slug='regalos' and cat.slug in ('sets','plumas')) where p.is_public on conflict do nothing;`);
+statements.push(`insert into montescano.corporate_projects(slug,title,description,is_public) values ('personalizacion','Proyectos corporativos y personalización','Personalización de contratapa y carátula con logotipos, leyendas o nombres. Láser, serigrafía o tampografía, según el modelo y sobre cotización.',true) on conflict(slug) do nothing;`);
+fs.mkdirSync('.audit/import',{recursive:true});
+for(let i=0;i<statements.length;i+=120)fs.writeFileSync(`.audit/import/batch-${i/120}.sql`,'begin;\n'+statements.slice(i,i+120).join('\n')+'\ncommit;');
+fs.mkdirSync('docs',{recursive:true});
+fs.writeFileSync('docs/assets-provenance.json',JSON.stringify(records.filter(r=>r.is_public).map(({sku,image,source_file,source_page,source_hash,image_xref})=>({sku,image,source_file,source_page,source_hash,image_xref})),null,2));
+console.log({records:records.length,batches:Math.ceil(statements.length/120),published:records.filter(r=>r.is_public).length});

@@ -1,0 +1,7 @@
+.git
+.audit
+catalogo
+*.pdf
+*.xlsx
+REPORTE_FASE_1.md
+.env*
