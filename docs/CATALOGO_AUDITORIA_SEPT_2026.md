@@ -55,4 +55,4 @@ Aplicación transaccional en Supabase: 30/09/2026. Resultado: 535 productos, 393
 
 QA local: lint y build PASS. Navegación, carrusel Embla (flechas, indicadores y drag), búsqueda, filtros, Quick View, foto, cotizador con SKU y ausencia de overflow/imágenes rotas PASS en escritorio, Android/Chrome, Safari móvil y reduced motion. No se enviaron formularios ni correos durante la prueba.
 
-Despliegue y comprobación pública se registran tras la publicación.
+Producción: commit 94840be desplegado el 30/09/2026 en https://montescano-catalogo-comercial.vercel.app. La Home pública mostró 393 referencias, logo y fotografías sin errores de carga; carrusel, indicador, búsqueda exacta TACB7088 y Quick View se comprobaron directamente.
