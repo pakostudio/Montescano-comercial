@@ -34,6 +34,6 @@ La API `public.montescano_catalog()` mantiene `SECURITY INVOKER` y devuelve úni
 
 La migración `20261006003916_october_catalog.sql` agrega campos y actualiza la función pública. Se aplicó en transacción. `node scripts/build-october-import.mjs` valida conteos, precios, SKU únicos y hashes, y genera `.audit/import/october.sql`. La importación preserva IDs y slugs, y es repetible sobre esta instantánea. Ejecutarla con permisos administrativos solo después de desplegar los recursos de imagen.
 
-Verificaciones: TypeScript, lint y build correctos; dependencias de producción sin vulnerabilidades reportadas después de actualizar Next.js a 16.3.6 y source-map-js a la versión corregida. Cotejo de 323 registros contra sus fuentes y 510 URLs de imagen con respuesta 200. La caché de catálogo se revalida cada 120 segundos.
+Verificaciones: TypeScript, lint y build correctos; dependencias de producción sin vulnerabilidades reportadas después de actualizar Next.js a 16.3.6 y source-map-js a la versión corregida. Cotejo de 323 registros contra sus fuentes y 510 URLs de imagen con respuesta 200. La lectura de Supabase usa `cache: no-store` para evitar mostrar una instantánea anterior tras una actualización; React deduplica la consulta dentro de cada petición.
 
 No se enviaron correos ni solicitudes de cotización de prueba a terceros durante esta actualización.
