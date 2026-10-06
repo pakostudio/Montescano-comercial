@@ -7,8 +7,7 @@ import {
   useScroll,
   useMotionValueEvent,
 } from "motion/react";
-import useEmblaCarousel from "embla-carousel-react";
-import { useCallback, useEffect, useMemo, useState, useRef } from "react";
+import { useEffect, useMemo, useState, useRef } from "react";
 import Link from "next/link";
 import {
   families,
@@ -18,7 +17,7 @@ import {
 import Dialog from "./Dialog";
 import LeadForm from "./LeadForm";
 import {Action,ActionLink,Reveal} from './MotionUI';
-import HeroDepth from './HeroDepth';
+import CinematicHero from './CinematicHero';
 import ContactActions from './ContactActions';
 import QuoteLink from './QuoteLink';
 import ProductPrice, {hasPromotion} from './ProductPrice';
@@ -52,24 +51,7 @@ export default function CatalogExperience({
     } | null>(null),
     [filterOpen, setFilterOpen] = useState(false),
     [menu, setMenu] = useState(false),
-    [slide, setSlide] = useState(0),
     [scrolled, setScrolled] = useState(false);
-  const [emblaRef, emblaApi] = useEmblaCarousel({
-    loop: true,
-    align: "start",
-    duration: reduced ? 0 : 28,
-  });
-  const onSelect = useCallback(() => {
-    if (emblaApi) setSlide(emblaApi.selectedScrollSnap());
-  }, [emblaApi]);
-  useEffect(() => {
-    if (!emblaApi) return;
-    onSelect();
-    emblaApi.on("select", onSelect);
-    return () => {
-      emblaApi.off("select", onSelect);
-    };
-  }, [emblaApi, onSelect]);
   useEffect(() => {
     const observer=new IntersectionObserver(entries=>{for(const entry of entries)if(entry.isIntersecting)setSection(entry.target.id);},{rootMargin:'-18% 0px -65% 0px',threshold:0});
     ['inicio','catalogo','corporativo','contacto'].forEach(id=>{const el=document.getElementById(id);if(el)observer.observe(el);});
@@ -104,33 +86,8 @@ export default function CatalogExperience({
     [products, active, query, filters, selection],
   );
   const filterCount = Object.values(filters).filter(Boolean).length;
-  const heroProducts = [
-    products.find((p) => p.sku === "TASAC3521"),
-    products.find((p) => p.sku === "VSW54N"),
-    products.find((p) => p.family === "sets"),
-  ].filter(Boolean) as Product[];
-  const headlines = [
-    <>
-      RELOJERÍA MEXICANA
-      <br />
-      DESDE 1998
-    </>,
-    <>
-      UNA COLECCIÓN.
-      <br />
-      TU SIGUIENTE ELECCIÓN.
-    </>,
-    <>
-      DETALLES QUE
-      <br />
-      HACEN PRESENCIA.
-    </>,
-  ];
-  const subtitles = [
-    "Montescano y Vizanti. Relojes para cada estilo, colecciones para tu negocio.",
-    "Explora relojes, Smart Watch y accesorios para encontrar el modelo que buscas.",
-    "Sets, plumas y soluciones de personalización para proyectos corporativos.",
-  ];
+  const featuredProduct = products.find((p) => p.sku === "TASAC3521");
+  const corporateProduct = products.find((p) => p.family === "sets");
   const clear = () => {
     setSelection('all');
     setFilters(initialFilters);
@@ -158,7 +115,7 @@ export default function CatalogExperience({
       <a href="#catalogo" className="skip-link">
         Saltar al catálogo
       </a>
-      <motion.header layout className={`site-header ${scrolled ? "scrolled" : ""}`} transition={{layout:{duration:NORMAL,ease:EASE}}}>
+      <motion.header layout className={`site-header cinematic-header ${scrolled ? "scrolled" : ""}`} transition={{layout:{duration:NORMAL,ease:EASE}}}>
         <Link href="/" className="logo" aria-label="Montescano, inicio">
           <img
             src="/brand/montescano.png"
@@ -209,131 +166,7 @@ export default function CatalogExperience({
         </Action>
       </motion.header>
       <main>
-        <section id="inicio" className="hero">
-          <div className="hero-copy">
-            <motion.p {...reveal} className="kicker">
-              EL TIEMPO, A TU MANERA
-            </motion.p>
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={slide}
-                initial="hidden"
-                animate="visible"
-                exit={{ opacity: 0,y:reduced?0:-6,transition:{duration:FAST} }}
-                variants={{hidden:{},visible:{transition:{staggerChildren:reduced?0:.075}}}}
-              >
-                <motion.h1 variants={{hidden:{opacity:0,y:reduced?0:18},visible:{opacity:1,y:0,transition:{duration:SLOW,ease:EASE}}}}>{headlines[slide]}</motion.h1>
-                <motion.p variants={{hidden:{opacity:0,y:reduced?0:12},visible:{opacity:1,y:0,transition:{duration:NORMAL,ease:EASE}}}} className="hero-description">{subtitles[slide]}</motion.p>
-            <motion.div variants={{hidden:{opacity:0,y:reduced?0:8},visible:{opacity:1,y:0,transition:{duration:NORMAL,ease:EASE}}}} className="hero-actions">
-              <motion.a
-                whileHover={{ y: -2 }}
-                whileTap={{ scale: 0.98 }}
-                className="button primary"
-                href="#catalogo"
-              >
-                EXPLORAR COLECCIONES <span aria-hidden="true">→</span>
-              </motion.a>
-              <motion.a
-                whileHover={{ x: 3 }}
-                className="text-link"
-                href="#corporativo"
-              >
-                PROYECTOS CORPORATIVOS ↗
-              </motion.a>
-            </motion.div>
-              </motion.div>
-            </AnimatePresence>
-          </div>
-          <div
-            className="hero-visual"
-            aria-roledescription="carrusel"
-            aria-label="Colecciones destacadas"
-            onKeyDown={(e) => {
-              if (e.key === "ArrowLeft") {
-                e.preventDefault();
-                emblaApi?.scrollPrev();
-              }
-              if (e.key === "ArrowRight") {
-                e.preventDefault();
-                emblaApi?.scrollNext();
-              }
-            }}
-          >
-            <div
-              className="embla"
-              ref={emblaRef}
-              tabIndex={0}
-              aria-label="Arrastra o usa las flechas para ver las colecciones"
-            >
-              <div className="embla-container">
-                {heroProducts.map((p, index) => (
-                  <div
-                    className="embla-slide"
-                    key={p.id}
-                    role="group"
-                    aria-roledescription="diapositiva"
-                    aria-label={`${index + 1} de ${heroProducts.length}`}
-                    aria-hidden={slide !== index}
-                  >
-                    <HeroDepth><motion.img
-                      animate={{
-                        scale: reduced?1:slide === index ? 1 : 0.96,
-                        opacity: slide === index ? 1 : 0.5,
-                      }}
-                      transition={{ duration: reduced?FAST:SLOW,ease:EASE }}
-                      src={p.image}
-                      alt={`${p.brand} ${p.sku}`}
-                      width="310"
-                      height="365"
-                      draggable={false}
-                    /></HeroDepth>
-                    <div className="hero-product-label">
-                      <span>{p.brand}</span>
-                      <strong>{p.sku}</strong>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="hero-bottom">
-              <div className="hero-dots">
-                {heroProducts.map((p, index) => (
-                  <Action
-                    key={p.id}
-                    className={slide === index ? "active" : ""}
-                    onClick={() => emblaApi?.scrollTo(index)}
-                    aria-label={`Ver colección ${index + 1}`}
-                    aria-pressed={slide === index}
-                  >
-                    <span />{slide===index&&<motion.i layoutId="hero-progress" transition={SPRING}/>}
-                  </Action>
-                ))}
-              </div>
-              <div className="hero-counter" aria-live="polite">
-                <AnimatePresence mode="wait" initial={false}><motion.b key={slide} initial={{opacity:0,y:reduced?0:5}} animate={{opacity:1,y:0}} exit={{opacity:0,y:reduced?0:-5}} transition={{duration:FAST}}>0{slide + 1}</motion.b></AnimatePresence>
-                <span> / 0{heroProducts.length}</span>
-              </div>
-              <div className="hero-arrows">
-                <motion.button
-                  whileHover={{ x: -2 }}
-                  whileTap={{ scale: 0.94 }}
-                  onClick={() => emblaApi?.scrollPrev()}
-                  aria-label="Diapositiva anterior"
-                >
-                  ←
-                </motion.button>
-                <motion.button
-                  whileHover={{ x: 2 }}
-                  whileTap={{ scale: 0.94 }}
-                  onClick={() => emblaApi?.scrollNext()}
-                  aria-label="Diapositiva siguiente"
-                >
-                  →
-                </motion.button>
-              </div>
-            </div>
-          </div>
-        </section>
+        <CinematicHero product={featuredProduct} />
         <section id="catalogo" className="catalog-section">
           <motion.div {...reveal} className="section-intro">
             <div>
@@ -582,9 +415,9 @@ export default function CatalogExperience({
         </motion.section>
         <section id="corporativo" className="corporate">
           <Reveal image className="corporate-image">
-            {heroProducts[2] && (
+            {corporateProduct && (
               <img
-                src={heroProducts[2].image}
+                src={corporateProduct.image}
                 alt="Set de regalo Montescano"
                 width="400"
                 height="350"
@@ -669,7 +502,7 @@ export default function CatalogExperience({
         </div>
         <div className="footer-bottom">Montescano · Catálogo comercial</div>
       </footer>
-      {!quick&&!lead&&!filterOpen&&!menu&&<ContactActions floating/>}
+      {section!=='inicio'&&!quick&&!lead&&!filterOpen&&!menu&&<ContactActions floating/>}
       <AnimatePresence>
         {quick && (
           <Dialog
