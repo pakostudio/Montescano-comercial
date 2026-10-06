@@ -2,6 +2,7 @@ export type Product = {
  id:string; sku:string; slug:string; brand:string; family:string; description:string;
  gender:string|null; material:string|null; movement:string|null; water_resistance:string|null;
  availability:'available'|'limited'|'on_request'|'unavailable'; image:string; images:string[];
+ price?:number|null; promo_price?:number|null; is_new?:boolean;
  features:{label:string;value:string}[]; variants:{slug:string;sku:string;label:string}[]; collections:string[];
 }
 export const families = [ ['todos','Todos'],['montescano','Montescano'],['vizanti','Vizanti'],['kids','Kids'],['smart-watch','Smart Watch'],['sets','Sets'],['plumas','Plumas'] ] as const;

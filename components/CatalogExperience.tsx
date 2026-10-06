@@ -21,6 +21,7 @@ import {Action,ActionLink,Reveal} from './MotionUI';
 import HeroDepth from './HeroDepth';
 import ContactActions from './ContactActions';
 import QuoteLink from './QuoteLink';
+import ProductPrice, {hasPromotion} from './ProductPrice';
 import {FAST,NORMAL,SLOW,EASE,SPRING} from '../lib/motion';
 const initialFilters = {
   brand: "",
@@ -36,6 +37,7 @@ export default function CatalogExperience({
   const reduced = useReducedMotion();
   const tabsRef=useRef<HTMLDivElement>(null);
   const [section,setSection]=useState('inicio');
+  const [selection,setSelection]=useState('all');
   const {scrollY}=useScroll();
   useMotionValueEvent(scrollY,'change',value=>setScrolled(value>24));
   const [active, setActive] = useState("todos"),
@@ -83,12 +85,13 @@ export default function CatalogExperience({
   }, []);
   useEffect(() => {
     setVisible(24);
-  }, [active, query, filters]);
+  }, [active, query, filters, selection]);
   const filtered = useMemo(
     () =>
       products.filter(
         (p) =>
           (active === "todos" || p.family === active) &&
+          (selection === 'all' || (selection === 'new' ? p.is_new : hasPromotion(p))) &&
           (!query ||
             `${p.sku} ${p.brand} ${p.description} ${p.collections.join(" ")}`
               .toLocaleLowerCase("es")
@@ -98,7 +101,7 @@ export default function CatalogExperience({
           (!filters.collection || p.collections.includes(filters.collection)) &&
           (!filters.availability || p.availability === filters.availability),
       ),
-    [products, active, query, filters],
+    [products, active, query, filters, selection],
   );
   const filterCount = Object.values(filters).filter(Boolean).length;
   const heroProducts = [
@@ -129,11 +132,13 @@ export default function CatalogExperience({
     "Sets, plumas y soluciones de personalización para proyectos corporativos.",
   ];
   const clear = () => {
+    setSelection('all');
     setFilters(initialFilters);
     setActive("todos");
     setQuery("");
   };
   const choose = (family: string) => {
+    setSelection('all');
     setActive(family);
     setFilters(initialFilters);
     setQuery("");
@@ -336,12 +341,16 @@ export default function CatalogExperience({
               <h2>Encuentra tu próximo modelo.</h2>
             </div>
             <p className="section-note">
-              Relojes, accesorios y sets.
+              Colecciones actualizadas · Octubre 2026.
               <br />
-              Una selección para cada ocasión.
+              Precios en MXN. Disponibilidad sujeta a confirmación.
             </p>
           </motion.div>
           <div className="controls">
+            <div className="catalog-selections" aria-label="Selección de productos">
+              {([['all','Todos los modelos'],['new','Novedades'],['promo','Promociones']] as const).map(([id,label]) =>
+                <button key={id} aria-pressed={selection===id} onClick={()=>setSelection(id)}>{label}</button>)}
+            </div>
             <motion.div layoutScroll ref={tabsRef} className="category-tabs" aria-label="Categoría">
               {families.map(([id, name]) => (
                 <motion.button
@@ -485,6 +494,7 @@ export default function CatalogExperience({
                       </p>
                       <h3>{p.sku}</h3>
                       <p className="product-description">{p.description}</p>
+                      <ProductPrice product={p}/>
                       <span className="card-cta">
                         VER DETALLES <motion.span variants={{rest:{x:0},hover:{x:reduced?0:4}}} aria-hidden="true">→</motion.span>
                       </span>
@@ -680,6 +690,7 @@ export default function CatalogExperience({
                 <p className="kicker">{quick.brand}</p>
                 <h2>{quick.sku}</h2>
                 <p>{quick.description}</p>
+                <ProductPrice product={quick}/>
                 <dl>
                   {[
                     ["Género", quick.gender],

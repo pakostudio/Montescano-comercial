@@ -6,6 +6,7 @@ import { availabilityLabels } from "../../../lib/catalog-types";
 import LeadForm from "../../../components/LeadForm";
 import ContactActions from '../../../components/ContactActions';
 import QuoteLink from '../../../components/QuoteLink';
+import ProductPrice from '../../../components/ProductPrice';
 import {Reveal,ActionLink} from '../../../components/MotionUI';
 export const dynamic = "force-dynamic";
 export async function generateMetadata({
@@ -64,6 +65,7 @@ export default async function ProductPage({
             <p className="kicker">{p.brand}</p>
             <h1>{p.sku}</h1>
             <p className="detail-description">{p.description}</p>
+            <ProductPrice product={p}/>
             <p className="availability">{availabilityLabels[p.availability]}</p>
             <dl>
               {[
