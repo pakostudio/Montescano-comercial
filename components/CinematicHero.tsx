@@ -18,15 +18,14 @@ export default function CinematicHero({product}: {product?: Product}) {
   const start = useRef<number | null>(null);
   const visible = useInView(root, {amount: 0.15});
   const reduced = useReducedMotion();
-  const [paused, setPaused] = useState(false);
   const [scene, setScene] = useState(0);
   const x = useSpring(0, {stiffness: 65, damping: 24});
   const y = useSpring(0, {stiffness: 65, damping: 24});
-  const moving = !reduced && !paused && visible;
+  const moving = visible;
   const reset = () => { x.set(0); y.set(0); };
   const change = (direction: number) => setScene(current => (current + direction + atmospheres.length) % atmospheres.length);
 
-  return <section ref={root} id="inicio" className="cinema" data-paused={!moving}
+  return <section ref={root} id="inicio" className="cinema"
     aria-label="Montescano. El tiempo, a tu manera"
     onPointerMove={event => {
       if (!moving || event.pointerType !== 'mouse') return;
@@ -51,7 +50,7 @@ export default function CinematicHero({product}: {product?: Product}) {
       </div>
     </div>
 
-    <div className="cinema-stage" role="group" aria-label="Reloj Montescano. Cambia la iluminación con los controles"
+    <div className="cinema-stage" role="group" aria-label="Reloj Montescano"
       onPointerDown={event => {start.current = event.clientX;}}
       onPointerUp={event => {
         if (start.current !== null && Math.abs(event.clientX - start.current) > 45) change(event.clientX < start.current ? 1 : -1);
@@ -68,16 +67,6 @@ export default function CinematicHero({product}: {product?: Product}) {
       <div className="cinema-model"><span>MONTESCANO</span><strong>TASAC3521</strong>
         {product && <Link href={`/productos/${product.slug}`} aria-label="Descubrir el Montescano TASAC3521">Descubrir el modelo <span aria-hidden="true">↗</span></Link>}
       </div>
-    </div>
-
-    <div className="cinema-bottom">
-      <a className="cinema-scroll" href="#catalogo"><span aria-hidden="true">↓</span> DESCUBRE TU SIGUIENTE PIEZA</a>
-      <div className="cinema-lighting" role="group" aria-label="Iluminación del escenario">
-        <span className="cinema-lighting-label">LUZ /</span>
-        {atmospheres.map((atmosphere, index) => <button key={atmosphere.name} type="button" className="cinema-swatch" aria-label={atmosphere.name} aria-pressed={scene === index} onClick={() => setScene(index)}><span style={{background: atmosphere.color}} /></button>)}
-        <span className="cinema-scene-name" aria-live="polite">{atmospheres[scene].name}</span>
-      </div>
-      {!reduced && <button className="cinema-pause" type="button" aria-label={paused ? 'Reanudar animación' : 'Pausar animación'} aria-pressed={paused} onClick={() => {setPaused(!paused); reset();}}><span aria-hidden="true">{paused ? '▷' : 'Ⅱ'}</span><span>{paused ? 'Reanudar' : 'Pausar'}</span></button>}
     </div>
   </section>;
 }
