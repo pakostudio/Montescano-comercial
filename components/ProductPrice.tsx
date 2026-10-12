@@ -10,7 +10,8 @@ const money = new Intl.NumberFormat('es-MX', {style:'currency',currency:'MXN'});
 export default function ProductPrice({product}:{product:Product}) {
   const promo = hasPromotion(product);
   return <div className="product-pricing">
-    {(product.is_new || promo) && <div className="product-badges">
+    {(product.is_saldo || product.is_new || promo) && <div className="product-badges">
+      {product.is_saldo && <span className="promo-badge">Saldo</span>}
       {product.is_new && <span className="new-badge">Nuevo</span>}
       {promo && <span className="promo-badge">Promoción</span>}
     </div>}
