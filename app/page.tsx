@@ -1,8 +1,9 @@
-import {getCatalog} from '../lib/catalog';
+import {getCatalog,getSaldos} from '../lib/catalog';
 import LuxrioExperience from '../components/LuxrioExperience';
 
 export const dynamic='force-dynamic';
 
 export default async function Home(){
-  return <LuxrioExperience products={await getCatalog()}/>;
+  const [products,saldoProducts]=await Promise.all([getCatalog(),getSaldos()]);
+  return <LuxrioExperience products={products} saldoProducts={saldoProducts}/>;
 }
