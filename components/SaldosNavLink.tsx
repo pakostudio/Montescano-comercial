@@ -1,6 +1,7 @@
 'use client';
 
 import {useEffect} from 'react';
+import styles from './SaldosNavLink.module.css';
 
 export default function SaldosNavLink(){
   useEffect(()=>{
@@ -10,7 +11,7 @@ export default function SaldosNavLink(){
         const link=document.createElement('a');
         link.href='/saldos';
         link.textContent='SALDOS';
-        link.className='nav-saldos-featured';
+        link.className=styles.desktop;
         link.setAttribute('data-saldos-link','true');
         link.setAttribute('aria-label','Venta de Saldos Montescano');
         const before=[...nav.querySelectorAll('a')].find(a=>a.textContent?.trim()==='CORPORATIVO');
@@ -21,7 +22,7 @@ export default function SaldosNavLink(){
         const link=document.createElement('a');
         link.href='/saldos';
         link.textContent='Venta de Saldos';
-        link.className='nav-saldos-featured mobile';
+        link.className=styles.mobile;
         link.setAttribute('data-saldos-link','true');
         link.setAttribute('aria-label','Venta de Saldos Montescano');
         const before=[...nav.querySelectorAll('a')].find(a=>a.textContent?.trim()==='Corporativo');
