@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import type {CSSProperties} from 'react';
 import type {Product} from '../lib/catalog-types';
 import {availabilityLabels} from '../lib/catalog-types';
 import styles from './SaldosExperience.module.css';
@@ -15,7 +16,7 @@ export default function SaldosExperience({products}:{products:Product[]}){
     <main>
       <section className={styles.hero}>
         <div><p>OPORTUNIDADES POR VOLUMEN</p><h1>Venta de<br/><em>Saldos</em></h1><p>Modelos seleccionados fuera del catálogo regular. Precios en MXN y disponibilidad sujeta a confirmación.</p><a href="#modelos">VER MODELOS ↓</a></div>
-        <div className={styles.heroStack}>{products.slice(0,3).map((p,i)=><div key={p.id} style={{'--i':i} as React.CSSProperties}><img src={p.image} alt={p.sku} width="260" height="310"/><span>{p.sku}</span></div>)}</div>
+        <div className={styles.heroStack}>{products.slice(0,3).map((p,i)=><div key={p.id} style={{'--i':i} as CSSProperties}><img src={p.image} alt={p.sku} width="260" height="310"/><span>{p.sku}</span></div>)}</div>
         <span className={styles.watermark}>SALDOS</span>
       </section>
       <section id="modelos" className={styles.catalog}>
