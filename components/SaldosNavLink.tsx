@@ -10,7 +10,9 @@ export default function SaldosNavLink(){
         const link=document.createElement('a');
         link.href='/saldos';
         link.textContent='SALDOS';
+        link.className='nav-saldos-featured';
         link.setAttribute('data-saldos-link','true');
+        link.setAttribute('aria-label','Venta de Saldos Montescano');
         const before=[...nav.querySelectorAll('a')].find(a=>a.textContent?.trim()==='CORPORATIVO');
         nav.insertBefore(link,before??null);
       });
@@ -18,8 +20,10 @@ export default function SaldosNavLink(){
         if(nav.querySelector('[data-saldos-link]')) return;
         const link=document.createElement('a');
         link.href='/saldos';
-        link.textContent='Saldos';
+        link.textContent='Venta de Saldos';
+        link.className='nav-saldos-featured mobile';
         link.setAttribute('data-saldos-link','true');
+        link.setAttribute('aria-label','Venta de Saldos Montescano');
         const before=[...nav.querySelectorAll('a')].find(a=>a.textContent?.trim()==='Corporativo');
         nav.insertBefore(link,before??null);
       });
