@@ -44,29 +44,32 @@ function ProductCard({product}:{product:Product}){
   </article>;
 }
 
-export default function LuxrioExperience({products}:{products:Product[]}){
+export default function LuxrioExperience({products,saldoProducts}:{products:Product[];saldoProducts:Product[]}){
   const [family,setFamily]=useState('todos');
   const [view,setView]=useState<View>('all');
   const [query,setQuery]=useState('');
   const [visible,setVisible]=useState(20);
   const [menu,setMenu]=useState(false);
 
-  const featured=products.find(p=>p.family==='montescano'&&p.is_new&&p.image)
-    ||products.find(p=>p.family==='montescano'&&p.image)
-    ||products.find(p=>p.image);
-  const news=products.filter(p=>p.is_new&&p.image).slice(0,4);
-  const editorial=(news.length>=4?news:products.filter(p=>p.image).slice(0,4));
-  const heroSecondary=products.find(p=>p.family==='vizanti'&&p.image&&p.id!==featured?.id);
-  const corporate=products.find(p=>p.family==='sets'&&p.image);
-  const saldos=products.filter(p=>p.is_saldo&&p.image).slice(0,3);
+  const saldoKeys=useMemo(()=>new Set(saldoProducts.flatMap(p=>[p.id,p.slug])),[saldoProducts]);
+  const regularProducts=useMemo(()=>products.filter(p=>!p.is_saldo&&!saldoKeys.has(p.id)&&!saldoKeys.has(p.slug)),[products,saldoKeys]);
+
+  const featured=regularProducts.find(p=>p.family==='montescano'&&p.is_new&&p.image)
+    ||regularProducts.find(p=>p.family==='montescano'&&p.image)
+    ||regularProducts.find(p=>p.image);
+  const news=regularProducts.filter(p=>p.is_new&&p.image).slice(0,4);
+  const editorial=(news.length>=4?news:regularProducts.filter(p=>p.image).slice(0,4));
+  const heroSecondary=regularProducts.find(p=>p.family==='vizanti'&&p.image&&p.id!==featured?.id);
+  const corporate=regularProducts.find(p=>p.family==='sets'&&p.image);
+  const saldos=saldoProducts.filter(p=>p.image).slice(0,3);
 
   const collectionCards=['montescano','vizanti','kids'].map(id=>({
     id,
-    product:products.find(p=>p.family===id&&p.image),
-    count:products.filter(p=>p.family===id).length,
+    product:regularProducts.find(p=>p.family===id&&p.image),
+    count:regularProducts.filter(p=>p.family===id).length,
   }));
 
-  const filtered=useMemo(()=>products.filter(p=>{
+  const filtered=useMemo(()=>regularProducts.filter(p=>{
     if(family!=='todos'&&p.family!==family) return false;
     if(view==='new'&&!p.is_new) return false;
     if(view==='promo'&&!hasPromotion(p)) return false;
@@ -75,7 +78,7 @@ export default function LuxrioExperience({products}:{products:Product[]}){
       if(!haystack.includes(query.toLocaleLowerCase('es'))) return false;
     }
     return true;
-  }),[products,family,view,query]);
+  }),[regularProducts,family,view,query]);
 
   const chooseFamily=(id:string)=>{
     setFamily(id);setView('all');setVisible(20);setMenu(false);
