@@ -1,0 +1,26 @@
+name: Montescano site audit checks
+on:
+  push:
+    branches: [benchmark-auditoria-2026]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Install locked dependencies
+        run: npm ci --ignore-scripts --no-fund
+      - name: Check dependency vulnerabilities
+        run: npm audit --omit=dev --audit-level=low
+      - name: Lint source code
+        run: npm run lint
+      - name: Check TypeScript
+        run: npm run typecheck
+      - name: Run contract tests
+        run: npm run test:contracts
