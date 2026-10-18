@@ -1,7 +1,7 @@
 // Public corporate contacts only. Leave empty until explicitly confirmed by Montescano.
 export const corporateContact = {
  whatsapp: process.env.NEXT_PUBLIC_MONTESCANO_WHATSAPP || '525624492892',
- email: process.env.NEXT_PUBLIC_MONTESCANO_EMAIL || 'pako@sportcstudio.com',
+ email: process.env.NEXT_PUBLIC_MONTESCANO_EMAIL || '',
 };
 export function contactLinks(sku?:string, corporate=false) {
  const message=sku?`Hola, me interesa recibir información sobre el modelo ${sku} de Montescano.`:corporate?'Hola, me interesa recibir información sobre proyectos corporativos y personalización Montescano.':'Hola, me interesa recibir información comercial sobre Montescano.';
