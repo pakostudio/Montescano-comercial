@@ -1,0 +1,38 @@
+name: Security dependency lock refresh
+on:
+  push:
+    branches: [benchmark-auditoria-2026]
+    paths: [package.json]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  lock-and-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: benchmark-auditoria-2026
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Regenerate npm lockfile from patched manifest
+        run: npm install --package-lock-only --ignore-scripts --no-audit --no-fund
+      - name: Commit reproducible lockfile
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add package-lock.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(security): regenerate lockfile after patched dependencies"
+            git push
+          fi
+      - name: Verify clean dependency installation
+        run: npm ci --ignore-scripts --no-fund
+      - name: Check dependency vulnerabilities
+        run: npm audit --omit=dev --audit-level=high
+      - name: Typecheck and tests
+        run: |
+          npm run typecheck
+          npm run test:contracts
