@@ -102,3 +102,10 @@
 @media(max-width:700px){.cinema-watch-photo{width:74%;height:280px;padding:13px}.cinema-pause{margin-top:5px;font-size:8px}.cinema-model{bottom:0}}
 @media(max-width:370px){.cinema-watch-photo{height:246px}}
 @media(prefers-reduced-motion:reduce){.cinema-watch-photo,.cinema-pause{animation:none!important;transition:none!important}}
+
+/* Fast catalogue discovery from Casio/Citizen/NOMOS benchmark. */
+.sort-box{display:flex;align-items:center;gap:9px;font:700 9px Arial,Helvetica,sans-serif;letter-spacing:.1em;color:#375341;white-space:nowrap}
+.sort-box select{border:1px solid #cad5cb;background:#fff;border-radius:4px;padding:11px 28px 11px 12px;font:12px Arial,Helvetica,sans-serif;color:#172b20;min-height:45px;cursor:pointer}
+.sort-box select:focus-visible{outline:2px solid #527329;outline-offset:3px}
+.cinematic-header .desktop-nav a[class*=desktop]:hover{color:#813923!important;background:#fff4ef!important}
+@media(max-width:700px){.sort-box{order:4;flex:1 1 100%;justify-content:space-between}.sort-box select{flex:1;max-width:280px}}
