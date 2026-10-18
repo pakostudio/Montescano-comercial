@@ -42,7 +42,7 @@ export default async function SaldoDetail({params}:{params:Promise<{slug:string}
             {[["Género",p.gender],["Material",p.material],["Movimiento",p.movement],["Resistencia al agua",p.water_resistance],...p.features.map(f=>[f.label,f.value])].filter(([,v])=>v).map(([label,value])=><div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}
           </dl>
           <ContactActions sku={p.sku}/>
-          <QuoteLink sku={p.sku}/>
+          <QuoteLink sku={p.sku} saldo/>
           <ActionLink href="#solicitud" className="button secondary">SOLICITAR INFORMACIÓN ↗</ActionLink>
         </Reveal>
       </section>
