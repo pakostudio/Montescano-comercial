@@ -4,6 +4,7 @@ import type {Metadata} from 'next';
 import {getSaldos} from '../../../lib/catalog';
 import {availabilityLabels} from '../../../lib/catalog-types';
 import ProductPrice from '../../../components/ProductPrice';
+import ProductGallery from '../../../components/ProductGallery';
 import ContactActions from '../../../components/ContactActions';
 import QuoteLink from '../../../components/QuoteLink';
 import LeadForm from '../../../components/LeadForm';
@@ -30,7 +31,7 @@ export default async function SaldoDetail({params}:{params:Promise<{slug:string}
     <main>
       <section className="product-detail">
         <Reveal image className="detail-photo">
-          {p.image ? <img src={p.image} alt={`${p.brand} ${p.sku}`} width="420" height="500"/> : null}
+          <ProductGallery images={p.images.length?p.images:[p.image]} brand={p.brand} sku={p.sku}/>
         </Reveal>
         <Reveal delay={.08} className="detail-copy">
           <p className="kicker">VENTA DE SALDOS · {p.brand}</p>
