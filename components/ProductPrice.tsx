@@ -12,8 +12,8 @@ export default function ProductPrice({product}:{product:Product}) {
   return <div className="product-pricing">
     {(product.is_saldo || product.is_new || promo) && <div className="product-badges">
       {product.is_saldo && <span className="promo-badge">Saldo</span>}
-      {product.is_new && <span className="new-badge">Nuevo</span>}
-      {promo && <span className="promo-badge">Promoción</span>}
+      {product.is_new && !product.is_saldo && <span className="new-badge">Nuevo</span>}
+      {promo && !product.is_saldo && <span className="promo-badge">Promoción</span>}
     </div>}
     {typeof product.price === 'number' && product.price > 0 && <p className="product-price">
       {promo && <del aria-label="Precio anterior">{money.format(product.price)}</del>}
