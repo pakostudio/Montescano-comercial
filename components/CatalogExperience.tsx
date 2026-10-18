@@ -27,6 +27,8 @@ const initialFilters = {
   brand: "",
   gender: "",
   collection: "",
+  material: "",
+  movement: "",
   availability: "",
 };
 export default function CatalogExperience({
@@ -38,6 +40,7 @@ export default function CatalogExperience({
   const tabsRef=useRef<HTMLDivElement>(null);
   const [section,setSection]=useState('inicio');
   const [selection,setSelection]=useState('all');
+  const [sort,setSort]=useState<'catalog'|'price-asc'|'price-desc'|'newest'>('catalog');
   const {scrollY}=useScroll();
   useMotionValueEvent(scrollY,'change',value=>setScrolled(value>24));
   const [active, setActive] = useState("todos"),
@@ -68,7 +71,7 @@ export default function CatalogExperience({
   }, []);
   useEffect(() => {
     setVisible(24);
-  }, [active, query, filters, selection]);
+  }, [active, query, filters, selection, sort]);
   const filtered = useMemo(
     () =>
       products.filter(
@@ -82,9 +85,22 @@ export default function CatalogExperience({
           (!filters.brand || p.brand === filters.brand) &&
           (!filters.gender || p.gender === filters.gender) &&
           (!filters.collection || p.collections.includes(filters.collection)) &&
+          (!filters.material || p.material === filters.material) &&
+          (!filters.movement || p.movement === filters.movement) &&
           (!filters.availability || p.availability === filters.availability),
-      ),
-    [products, active, query, filters, selection],
+      ).sort((a,b)=>{
+        const price=(p:Product)=>{const v=hasPromotion(p)?p.promo_price:p.price;return typeof v==='number'&&v>0?v:null;};
+        if(sort==='price-asc'||sort==='price-desc'){
+          const av=price(a),bv=price(b);
+          if(av===null&&bv!==null)return 1;
+          if(av!==null&&bv===null)return -1;
+          if(av!==null&&bv!==null)return (sort==='price-asc'?av-bv:bv-av)||a.sku.localeCompare(b.sku);
+          return a.sku.localeCompare(b.sku);
+        }
+        if(sort==='newest')return Number(Boolean(b.is_new))-Number(Boolean(a.is_new))||a.sku.localeCompare(b.sku);
+        return 0;
+      }),
+    [products,active,query,filters,selection,sort],
   );
   const filterCount = Object.values(filters).filter(Boolean).length;
   // Piezas REALES y aprobadas del catálogo: la escena visual cambia de reloj, no sólo de fondo.
@@ -96,6 +112,7 @@ export default function CatalogExperience({
   const corporateProduct = products.find((p) => p.family === "sets");
   const clear = () => {
     setSelection('all');
+    setSort('catalog');
     setFilters(initialFilters);
     setActive("todos");
     setQuery("");
@@ -260,6 +277,14 @@ export default function CatalogExperience({
                 </svg>{" "}
                 Filtros {filterCount > 0 && <span>{filterCount}</span>}
               </Action>
+              <label className="sort-box">ORDENAR
+                <select value={sort} onChange={e=>setSort(e.target.value as typeof sort)} aria-label="Ordenar catálogo">
+                  <option value="catalog">Orden del catálogo</option>
+                  <option value="newest">Novedades primero</option>
+                  <option value="price-asc">Precio: menor a mayor</option>
+                  <option value="price-desc">Precio: mayor a menor</option>
+                </select>
+              </label>
               <p className="result-count" aria-live="polite">
                 <AnimatePresence mode="wait" initial={false}><motion.span key={filtered.length} initial={{opacity:0,y:reduced?0:4}} animate={{opacity:1,y:0}} exit={{opacity:0}} transition={{duration:FAST}}>{filtered.length}</motion.span></AnimatePresence> modelos
               </p>
@@ -615,12 +640,14 @@ export default function CatalogExperience({
                   ))}
                 </select>
               </label>
-              {(["brand", "gender", "collection", "availability"] as const).map(
+              {(["brand", "gender", "collection", "material", "movement", "availability"] as const).map(
                 (key) => {
                   const labels = {
                     brand: "Marca",
                     gender: "Género",
                     collection: "Colección",
+                    material: "Material",
+                    movement: "Movimiento",
                     availability: "Disponibilidad pública",
                   };
                   const options =
@@ -636,7 +663,11 @@ export default function CatalogExperience({
                           ]
                         : key === "collection"
                           ? [...new Set(products.flatMap((p) => p.collections))]
-                          : Object.keys(availabilityLabels);
+                          : key === "material"
+                           ? [...new Set(products.map(p=>p.material).filter((x):x is string=>Boolean(x)))].sort()
+                         : key === "movement"
+                           ? [...new Set(products.map(p=>p.movement).filter((x):x is string=>Boolean(x)))].sort()
+                           : Object.keys(availabilityLabels);
                   return (
                     <label key={key}>
                       {labels[key]}
