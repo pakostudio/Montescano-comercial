@@ -9,7 +9,7 @@ import {budgetTypes,contactPreferences,emptyQuote,personalizationOptions,product
 
 const stepNames=['PROYECTO','PRODUCTOS','NECESIDADES','CONTACTO','REVISAR'];
 export default function QuoteWizard({products,initialProduct}:{products:Product[];initialProduct?:Product}){
- const [draft,setDraft]=useState<QuoteDraft>({...emptyQuote,items:initialProduct?[{product_id:initialProduct.id}]:[],source_context:initialProduct?'producto/'+initialProduct.slug:'corporativo',source_page:initialProduct?'/productos/'+initialProduct.slug:'/#corporativo'});
+ const [draft,setDraft]=useState<QuoteDraft>({...emptyQuote,items:initialProduct?[{product_id:initialProduct.id}]:[],source_context:initialProduct?(initialProduct.is_saldo?'saldo/':'producto/')+initialProduct.slug:'corporativo',source_page:initialProduct?(initialProduct.is_saldo?'/saldos/':'/productos/')+initialProduct.slug:'/#corporativo'});
  const [step,setStep]=useState(1),[query,setQuery]=useState(''),[status,setStatus]=useState<'idle'|'loading'|'success'|'error'>('idle'),[error,setError]=useState(''),[receipt,setReceipt]=useState<{folio:string;notifications:boolean}|null>(null);
  const requestId=useRef<string|null>(null),sending=useRef(false),heading=useRef<HTMLHeadingElement>(null),first=useRef(true);
  const reduced=useReducedMotion();
