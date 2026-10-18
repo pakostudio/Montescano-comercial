@@ -19,6 +19,7 @@ import LeadForm from "./LeadForm";
 import {Action,ActionLink,Reveal} from './MotionUI';
 import CinematicHero from './CinematicHero';
 import ContactActions from './ContactActions';
+import saldosStyles from './SaldosNavLink.module.css';
 import QuoteLink from './QuoteLink';
 import ProductPrice, {hasPromotion} from './ProductPrice';
 import {FAST,NORMAL,SLOW,EASE,SPRING} from '../lib/motion';
@@ -151,6 +152,7 @@ export default function CatalogExperience({
               )}
             </ActionLink>
           ))}
+          <Link className={saldosStyles.desktop} href="/saldos" aria-label="Venta de Saldos">SALDOS</Link>
         </nav>
         <motion.button
           whileHover={{ y: -2 }}
@@ -503,6 +505,7 @@ export default function CatalogExperience({
           <a href="#inicio">Inicio</a>
           <a href="#corporativo">Corporativo</a>
           <a href="#contacto">Contacto</a>
+          <Link href="/saldos">Venta de Saldos</Link>
           <Link href="/privacidad">Información del formulario</Link>
         </div>
         <div className="footer-bottom">Montescano · Catálogo comercial</div>
@@ -686,6 +689,7 @@ export default function CatalogExperience({
                   {name === "Kids" ? "Vizanti Kids" : name}
                 </a>
               ))}
+              <Link className={saldosStyles.mobile} href="/saldos" onClick={() => setMenu(false)}>VENTA DE SALDOS ↗</Link>
               <a href="#corporativo" onClick={() => setMenu(false)}>
                 Corporativo
               </a>
