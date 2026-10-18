@@ -1,13 +1,14 @@
 import {createHmac} from 'node:crypto';
 import {parseQuote} from '../../../lib/quote';
+import {isSameOriginFormPost} from '../../../lib/security';
 import {notifyQuote,type QuoteReceipt} from '../../../lib/quote-email';
 export const runtime='nodejs';
 export const maxDuration=60;
 export async function POST(request:Request){
  const fail=(error:string,status=400)=>Response.json({error},{status,headers:{'Cache-Control':'no-store'}});
- const {SITE_URL,SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY,MONTESCANO_LEAD_TOKEN}=process.env;
- if(!SITE_URL||!SUPABASE_URL||!SUPABASE_PUBLISHABLE_KEY||!MONTESCANO_LEAD_TOKEN)return fail('El cotizador no está disponible en este momento.',503);
- if(request.headers.get('origin')!==new URL(SITE_URL).origin)return fail('Solicitud no permitida.',403);
+ const {SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY,MONTESCANO_LEAD_TOKEN}=process.env;
+ if(!SUPABASE_URL||!SUPABASE_PUBLISHABLE_KEY||!MONTESCANO_LEAD_TOKEN)return fail('El cotizador no está disponible en este momento.',503);
+ if(!isSameOriginFormPost(request))return fail('Solicitud no permitida.',403);
  if(!request.headers.get('content-type')?.includes('application/json'))return fail('Formato no válido.',415);
  let input;
  try{
@@ -17,7 +18,7 @@ export async function POST(request:Request){
   input=JSON.parse(text+decoder.decode());
  }catch{return fail('Solicitud no válida.');}
  let payload;try{payload=parseQuote(input);}catch(e){return fail(e instanceof Error?e.message:'Revisa los datos.');}
- const ip=request.headers.get('x-vercel-forwarded-for')||request.headers.get('x-forwarded-for')?.split(',')[0]||'local';
+ const ip=(request.headers.get('x-vercel-forwarded-for')||request.headers.get('x-forwarded-for')?.split(',')[0]||'local').slice(0,128);
  const fingerprint=createHmac('sha256',MONTESCANO_LEAD_TOKEN).update(ip).digest('hex');
  const rpc=(name:string,body:unknown)=>fetch(SUPABASE_URL+'/rest/v1/rpc/'+name,{method:'POST',headers:{apikey:SUPABASE_PUBLISHABLE_KEY,'Content-Type':'application/json'},body:JSON.stringify(body),cache:'no-store',signal:AbortSignal.timeout(12000)});
  let receipt:QuoteReceipt;
