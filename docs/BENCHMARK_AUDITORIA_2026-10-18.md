@@ -32,7 +32,7 @@
 - Basado en **el catálogo comercial anterior**, sin reinstalar Luxrio.
 - Hero animado que muestra **tres modelos reales aprobados**, foto/SKU coincidentes y enlaces reales a ficha. No sólo varía el fondo; hay pausa, controles de teclado, cambio manual y respeto a `prefers-reduced-motion`.
 - Arial/Helvetica; contraste verde profundo + blanco y fotografías aprobadas. Motion controlado, nada de arte generativo.
-- Filtros adicionales por **material y movimiento**, orden por novedades/precio y microinteracciones de navegación.
+- Filtros por marca, género, colección y disponibilidad; orden por novedades/precio. Se retiraron los filtros de material/movimiento porque los campos no están suficientemente poblados.
 - Acceso a **Venta de Saldos** como componente React nativo, en escritorio/móvil/pie; se retiró la dependencia de `MutationObserver` para inyectar enlaces.
 - Cotizador de Saldos ahora preserva su SKU y obtiene modelos de `getSaldos()`, sin intentar encontrarlos en `getCatalog()`.
 - Validación de origen exacto same-origin para formularios en producción y Preview, sin depender de `SITE_URL` para la llamada POST.
@@ -77,3 +77,8 @@
 ## 6. Puerta de lanzamiento
 
 No promover a producción hasta aprobar: (a) preview visual en móvil y desktop, (b) cotizador con prueba de notificación, (c) contactos y aviso de privacidad, (d) verificación de seguridad y performance con resultados medidos. Un build verde no equivale a una auditoría total aprobada.
+
+
+## Actualización de cierre (18 oct 2026)
+
+La auditoría final del sitio público, sin el envío transaccional del cotizador, se documenta en [CIERRE_AUDITORIA_VISUAL_2026-10-18.md](./CIERRE_AUDITORIA_VISUAL_2026-10-18.md). Se verificaron **510 fotografías aprobadas sin archivos faltantes**, 405 referencias regulares, 46 de Saldos y páginas públicas 200 OK. El reporte separa explícitamente lo que está comprobado de lo que todavía requiere certificación externa y aprobación visual humana.
