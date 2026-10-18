@@ -68,3 +68,32 @@ Objetivo de ejecución: una marca mexicana comercial y creíble; **Arial**, exce
 **No certificados aún (fuera del alcance acordado o limitación de acceso):** cotizador E2E, auditoría legal del aviso de privacidad con denominación/RFC/domicilio ARCO, pentest externo, pruebas móviles visuales manuales multi-dispositivo, Core Web Vitals/Lighthouse medidos y telemetría privada Vercel.
 
 **Decisión de release:** no promover a producción sin aceptación visual del responsable y cierre de seguridad externa relevante. No anunciar "100% libre de vulnerabilidades" sin una prueba que pueda fundamentarlo.
+
+## 7. Cierre técnico complementario — 18 oct 2026
+
+**Seguridad de dependencias aplicada (no sólo recomendada):**
+
+- Next.js `16.3.6` → **`16.4.2`**, tras avisos de seguridad publicados el 14/oct/2026.
+- React y React DOM → **`19.3.1`**.
+- Sharp → **`0.35.5`**; todas las dependencias nativas relevantes se actualizaron coherentemente mediante `npm install --package-lock-only` ejecutado en GitHub Actions.
+- El archivo `package-lock.json` quedó regenerado y versionado; `npm ci` se ejecutó correctamente con estas versiones.
+- Referencias de seguridad: [Next.js advisory October 2026](https://github.com/vercel/next.js/security/advisories/GHSA-673q-mjm6-r5xr), [React RSC](https://github.com/react/react/security/advisories/GHSA-xqc2-xf4c-x3h3), [Next September release](https://github.com/vercel/next.js/releases/tag/v16.3.8).
+- [GitHub Actions, actualización de dependencias — run 39169422455](https://github.com/pakostudio/Montescano-comercial/actions/runs/39169422455): éxito; registro explícito de `npm audit --omit=dev --audit-level=high` **found 0 vulnerabilities**; `npm run typecheck` y `npm run test:contracts` correctos.
+- [GitHub Actions, auditoría de calidad — run 39169731375](https://github.com/pakostudio/Montescano-comercial/actions/runs/39169731375): éxito en `npm ci`, `npm audit --omit=dev --audit-level=low`, `npm run lint`, `npm run typecheck` y `npm run test:contracts`. La auditoría se ejecutará de nuevo con commits futuros en la rama de revisión.
+
+**Comprobaciones HTTP posteriores a la actualización (Vercel Preview):**
+
+| Ruta | Resultado |
+|---|---|
+| `/` | 200 OK; portada y catálogo |
+| `/saldos` | 200 OK; listado de saldos |
+| `/productos/tasac3521` | 200 OK; ficha y galería |
+| `/saldos/asdb7197` | 200 OK; ficha de Saldos y galería |
+| `/privacidad` | 200 OK |
+| `/robots.txt` | 200 OK, `Disallow: /` en Preview |
+
+**Pendiente único de desarrollo funcional solicitado:** [GitHub issue #1 — Cotizador y pruebas E2E](https://github.com/pakostudio/Montescano-comercial/issues/1). El usuario pidió posponerlo; no se han enviado solicitudes a producción en esta auditoría.
+
+**Límites de certificación:** los resultados anteriores son controles técnicos reales, no un pentest certificado ni pruebas visuales humanas en todos los dispositivos. La información de privacidad debe ser revisada por el responsable legal de la empresa. No declarar seguridad absoluta o aprobación estética humana sin esa evidencia.
+
+**Publicación:** los cambios permanecen exclusivamente en la rama de Preview y no se han fusionado con producción.
