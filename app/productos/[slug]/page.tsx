@@ -7,6 +7,7 @@ import LeadForm from "../../../components/LeadForm";
 import ContactActions from '../../../components/ContactActions';
 import QuoteLink from '../../../components/QuoteLink';
 import ProductPrice from '../../../components/ProductPrice';
+import ProductGallery from '../../../components/ProductGallery';
 import {Reveal,ActionLink} from '../../../components/MotionUI';
 export const dynamic = "force-dynamic";
 export async function generateMetadata({
@@ -54,12 +55,7 @@ export default async function ProductPage({
       <main>
         <section className="product-detail">
           <Reveal image className="detail-photo">
-            <img
-              src={p.image}
-              alt={`${p.brand} ${p.sku}`}
-              width="420"
-              height="500"
-            />
+            <ProductGallery images={p.images.length?p.images:[p.image]} brand={p.brand} sku={p.sku}/>
           </Reveal>
           <Reveal delay={.08} className="detail-copy">
             <p className="kicker">{p.brand}</p>
