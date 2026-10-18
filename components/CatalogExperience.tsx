@@ -27,8 +27,6 @@ const initialFilters = {
   brand: "",
   gender: "",
   collection: "",
-  material: "",
-  movement: "",
   availability: "",
 };
 export default function CatalogExperience({
@@ -85,8 +83,6 @@ export default function CatalogExperience({
           (!filters.brand || p.brand === filters.brand) &&
           (!filters.gender || p.gender === filters.gender) &&
           (!filters.collection || p.collections.includes(filters.collection)) &&
-          (!filters.material || p.material === filters.material) &&
-          (!filters.movement || p.movement === filters.movement) &&
           (!filters.availability || p.availability === filters.availability),
       ).sort((a,b)=>{
         const price=(p:Product)=>{const v=hasPromotion(p)?p.promo_price:p.price;return typeof v==='number'&&v>0?v:null;};
@@ -640,14 +636,12 @@ export default function CatalogExperience({
                   ))}
                 </select>
               </label>
-              {(["brand", "gender", "collection", "material", "movement", "availability"] as const).map(
+              {(["brand", "gender", "collection", "availability"] as const).map(
                 (key) => {
                   const labels = {
                     brand: "Marca",
                     gender: "Género",
                     collection: "Colección",
-                    material: "Material",
-                    movement: "Movimiento",
                     availability: "Disponibilidad pública",
                   };
                   const options =
@@ -663,11 +657,7 @@ export default function CatalogExperience({
                           ]
                         : key === "collection"
                           ? [...new Set(products.flatMap((p) => p.collections))]
-                          : key === "material"
-                           ? [...new Set(products.map(p=>p.material).filter((x):x is string=>Boolean(x)))].sort()
-                         : key === "movement"
-                           ? [...new Set(products.map(p=>p.movement).filter((x):x is string=>Boolean(x)))].sort()
-                           : Object.keys(availabilityLabels);
+                            : Object.keys(availabilityLabels);
                   return (
                     <label key={key}>
                       {labels[key]}
