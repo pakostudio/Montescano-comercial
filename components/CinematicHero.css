@@ -109,3 +109,18 @@
 .sort-box select:focus-visible{outline:2px solid #527329;outline-offset:3px}
 .cinematic-header .desktop-nav a[class*=desktop]:hover{color:#813923!important;background:#fff4ef!important}
 @media(max-width:700px){.sort-box{order:4;flex:1 1 100%;justify-content:space-between}.sort-box select{flex:1;max-width:280px}}
+
+/* Accessibility pass: readable captions / touch targets on compact phones. */
+@media(max-width:700px){
+ .cinema-eyebrow{font-size:10px;letter-spacing:.10em}
+ .cinema-scene-copy strong{font-size:10px}
+ .cinema-scene-copy p{font-size:14px}
+ .cinema-cta{font-size:11px;letter-spacing:.035em;gap:10px}
+ .cinema-tabs button{min-height:62px;padding:12px 9px}
+ .cinema-tabs button>b{font-size:10px;letter-spacing:.015em;overflow-wrap:anywhere}
+ .cinema-tabs button>span{font-size:9px}
+ .cinema-model>strong{font-size:14px}
+ .cinema-model>a{font-size:11px}
+ .cinema-pause{font-size:11px;min-height:40px}
+}
+@media(max-width:370px){.cinema-eyebrow{font-size:9px}.cinema-tabs button>b{font-size:10px}.cinema-tabs button>span{display:none}}
