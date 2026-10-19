@@ -41,8 +41,8 @@ for(const width of widths){
         const mobile=page.locator('.mobile-nav');await mobile.waitFor({state:'visible',timeout:7000});
         assert(await mobile.getByRole('link',{name:/VENTA DE SALDOS/i}).isVisible(),'Saldos absent from mobile menu');
         const dlg=page.locator('dialog[open]');assert(await dlg.count()>0,'Menu modal not opened');
-        await page.keyboard.press('Escape');await wait(150);
-        assert(await page.locator('.mobile-nav').count()===0,'Menu does not close with Escape');
+        await page.keyboard.press('Escape');
+        await page.locator('.mobile-nav').waitFor({state:'detached',timeout:2500});
       }
       if(route==='/saldos'){
         const field=page.locator('input[type=search]').first();await field.fill('ASDB7197');
