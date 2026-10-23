@@ -160,7 +160,7 @@ export default function CatalogExperience({
             </ActionLink>
           ))}
           <Link className={saldosStyles.desktop} href="/saldos" aria-label="Venta de Saldos">SALDOS</Link>
-          <button type="button" className="nav-contact-trigger" onClick={()=>setLead({context:'nav-contacto'})}>CONTACTO</button>
+          
         </nav>
         <CommercialCtas onContact={()=>setLead({context:'header-contacto'})}/>
         <Action
@@ -497,7 +497,7 @@ export default function CatalogExperience({
           <p className="footer-title">MONTESCANO</p>
           <a href="#inicio">Inicio</a>
           <a href="#corporativo">Corporativo</a>
-          <button type="button" className="footer-contact-trigger" onClick={()=>setLead({context:'footer-enlace-contacto'})}>Contacto</button>
+          
           <Link href="/saldos">Venta de Saldos</Link>
           <Link href="/privacidad">Información del formulario</Link>
         </div>
