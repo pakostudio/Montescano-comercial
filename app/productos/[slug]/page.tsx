@@ -105,7 +105,7 @@ export default async function ProductPage({
           <LeadForm product={p} context={`producto/${p.slug}`} />
         </section>
       </main>
-      <footer>
+      <footer className="detail-footer">
         <Link href="/">Montescano · Catálogo comercial</Link>
         <Link href="/privacidad">Información del formulario</Link>
         <CommercialCtas variant="footer" sku={p.sku}/>
