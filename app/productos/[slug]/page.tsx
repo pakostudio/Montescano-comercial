@@ -111,7 +111,6 @@ export default async function ProductPage({
         <Link href="/">Montescano · Catálogo comercial</Link>
         <Link href="/privacidad">Información del formulario</Link>
       </footer>
-      <ContactActions sku={p.sku} floating/>
     </>
   );
 }
