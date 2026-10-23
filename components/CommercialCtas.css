@@ -1,42 +1,98 @@
-.commercial-ctas{display:flex;align-items:center;justify-content:flex-end;gap:13px;flex-wrap:wrap;font:700 11px Arial,Helvetica,sans-serif}.commercial-ctas a,.commercial-ctas button{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:42px;white-space:nowrap;cursor:pointer}.commercial-ctas button{background:none;border:0;padding:8px 2px;color:inherit}.commercial-ctas a{text-decoration:none;color:inherit}.commercial-ctas svg{width:17px;height:17px;flex-shrink:0}.commercial-whatsapp:hover,.commercial-mail:hover{text-decoration:underline;text-underline-offset:5px}.commercial-quote{background:#a44d37;color:#fff!important;border:1px solid #b76449;padding:9px 12px;border-radius:3px;text-transform:uppercase;font-size:10px;letter-spacing:.035em;transition:background .2s}.commercial-quote:hover{background:#84351f}.commercial-ctas :is(a,button):focus-visible{outline:2px solid #a8ca8f;outline-offset:3px}
-.commercial-ctas-compact{justify-content:flex-start;gap:13px}.commercial-ctas-compact .commercial-quote{min-height:46px}
-@media(max-width:1250px){.commercial-ctas{gap:7px}.commercial-ctas a,.commercial-ctas button{font-size:10px}.commercial-ctas svg{width:16px;height:16px}.commercial-quote{padding:8px 9px}}
-@media(max-width:1100px){.site-header .commercial-ctas{margin-left:auto}.site-header .commercial-whatsapp span,.site-header .commercial-mail span{display:none}.site-header .commercial-quote{font-size:9px}}
-@media(max-width:700px){.site-header .commercial-ctas{gap:5px}.site-header .commercial-whatsapp,.site-header .commercial-mail{padding:7px 3px;min-width:30px}.site-header .commercial-quote{font-size:9px;padding:7px 9px;letter-spacing:0;min-height:40px}.commercial-ctas-compact{gap:10px}.commercial-ctas-compact .commercial-whatsapp span,.commercial-ctas-compact .commercial-mail span{display:inline}}
-@media(max-width:370px){.site-header .commercial-quote{font-size:8px;padding:6px}.site-header .commercial-mail{display:none}}
-
-.commercial-quote-short{display:none}
-@media(max-width:1350px){
- .cinematic-header .desktop-nav{display:none}
- .cinematic-header .menu-toggle{display:block;flex-shrink:0}
- .cinematic-header .commercial-ctas{margin-left:auto}
+/* Montescano — premium commercial action rail.
+   Restrained controls inspired by luxury watch storefront navigation. */
+.commercial-ctas{
+  display:flex;align-items:center;justify-content:flex-end;gap:13px;
+  flex-wrap:nowrap;flex-shrink:0;
+  font:700 11px/1.2 Arial,Helvetica,sans-serif;
+  letter-spacing:.015em;
+}
+.commercial-ctas :is(a,button){
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  white-space:nowrap;min-height:44px;text-decoration:none;cursor:pointer;
+  -webkit-tap-highlight-color:transparent;
+}
+.commercial-ctas :is(.commercial-whatsapp,.commercial-mail){
+  padding:8px 3px;border:0;background:transparent;
+  border-radius:6px;color:inherit;transition:color .22s ease,transform .22s ease;
+}
+.commercial-ctas button.commercial-mail{font:inherit;letter-spacing:inherit;}
+.commercial-ctas :is(.commercial-whatsapp,.commercial-mail) svg{
+  display:block;width:24px;height:24px;flex:0 0 24px;
+  transition:transform .28s cubic-bezier(.2,.8,.25,1),stroke .22s ease;
+}
+.commercial-ctas :is(.commercial-whatsapp,.commercial-mail):hover{
+  color:#c9dbbc;transform:translateY(-1px);
+}
+.commercial-ctas :is(.commercial-whatsapp,.commercial-mail):hover svg{
+  transform:translateY(-2px) scale(1.09);
+}
+.commercial-ctas a.commercial-quote{
+  padding:12px 18px;min-height:46px;
+  border:1px solid #6f8b72;border-radius:9px;
+  background:linear-gradient(130deg,#607c63 0%,#526d56 100%);
+  color:#fff!important;font-weight:800;font-size:10px;
+  letter-spacing:.065em;text-transform:uppercase;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.16),0 5px 16px rgba(10,25,16,.14);
+  transition:transform .25s ease,box-shadow .25s ease,background .25s ease,border-color .25s ease;
+}
+.commercial-ctas a.commercial-quote:hover{
+  background:linear-gradient(130deg,#526d56 0%,#435e48 100%);
+  border-color:#86a287;
+  transform:translateY(-2px);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 10px 22px rgba(5,20,10,.22);
+}
+.commercial-ctas a.commercial-quote:active{transform:translateY(0);}
+.commercial-ctas :is(a,button):focus-visible{
+  outline:2px solid #d5eabf;outline-offset:4px;
+}
+.commercial-quote-short{display:none;}
+.commercial-ctas-compact{justify-content:flex-start;gap:16px;flex-wrap:wrap;}
+.commercial-ctas-compact .commercial-quote{min-height:46px;}
+@media(max-width:1570px){
+ .cinematic-header .desktop-nav{gap:10px;}
+ .cinematic-header .desktop-nav a{font-size:9px;}
+ .cinematic-header .commercial-ctas{gap:9px;}
+ .cinematic-header .commercial-quote{padding:11px 13px;}
+}
+@media(max-width:1370px){
+ .cinematic-header .desktop-nav{display:none;}
+ .cinematic-header .menu-toggle{display:block;flex-shrink:0;}
+ .cinematic-header .commercial-ctas{margin-left:auto;}
+}
+@media(max-width:1100px){
+ .site-header .commercial-ctas{margin-left:auto;gap:8px;}
+ .site-header .commercial-whatsapp>span,.site-header .commercial-mail>span{display:none;}
+ .site-header .commercial-ctas :is(.commercial-whatsapp,.commercial-mail){min-width:38px;padding:8px 5px;}
+ .site-header .commercial-ctas a.commercial-quote{font-size:10px;padding:10px 13px;}
 }
 @media(max-width:700px){
- .cinematic-header .logo img{width:110px}
- .cinematic-header .commercial-quote-full{display:none}
- .cinematic-header .commercial-quote-short{display:inline}
- .cinematic-header .commercial-ctas{flex-wrap:nowrap;gap:4px}
- .cinematic-header .commercial-quote{font-size:11px;padding:8px 12px;min-height:42px}
- .cinematic-header .commercial-whatsapp,.cinematic-header .commercial-mail{min-width:32px;min-height:42px}
- .cinematic-header .menu-toggle{margin-left:0}
+ .cinematic-header .logo img{width:110px;}
+ .site-header .commercial-quote-full{display:none;}
+ .site-header .commercial-quote-short{display:inline;}
+ .site-header .commercial-ctas{gap:5px;}
+ .site-header .commercial-ctas :is(.commercial-whatsapp,.commercial-mail){min-width:34px;min-height:42px;padding:7px 2px;}
+ .site-header .commercial-ctas :is(.commercial-whatsapp,.commercial-mail) svg{width:22px;height:22px;flex-basis:22px;}
+ .site-header .commercial-ctas a.commercial-quote{min-height:42px;font-size:10px;padding:9px 12px;letter-spacing:.03em;}
+ .cinematic-header .menu-toggle{margin-left:0;}
+ .commercial-ctas-compact{gap:10px;}
+ .commercial-ctas-compact :is(.commercial-whatsapp,.commercial-mail)>span{display:inline;}
 }
 @media(max-width:390px){
- .cinematic-header .logo img{width:96px}
- .cinematic-header .commercial-quote{padding:8px 9px}
- .cinematic-header .commercial-ctas{gap:2px}
+ .cinematic-header .logo img{width:96px;}
+ .cinematic-header .commercial-ctas{gap:3px;}
+ .site-header .commercial-ctas a.commercial-quote{padding:9px 10px;}
 }
-
-/* Even a 320px phone keeps all three conversion channels accessible. */
-@media(max-width:370px){.site-header.cinematic-header{padding-left:3vw;padding-right:3vw;gap:4px}.cinematic-header .logo img{width:85px}.cinematic-header .commercial-mail{display:inline-flex}.cinematic-header .menu-toggle{margin-left:0}.cinematic-header .commercial-ctas{gap:1px}}
-
-/* Montescano premium green conversion treatment — contrast checked for white labels. */
-.commercial-ctas a.commercial-quote{background:#596F4C;color:#fff!important;border-color:#596F4C;box-shadow:0 4px 16px rgba(10,28,20,.12);transition:background-color .25s ease,transform .25s ease,box-shadow .25s ease}
-.commercial-ctas a.commercial-quote:hover{background:#536747;border-color:#536747;transform:translateY(-2px);box-shadow:0 11px 24px rgba(10,28,20,.22)}
-.commercial-ctas a.commercial-quote:active{background:#435738;transform:translateY(0)}
-.commercial-ctas .commercial-whatsapp,.commercial-ctas .commercial-mail{gap:10px;transition:color .25s ease,transform .25s ease}
-.commercial-ctas .commercial-whatsapp svg,.commercial-ctas .commercial-mail svg{width:24px;height:24px;transition:transform .3s cubic-bezier(.2,.8,.2,1);flex-shrink:0}
-.commercial-ctas .commercial-whatsapp:hover,.commercial-ctas .commercial-mail:hover{transform:translateY(-1px)}
-.commercial-ctas .commercial-whatsapp:hover svg,.commercial-ctas .commercial-mail:hover svg{transform:translateY(-2px) scale(1.08)}
-@media(max-width:1100px){.site-header .commercial-ctas .commercial-whatsapp svg,.site-header .commercial-ctas .commercial-mail svg{width:22px;height:22px}}
-@media(max-width:390px){.site-header .commercial-ctas .commercial-whatsapp svg,.site-header .commercial-ctas .commercial-mail svg{width:20px;height:20px}}
-@media(prefers-reduced-motion:reduce){.commercial-ctas .commercial-whatsapp,.commercial-ctas .commercial-mail,.commercial-ctas svg,.commercial-ctas .commercial-quote{transition:none!important}.commercial-ctas .commercial-whatsapp:hover,.commercial-ctas .commercial-mail:hover,.commercial-ctas .commercial-whatsapp:hover svg,.commercial-ctas .commercial-mail:hover svg,.commercial-ctas .commercial-quote:hover{transform:none}}
+@media(max-width:370px){
+ .site-header.cinematic-header{padding-left:3vw;padding-right:3vw;gap:4px;}
+ .cinematic-header .logo img{width:84px;}
+ .cinematic-header .commercial-ctas{gap:2px;}
+ .site-header .commercial-ctas :is(.commercial-whatsapp,.commercial-mail){min-width:30px;}
+ .site-header .commercial-ctas :is(.commercial-whatsapp,.commercial-mail) svg{width:20px;height:20px;flex-basis:20px;}
+ .site-header .commercial-ctas a.commercial-quote{font-size:9px;padding:8px;}
+ .cinematic-header .menu-toggle{margin-left:0;}
+}
+@media(prefers-reduced-motion:reduce){
+ .commercial-ctas :is(a,button,svg){transition:none!important;}
+ .commercial-ctas :is(.commercial-quote,.commercial-whatsapp,.commercial-mail):hover,
+ .commercial-ctas :is(.commercial-whatsapp,.commercial-mail):hover svg{transform:none!important;}
+}
