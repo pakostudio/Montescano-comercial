@@ -1497,18 +1497,20 @@ footer .footer-contact-trigger:hover,footer .footer-contact-trigger:focus-visibl
 .catalog-context-link:hover svg{transform:translateY(-2px) scale(1.08)}
 .cinematic-header .menu-toggle span{background:#f7faf7}
 @media(max-width:1760px){
- .cinematic-header{gap:14px;padding-left:2vw;padding-right:2vw}
- .cinematic-header .logo{padding-right:16px}
- .cinematic-header .logo img{width:154px}
- .cinematic-header .desktop-nav{gap:8px}
- .cinematic-header .desktop-nav .nav-premium-item{font-size:9px;gap:5px}
- .cinematic-header .desktop-nav .nav-premium-item svg{width:16px;height:16px}
- .header-commercial-cluster{gap:10px;padding-left:12px}
- .cinematic-header .commercial-ctas{gap:6px}
+ .cinematic-header{gap:10px;padding-left:1.5vw;padding-right:1.5vw}
+ .cinematic-header .logo{padding-right:12px}
+ .cinematic-header .logo img{width:145px}
+ .cinematic-header .desktop-nav{gap:6px}
+ .cinematic-header .desktop-nav .nav-premium-item{font-size:9px;gap:4px}
+ .cinematic-header .desktop-nav .nav-premium-item svg{width:15px;height:15px}
+ .header-commercial-cluster{gap:7px;padding-left:10px}
+ .cinematic-header .commercial-ctas{gap:4px;font-size:10px}
+ .cinematic-header .commercial-ctas :is(a,button){gap:6px}
+ .cinematic-header .commercial-ctas :is(.commercial-whatsapp,.commercial-mail,.commercial-quote) svg{width:21px;height:21px;flex-basis:21px}
  .catalog-context-link{font-size:10px;gap:6px}
  .catalog-context-link svg{width:21px;height:21px}
 }
-@media(max-width:1510px){
+@media(max-width:1360px){
  .cinematic-header .desktop-nav{display:none}
  .cinematic-header .menu-toggle{display:block;flex-shrink:0}
  .cinematic-header .header-commercial-cluster{margin-left:auto}
