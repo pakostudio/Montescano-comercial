@@ -1,0 +1,22 @@
+.group{display:flex;align-items:center;gap:8px;font-family:Arial,Helvetica,sans-serif;flex-shrink:0}
+.group a,.group button{min-height:42px;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:10px 12px;font:700 10px Arial,Helvetica,sans-serif;letter-spacing:.035em;white-space:nowrap;text-decoration:none;cursor:pointer;transition:background .18s ease,color .18s ease,transform .18s ease,border-color .18s ease}
+.group svg{width:16px!important;height:16px!important;flex-shrink:0}
+.group a:focus-visible,.group button:focus-visible{outline:3px solid #bdddbb;outline-offset:3px}
+.whatsapp{color:#d8eee0!important;background:transparent;border:1px solid rgba(207,233,215,.34)}
+.whatsapp:hover{color:#fff!important;border-color:#c2dac8;transform:translateY(-1px)}
+.contact{color:#f0f5ef!important;background:transparent;border:1px solid rgba(207,233,215,.34)}
+.contact:hover{background:#294538;border-color:#ccdcca;transform:translateY(-1px)}
+.quote{color:#fff!important;background:#a44d37;border:1px solid #a44d37;box-shadow:0 5px 14px #0002}
+.quote:hover{background:#be6047;border-color:#be6047;transform:translateY(-1px)}
+.quote b{font-size:16px;line-height:1}
+.dialogContent{padding:52px clamp(18px,4vw,55px) 35px;max-height:85dvh;overflow-y:auto;color:#242624;background:#fff}
+.footer{flex-wrap:wrap;gap:8px;margin:15px 0}.footer a,.footer button{min-height:46px;font-size:10px}
+.detail{flex-wrap:wrap;padding-left:0}
+.detail .contact{color:#244130!important;border-color:#adbcae}
+.detail .whatsapp{color:#1a6040!important;border-color:#adbcae}
+.detail .quote{color:#fff!important}
+@media(max-width:1450px){.header a,.header button{padding:10px 9px;gap:5px;font-size:9px}.header .quote b{display:none}.group svg{width:15px!important;height:15px!important}}
+@media(max-width:1100px){.header .contact{display:none}.header .whatsapp{min-width:44px}.header .whatsapp span{display:none}.header .quote{min-height:44px;padding:10px 12px}.header .quote span{font-size:10px}}
+@media(max-width:450px){.header{gap:6px}.header .quote{padding:10px 8px}.header .quote span{font-size:9px;letter-spacing:0}.header .quote svg{display:none}.footer{align-items:stretch;flex-direction:column}.footer a,.footer button{width:100%;justify-content:center}}
+@media(max-width:360px){.header .quote span{font-size:9px}}
+@media(prefers-reduced-motion:reduce){.group a,.group button{transition:none}.group a:hover,.group button:hover{transform:none}}
