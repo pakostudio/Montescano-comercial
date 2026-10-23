@@ -57,7 +57,7 @@ export default function CatalogExperience({
     [scrolled, setScrolled] = useState(false);
   useEffect(() => {
     const observer=new IntersectionObserver(entries=>{for(const entry of entries)if(entry.isIntersecting)setSection(entry.target.id);},{rootMargin:'-18% 0px -65% 0px',threshold:0});
-    ['inicio','catalogo','corporativo','contacto'].forEach(id=>{const el=document.getElementById(id);if(el)observer.observe(el);});
+    ['inicio','catalogo','corporativo'].forEach(id=>{const el=document.getElementById(id);if(el)observer.observe(el);});
     return()=>observer.disconnect();
   }, []);
   useEffect(()=>{const container=tabsRef.current;const selected=container?.querySelector<HTMLButtonElement>('[aria-pressed="true"]');if(container&&selected)container.scrollTo({left:selected.offsetLeft-container.offsetLeft-(container.clientWidth-selected.clientWidth)/2,behavior:reduced?'instant':'smooth'});},[active,reduced]);
@@ -147,7 +147,6 @@ export default function CatalogExperience({
             ["SMART WATCH", "#catalogo", "smart-watch"],
             ["SETS", "#catalogo", "sets"],
             ["CORPORATIVO", "#corporativo", ""],
-            ["CONTACTO", "#contacto", ""],
           ].map(([label, href, family]) => (
             <ActionLink key={label} href={href} aria-current={(section==='catalogo'?active===family&&family!=='todos':href===`#${section}`)?'location':undefined} onClick={() => {setSection(href.slice(1));if(family)choose(family);}}>
               {label}
@@ -161,6 +160,7 @@ export default function CatalogExperience({
             </ActionLink>
           ))}
           <Link className={saldosStyles.desktop} href="/saldos" aria-label="Venta de Saldos">SALDOS</Link>
+          <button type="button" className="nav-contact-trigger" onClick={()=>setLead({context:'nav-contacto'})}>CONTACTO</button>
         </nav>
         <CommercialCtas onContact={()=>setLead({context:'header-contacto'})}/>
         <Action
@@ -473,22 +473,6 @@ export default function CatalogExperience({
             </Action></Reveal>
           </div>
         </section>
-        <section id="contacto" className="contact-section">
-          <Reveal className="contact-copy">
-            <p className="kicker">CONTACTO COMERCIAL</p>
-            <h2>
-              La siguiente conversación
-              <br />
-              empieza aquí.
-            </h2>
-            <p>
-              Cuéntanos qué estás buscando. Ya sea para tu tienda, tu equipo o
-              un proyecto especial, envía tu solicitud al equipo de Montescano.
-            </p>
-            <ContactActions/>
-          </Reveal>
-          <Reveal delay={.12}><LeadForm /></Reveal>
-        </section>
       </main>
       <footer>
         <div className="footer-brand">
@@ -513,7 +497,7 @@ export default function CatalogExperience({
           <p className="footer-title">MONTESCANO</p>
           <a href="#inicio">Inicio</a>
           <a href="#corporativo">Corporativo</a>
-          <a href="#contacto">Contacto</a>
+          <button type="button" className="footer-contact-trigger" onClick={()=>setLead({context:'footer-enlace-contacto'})}>Contacto</button>
           <Link href="/saldos">Venta de Saldos</Link>
           <Link href="/privacidad">Información del formulario</Link>
         </div>
@@ -701,7 +685,7 @@ export default function CatalogExperience({
               <a href="#corporativo" onClick={() => setMenu(false)}>
                 Corporativo
               </a>
-              <a href="#contacto" onClick={() => setMenu(false)}>Contacto</a>
+              <button type="button" className="mobile-contact-trigger" onClick={()=>{setMenu(false);setLead({context:'menu-contacto'});}}>Contacto</button>
               <CommercialCtas onContact={()=>{setMenu(false);setLead({context:"menu-contacto"});}} compact/>
             </nav>
           </Dialog>
