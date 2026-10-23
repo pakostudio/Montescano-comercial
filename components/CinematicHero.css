@@ -137,3 +137,14 @@
 .cinema-motion-toggle:hover,.cinema-motion-toggle:focus-visible,.cinema-motion-toggle[aria-pressed="true"]{opacity:1;background:rgba(13,31,25,.72);border-color:rgba(221,235,225,.7)}
 @media(max-width:700px){.cinema-scene-copy{min-height:62px;margin:18px 0 0}.cinema-motion-toggle{top:5px;right:5px;width:34px;height:34px}}
 @media(prefers-reduced-motion:reduce){.cinema-motion-toggle{transition:none}}
+
+/* Approved final hero: one real model, no autoplay, prompts or superfluous controls. */
+.cinema-single .cinema-atmosphere-single{background-color:#245444}
+.cinema-single .cinema-scene-copy strong{color:#d7e6cf}
+.cinema-single .cinema-product-depth{pointer-events:none}
+.cinema-single-link{display:grid;place-items:center;width:100%;height:100%;pointer-events:auto;cursor:pointer;text-decoration:none}
+.cinema-single-link:focus-visible{outline:2px solid #d9ebbf;outline-offset:4px;border-radius:6px}
+.cinema-single-link .cinema-watch{transition:transform .4s ease}
+.cinema-single-link:hover .cinema-watch{transform:translateY(-5px)}
+@media(max-width:700px){.cinema-single .cinema-scene-copy{margin-bottom:20px}.cinema-single .cinema-stage{margin-top:8px}}
+@media(prefers-reduced-motion:reduce){.cinema-single-link .cinema-watch{transition:none}.cinema-single-link:hover .cinema-watch{transform:none}}
