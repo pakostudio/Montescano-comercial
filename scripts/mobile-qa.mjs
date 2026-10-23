@@ -7,7 +7,7 @@ const safe=new URL(base);
 const auth=safe.search;
 const destination=(path)=>new URL(path+auth,safe.origin).href;
 const widths=[320,375,390,430,768];
-const routes=['/','/saldos','/productos/tasac3521','/saldos/asdb7197','/privacidad'];
+const routes=['/','/saldos','/productos/tasac3521','/saldos/asdb7197','/cotizador','/privacidad'];
 await fs.mkdir('mobile-qa-artifacts',{recursive:true});
 const browser=await chromium.launch({headless:true,args:['--no-sandbox']});
 const failures=[];const report=[];
@@ -36,6 +36,23 @@ for(const width of widths){
       assert(met.offscreen.length===0,'Key text/link outside viewport '+JSON.stringify(met.offscreen));
       assert(met.brokenLoadedImages.length===0,'Broken loaded images '+JSON.stringify(met.brokenLoadedImages));
       if(route==='/'){
+        assert(await page.locator('.catalog-context-link').count()===0,'Redundant commercial catalogue header link reappeared');
+        const header=page.locator('header.site-header');
+        const wa=header.locator('.commercial-whatsapp'),contact=header.locator('.commercial-mail'),quote=header.locator('.commercial-quote');
+        for(const [name,control] of [['WhatsApp',wa],['Contacto',contact],['Cotización',quote]]){
+          assert(await control.count()===1,name+' header action missing');
+          assert(await control.isVisible(),name+' header action hidden');
+          const rect=await control.boundingBox();
+          assert(rect&&rect.x>=-2&&rect.x+rect.width<=width+2,name+' header action outside viewport');
+        }
+        assert((await wa.getAttribute('href'))?.startsWith('https://wa.me/'),'WhatsApp destination absent');
+        assert((await quote.getAttribute('href'))?.startsWith('/cotizador'),'Cotizador destination absent');
+        await contact.click({timeout:7000});
+        const leadDialog=page.getByRole('dialog',{name:'Solicitar información'});
+        await leadDialog.waitFor({state:'visible',timeout:7000});
+        assert(await leadDialog.getByRole('textbox',{name:/Nombre/i}).count()>0,'Contact dialog has no form');
+        await page.keyboard.press('Escape');
+        await leadDialog.waitFor({state:'detached',timeout:5000});
         assert(met.hamburger?.w>=40,'Mobile menu target less than 40px');
         await page.locator('.menu-toggle').click({timeout:10000});
         const mobile=page.locator('.mobile-nav');await mobile.waitFor({state:'visible',timeout:7000});
@@ -43,6 +60,11 @@ for(const width of widths){
         const dlg=page.locator('dialog[open]');assert(await dlg.count()>0,'Menu modal not opened');
         await page.keyboard.press('Escape');
         await page.locator('.mobile-nav').waitFor({state:'detached',timeout:2500});
+      }
+      if(route==='/cotizador'){
+        assert(await page.getByRole('heading',{level:1}).count()>0,'Quotation wizard heading missing');
+        assert(await page.getByRole('button',{name:/CONTINUAR/i}).count()>0,'Quotation wizard cannot advance');
+        assert(await page.getByRole('button',{name:/Regalo corporativo/i}).count()>0,'Quotation wizard options absent');
       }
       if(route==='/saldos'){
         const field=page.locator('input[type=search]').first();await field.fill('ASDB7197');
