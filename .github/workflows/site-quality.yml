@@ -1,7 +1,7 @@
 name: Montescano site audit checks
 on:
   push:
-    branches: [benchmark-auditoria-2026]
+    branches: [main, benchmark-auditoria-2026]
   workflow_dispatch:
 permissions:
   contents: read
