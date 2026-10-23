@@ -96,7 +96,6 @@ export default function CinematicHero({products}:{products:Product[]}) {
         aria-pressed={paused}
         onClick={()=>{setPaused(value=>!value);setInteracting(false);}}
       ><span aria-hidden="true">{paused?'▶':'Ⅱ'}</span></button>}
-      <div className="cinema-swipe" aria-hidden="true">DESLIZA PARA DESCUBRIR</div>
     </div>
   </section>;
 }
