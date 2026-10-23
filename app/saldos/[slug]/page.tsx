@@ -45,7 +45,7 @@ export default async function SaldoDetail({params}:{params:Promise<{slug:string}
           </dl>
           <ContactActions sku={p.sku}/>
           <QuoteLink sku={p.sku} saldo/>
-          <ActionLink href="#solicitud" className="button secondary">SOLICITAR INFORMACIÓN ↗</ActionLink>
+          <ActionLink href="#solicitud" className="button secondary">SOLICITAR INFORMACIÓN</ActionLink>
         </Reveal>
       </section>
       <section id="solicitud" className="detail-form"><LeadForm product={p} context={`saldo/${p.slug}`}/></section>
