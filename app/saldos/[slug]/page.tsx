@@ -7,6 +7,7 @@ import ProductPrice from '../../../components/ProductPrice';
 import ProductGallery from '../../../components/ProductGallery';
 import ContactActions from '../../../components/ContactActions';
 import QuoteLink from '../../../components/QuoteLink';
+import CommercialCtas from '../../../components/CommercialCtas';
 import LeadForm from '../../../components/LeadForm';
 import {Reveal,ActionLink} from '../../../components/MotionUI';
 
@@ -27,6 +28,7 @@ export default async function SaldoDetail({params}:{params:Promise<{slug:string}
     <header className="site-header detail-header">
       <Link className="logo" href="/"><img src="/brand/montescano.png" alt="Montescano" width="164" height="53"/></Link>
       <Link className="text-link" href="/saldos">← VOLVER A SALDOS</Link>
+      <CommercialCtas sku={p.sku} saldo/>
     </header>
     <main>
       <section className="product-detail">
@@ -49,7 +51,7 @@ export default async function SaldoDetail({params}:{params:Promise<{slug:string}
       </section>
       <section id="solicitud" className="detail-form"><LeadForm product={p} context={`saldo/${p.slug}`}/></section>
     </main>
-    <footer><Link href="/saldos">Montescano · Venta de Saldos</Link><Link href="/privacidad">Información del formulario</Link></footer>
+    <footer><Link href="/saldos">Montescano · Venta de Saldos</Link><Link href="/privacidad">Información del formulario</Link><CommercialCtas variant="footer" sku={p.sku} saldo/></footer>
     <ContactActions sku={p.sku} floating/>
   </>;
 }
