@@ -28,3 +28,12 @@
 :global(.site-header:not(.cinematic-header)) .header .contact{color:#1c5135!important;border-color:#8ea995;background:#fff}
 :global(.site-header:not(.cinematic-header)) .header .whatsapp:hover,
 :global(.site-header:not(.cinematic-header)) .header .contact:hover{color:#123a26!important;background:#e9f1eb}
+
+.quoteShort{display:none}
+@media(max-width:450px){
+ .header .quoteFull{display:none}
+ .header .quoteShort{display:inline;font-size:10px;font-weight:800;letter-spacing:.01em}
+ .header .quote{min-width:71px;padding:10px 7px}
+ .header .whatsapp{width:40px;min-width:40px;padding:10px 7px}
+ .header .whatsapp svg{width:18px!important;height:18px!important}
+}
