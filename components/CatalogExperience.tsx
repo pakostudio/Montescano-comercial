@@ -19,6 +19,7 @@ import LeadForm from "./LeadForm";
 import {Action,ActionLink,Reveal} from './MotionUI';
 import CinematicHero from './CinematicHero';
 import ContactActions from './ContactActions';
+import CommercialCtas from './CommercialCtas';
 import saldosStyles from './SaldosNavLink.module.css';
 import QuoteLink from './QuoteLink';
 import ProductPrice, {hasPromotion} from './ProductPrice';
@@ -167,14 +168,7 @@ export default function CatalogExperience({
           ))}
           <Link className={saldosStyles.desktop} href="/saldos" aria-label="Venta de Saldos">SALDOS</Link>
         </nav>
-        <motion.button
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.98 }}
-          className="header-cta"
-          onClick={() => setLead({ context: "header" })}
-        >
-          SOLICITAR INFORMACIÓN ↗
-        </motion.button>
+        <CommercialCtas onContact={()=>setLead({context:'header-contacto'})}/>
         <Action
           className="menu-toggle"
           onClick={() => setMenu(true)}
@@ -511,7 +505,7 @@ export default function CatalogExperience({
             height="56"
           />
           <p>Relojería mexicana desde 1998.</p>
-          <ContactActions/>
+          <CommercialCtas onContact={()=>setLead({context:'footer-contacto'})} compact/>
         </div>
         <div>
           <p className="footer-title">COLECCIONES</p>
@@ -714,9 +708,8 @@ export default function CatalogExperience({
               <a href="#corporativo" onClick={() => setMenu(false)}>
                 Corporativo
               </a>
-              <a href="#contacto" onClick={() => setMenu(false)}>
-                Contacto
-              </a>
+              <a href="#contacto" onClick={() => setMenu(false)}>Contacto</a>
+              <CommercialCtas onContact={()=>{setMenu(false);setLead({context:"menu-contacto"});}} compact/>
             </nav>
           </Dialog>
         )}
