@@ -1461,10 +1461,7 @@ footer .contact-actions .button{font-size:10px;padding:12px 15px;min-height:44px
  .detail-header>.commercial-ctas .commercial-quote{font-size:9px;padding:6px}
 }
 
-/* Match footer quotation CTA to new green navigation system. */
-footer .commercial-ctas a.commercial-quote{background:linear-gradient(130deg,#607c63,#526d56)!important;color:#ffffff!important;border:1px solid #6f8b72!important;border-radius:9px;padding:12px 18px;min-height:46px;transition:background .25s,box-shadow .25s,transform .25s}
-footer .commercial-ctas a.commercial-quote:hover{background:linear-gradient(130deg,#526d56,#435e48)!important;color:#ffffff!important;border-color:#86a287!important;text-decoration:none;box-shadow:0 10px 22px rgba(10,30,17,.2);transform:translateY(-2px)}
-footer .commercial-ctas a.commercial-quote:focus-visible{outline:3px solid #225f47;outline-offset:3px}
+/* Footer quotation now shares the icon-link treatment used in the header. */
 
 /* Contact is a dialog, not a permanent page section. Keep its navigation entry accessible. */
 .desktop-nav .nav-contact-trigger{font:700 10px Arial,Helvetica,sans-serif;letter-spacing:.09em;white-space:nowrap;position:relative;cursor:pointer;border:0;border-bottom:1px solid transparent;background:transparent;color:inherit;padding:32px 0}
