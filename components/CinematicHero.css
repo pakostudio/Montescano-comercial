@@ -107,7 +107,7 @@
 .sort-box{display:flex;align-items:center;gap:9px;font:700 9px Arial,Helvetica,sans-serif;letter-spacing:.1em;color:#375341;white-space:nowrap}
 .sort-box select{border:1px solid #cad5cb;background:#fff;border-radius:4px;padding:11px 28px 11px 12px;font:12px Arial,Helvetica,sans-serif;color:#172b20;min-height:45px;cursor:pointer}
 .sort-box select:focus-visible{outline:2px solid #527329;outline-offset:3px}
-.cinematic-header .desktop-nav a[class*=desktop]:hover{color:#813923!important;background:#fff4ef!important}
+.cinematic-header .desktop-nav a[class*=desktop]:hover,.cinematic-header .desktop-nav a[class*=desktop]:focus-visible{color:#fff!important;background:rgba(223,239,219,.18)!important;border-color:rgba(221,237,217,.55)!important}
 @media(max-width:700px){.sort-box{order:4;flex:1 1 100%;justify-content:space-between}.sort-box select{flex:1;max-width:280px}}
 
 /* Accessibility pass: readable captions / touch targets on compact phones. */
