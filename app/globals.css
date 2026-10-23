@@ -1339,6 +1339,10 @@ dd {
 .desktop-nav a:hover,.desktop-nav a:focus-visible{color:var(--green)}
 .desktop-nav a::before{content:'';position:absolute;bottom:16px;left:0;right:0;height:1px;background:var(--green);transform:scaleX(0);transform-origin:left;transition:transform var(--motion-normal) var(--motion-ease)}
 .desktop-nav a:hover::before{transform:scaleX(1)}
+/* Button-like navigation, especially Saldos, must not inherit link underlines. */
+.desktop-nav a[class*="desktop"]::before{content:none!important;display:none!important}
+.desktop-nav a[class*="desktop"]:hover::before,.desktop-nav a[class*="desktop"]:focus-visible::before{content:none!important;display:none!important}
+
 .button,.text-link,.header-cta,.filter-button,.hero-arrows button,.filter-chips button,.close,.variants a,.menu-toggle{transition:background-color var(--motion-fast),border-color var(--motion-fast),color var(--motion-fast),box-shadow var(--motion-fast)}
 .button span[aria-hidden],.text-link span[aria-hidden]{display:inline-block;transition:transform var(--motion-fast) var(--motion-ease)}
 .button:hover span[aria-hidden],.button:focus-visible span[aria-hidden]{transform:translateX(4px)}
