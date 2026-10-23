@@ -124,3 +124,18 @@
  .cinema-pause{font-size:11px;min-height:40px}
 }
 @media(max-width:370px){.cinema-eyebrow{font-size:9px}.cinema-tabs button>b{font-size:10px}.cinema-tabs button>span{display:none}}
+
+/* Sprint aprobado: tres piezas fotográficas reales, sin tarjetas blancas ni pestañas invasivas. */
+.cinema-watch-cutout{width:min(92%,510px);height:min(67svh,610px);max-height:100%;overflow:visible;filter:drop-shadow(18px 32px 20px rgba(0,0,0,.37))}
+.cinema-carousel-controls{display:flex;align-items:center;gap:7px;margin-top:24px;width:max-content;max-width:100%}
+.cinema-carousel-controls .cinema-tabs{display:flex;gap:3px;margin:0;width:auto;max-width:none;align-items:center}
+.cinema-carousel-controls .cinema-tabs button{display:grid;place-items:center;flex:none;width:40px;min-width:40px;height:42px;min-height:42px;padding:0!important;border:0;background:transparent!important;color:#d7e6ce;border-radius:0;overflow:visible}
+.cinema-carousel-controls .cinema-tabs button:hover,.cinema-carousel-controls .cinema-tabs button:focus-visible{transform:none!important}
+.cinema-carousel-controls .cinema-tabs button .cinema-dot{display:block!important;width:20px;height:3px;border-radius:4px;background:#8aaba0;opacity:.42;transition:width .3s,opacity .3s,background .3s}
+.cinema-carousel-controls .cinema-tabs button[aria-pressed="true"] .cinema-dot{width:33px;background:#ebf6df;opacity:1}
+.cinema-carousel-controls .cinema-pause{min-width:40px;min-height:42px;padding:0 8px;margin:0;border:1px solid transparent;color:#c5d6cc;font-size:12px!important;letter-spacing:0}
+.cinema-carousel-controls .cinema-pause:hover{border-color:rgba(255,255,255,.25);text-decoration:none}
+.cinema-carousel-controls .cinema-pause>span{font-size:17px}
+@media(max-width:700px){.cinema-carousel-controls{margin-top:13px}.cinema-watch-cutout{width:93%;height:285px;max-height:285px}.cinema-carousel-controls .cinema-tabs button{height:40px;min-height:40px}.cinema-carousel-controls .cinema-pause{min-height:40px}}
+@media(max-width:370px){.cinema-watch-cutout{height:244px;max-height:244px}.cinema-carousel-controls{margin-top:8px}}
+@media(prefers-reduced-motion:reduce){.cinema-carousel-controls .cinema-dot{transition:none!important}}
