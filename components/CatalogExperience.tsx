@@ -19,6 +19,8 @@ import LeadForm from "./LeadForm";
 import {Action,ActionLink,Reveal} from './MotionUI';
 import CinematicHero from './CinematicHero';
 import ContactActions from './ContactActions';
+import CommercialCtas from './CommercialCtas';
+import {contactLinks} from '../lib/contact';
 import saldosStyles from './SaldosNavLink.module.css';
 import QuoteLink from './QuoteLink';
 import ProductPrice, {hasPromotion} from './ProductPrice';
@@ -152,7 +154,6 @@ export default function CatalogExperience({
             ["SMART WATCH", "#catalogo", "smart-watch"],
             ["SETS", "#catalogo", "sets"],
             ["CORPORATIVO", "#corporativo", ""],
-            ["CONTACTO", "#contacto", ""],
           ].map(([label, href, family]) => (
             <ActionLink key={label} href={href} aria-current={(section==='catalogo'?active===family&&family!=='todos':href===`#${section}`)?'location':undefined} onClick={() => {setSection(href.slice(1));if(family)choose(family);}}>
               {label}
@@ -167,14 +168,7 @@ export default function CatalogExperience({
           ))}
           <Link className={saldosStyles.desktop} href="/saldos" aria-label="Venta de Saldos">SALDOS</Link>
         </nav>
-        <motion.button
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.98 }}
-          className="header-cta"
-          onClick={() => setLead({ context: "header" })}
-        >
-          SOLICITAR INFORMACIÓN ↗
-        </motion.button>
+        <CommercialCtas variant="header"/>
         <Action
           className="menu-toggle"
           onClick={() => setMenu(true)}
@@ -511,7 +505,7 @@ export default function CatalogExperience({
             height="56"
           />
           <p>Relojería mexicana desde 1998.</p>
-          <ContactActions/>
+          <CommercialCtas variant="footer"/>
         </div>
         <div>
           <p className="footer-title">COLECCIONES</p>
@@ -714,9 +708,9 @@ export default function CatalogExperience({
               <a href="#corporativo" onClick={() => setMenu(false)}>
                 Corporativo
               </a>
-              <a href="#contacto" onClick={() => setMenu(false)}>
-                Contacto
-              </a>
+              <button type="button" className="mobile-nav-contact" onClick={() => {setMenu(false);setLead({context:'menu-contacto'});}}>✉ CONTACTO · ESCRÍBENOS</button>
+              {contactLinks().whatsapp&&<a href={contactLinks().whatsapp!} target="_blank" rel="noopener noreferrer" onClick={()=>setMenu(false)}>↗ WHATSAPP</a>}
+              <Link className="mobile-nav-quote" href="/cotizador" onClick={()=>setMenu(false)}>SOLICITAR COTIZACIÓN ↗</Link>
             </nav>
           </Dialog>
         )}
