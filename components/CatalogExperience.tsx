@@ -333,9 +333,7 @@ export default function CatalogExperience({
                         height="280"
                         loading="lazy"
                       />
-                      <motion.span variants={{rest:{opacity:0,x:-3},hover:{opacity:1,x:0}}} className="card-arrow" aria-hidden="true">
-                        ↗
-                      </motion.span>
+                      
                     </div>
                     <div className="product-info">
                       <p className="product-brand">
@@ -345,7 +343,7 @@ export default function CatalogExperience({
                       <p className="product-description">{p.description}</p>
                       <ProductPrice product={p}/>
                       <span className="card-cta">
-                        VER DETALLES <motion.span variants={{rest:{x:0},hover:{x:reduced?0:4}}} aria-hidden="true">→</motion.span>
+                        VER DETALLES 
                       </span>
                     </div>
                   </motion.button>
@@ -422,7 +420,7 @@ export default function CatalogExperience({
                   )}
                   <motion.span variants={{rest:{y:0},hover:{y:reduced?0:-2}}}>
                     {title}
-                    <motion.b variants={{rest:{x:0,opacity:.65},hover:{x:reduced?0:3,opacity:1}}} aria-hidden="true">↗</motion.b>
+                    
                   </motion.span>
                 </motion.a>
               );
@@ -463,13 +461,13 @@ export default function CatalogExperience({
               className="button secondary"
               onClick={() => { window.location.href='/cotizador'; }}
             >
-              COTIZAR PROYECTO ↗
+              COTIZAR PROYECTO
             </motion.button>
             <Action
               className="text-link"
               onClick={() => setLead({interest:'Personalización',context:'personalizacion'})}
             >
-              SOLICITAR INFORMACIÓN →
+              SOLICITAR INFORMACIÓN
             </Action></Reveal>
           </div>
         </section>
@@ -562,10 +560,10 @@ export default function CatalogExperience({
                     setQuick(null);
                   }}
                 >
-                  SOLICITAR INFORMACIÓN ↗
+                  SOLICITAR INFORMACIÓN
                 </Action>
                 <Link className="text-link" href={`/productos/${quick.slug}`}>
-                  VER DETALLE COMPLETO →
+                  VER DETALLE COMPLETO
                 </Link>
               </motion.div>
             </div>
@@ -657,7 +655,7 @@ export default function CatalogExperience({
                 className="button primary"
                 onClick={() => setFilterOpen(false)}
               >
-                VER {filtered.length} MODELOS →
+                VER {filtered.length} MODELOS
               </Action>
               <Action className="text-link" onClick={clear}>
                 LIMPIAR FILTROS
@@ -681,7 +679,7 @@ export default function CatalogExperience({
                   {name === "Kids" ? "Vizanti Kids" : name}
                 </a>
               ))}
-              <Link className={saldosStyles.mobile} href="/saldos" onClick={() => setMenu(false)}>VENTA DE SALDOS ↗</Link>
+              <Link className={saldosStyles.mobile} href="/saldos" onClick={() => setMenu(false)}>VENTA DE SALDOS</Link>
               <a href="#corporativo" onClick={() => setMenu(false)}>
                 Corporativo
               </a>
