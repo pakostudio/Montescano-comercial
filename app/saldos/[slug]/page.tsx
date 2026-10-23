@@ -51,6 +51,5 @@ export default async function SaldoDetail({params}:{params:Promise<{slug:string}
       <section id="solicitud" className="detail-form"><LeadForm product={p} context={`saldo/${p.slug}`}/></section>
     </main>
     <footer><CommercialCtas sku={p.sku} saldo compact/><Link href="/saldos">Montescano · Venta de Saldos</Link><Link href="/privacidad">Información del formulario</Link></footer>
-    <ContactActions sku={p.sku} floating/>
   </>;
 }
