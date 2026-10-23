@@ -30,3 +30,8 @@
  .more{font-size:11px}
  .back{min-height:44px;display:inline-flex;align-items:center}
 }
+
+/* Accesos comerciales prioritarios en Saldos y móviles sin desbordamientos. */
+@media(max-width:1150px){.header{gap:14px}.title{display:none}.logo img{width:145px}}
+@media(max-width:820px){.back{display:none!important}.header{justify-content:space-between}.header>:last-child{margin-left:auto}}
+@media(max-width:450px){.header{padding:9px 3vw;gap:6px}.logo img{width:112px}}
