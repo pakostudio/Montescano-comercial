@@ -76,7 +76,7 @@ export default function CatalogExperience({
   useEffect(() => {
     const p = new URLSearchParams(window.location.search);
     const f = p.get("coleccion");
-    if (f && families.some(([id]) => id === f)) setActive(f);
+    if (f && families.some(([id]) => id === f)) {setActive(f);if(!['todos','montescano','vizanti','kids'].includes(f))setSelection('all');}
     const g = p.get("genero");
     if (g) setFilters((v) => ({ ...v, gender: g }));
   }, []);
@@ -194,13 +194,13 @@ export default function CatalogExperience({
         <section id="catalogo" className="catalog-section">
           <motion.div {...reveal} className="section-intro">
             <div>
-              <p className="kicker">CATÁLOGO ACTUALIZADO · OCTUBRE 2026</p>
-              <h2>Montescano y Vizanti · Colección 2026.</h2>
+              <p className="kicker">{selection==='edition'?'CATÁLOGO ACTUALIZADO · OCTUBRE 2026':'CATÁLOGO GENERAL MONTESCANO'}</p>
+              <h2>{selection==='edition'?'Montescano y Vizanti · Colección 2026.':'Explora todas nuestras colecciones.'}</h2>
             </div>
             <p className="section-note">
-              {editionCount} modelos con fotografía aprobada del catálogo oficial de octubre 2026.
+              {selection==='edition'?<>{editionCount} modelos con fotografía aprobada del catálogo oficial de octubre 2026.</>:<>Colecciones generales de Montescano, Vizanti, Kids, Sets y Plumas.</>}
               <br />
-              Precios públicos en MXN según el archivo recibido. Disponibilidad sujeta a confirmación.
+              Precios públicos en MXN. Disponibilidad sujeta a confirmación.
             </p>
           </motion.div>
           <div className="controls">
@@ -220,7 +220,7 @@ export default function CatalogExperience({
                 >
                   <span>{name}</span>
                   <small>
-                    {products.filter(p=>(id==='todos'||p.family===id)&&(selection!=='edition'||p.edition==='2026-10')).length}
+                    {products.filter(p=>(id==='todos'||p.family===id)&&(selection!=='edition'||!['todos','montescano','vizanti','kids'].includes(id)||p.edition==='2026-10')).length}
                   </small>
                   {active === id && (
                     <motion.i
