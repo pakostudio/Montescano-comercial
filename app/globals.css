@@ -1458,6 +1458,15 @@ footer .contact-actions .button{font-size:10px;padding:12px 15px;min-height:44px
 }
 
 /* CTA footer: preserve terracotta button surface and readable white text. */
-footer .commercial-ctas a.commercial-quote{background:#a44d37!important;color:#ffffff!important;border:1px solid #a44d37!important;padding:12px 17px;min-height:46px;transition:background-color .2s,color .2s,box-shadow .2s}
-footer .commercial-ctas a.commercial-quote:hover{background:#84351f!important;color:#ffffff!important;border-color:#84351f!important;text-decoration:none;box-shadow:0 8px 20px rgba(132,53,31,.15)}
+footer .commercial-ctas a.commercial-quote{background:#596F4C!important;color:#ffffff!important;border:1px solid #596F4C!important;padding:12px 17px;min-height:46px;transition:background-color .25s,color .25s,box-shadow .25s,transform .25s}
+footer .commercial-ctas a.commercial-quote:hover{background:#536747!important;color:#ffffff!important;border-color:#536747!important;text-decoration:none;box-shadow:0 8px 20px rgba(23,61,42,.2);transform:translateY(-2px)}
 footer .commercial-ctas a.commercial-quote:focus-visible{outline:3px solid #225f47;outline-offset:3px}
+
+/* Contact is a dialog, not a permanent page section. Keep its navigation entry accessible. */
+.desktop-nav .nav-contact-trigger{font:700 10px Arial,Helvetica,sans-serif;letter-spacing:.09em;white-space:nowrap;position:relative;cursor:pointer;border:0;border-bottom:1px solid transparent;background:transparent;color:inherit;padding:32px 0}
+.desktop-nav .nav-contact-trigger:hover,.desktop-nav .nav-contact-trigger:focus-visible{color:#dfe8d7;border-bottom-color:#c9d8bd}
+.mobile-nav .mobile-contact-trigger{font:inherit;font-size:22px;text-align:left;border:0;border-bottom:1px solid var(--line);padding:12px 0;background:transparent;color:inherit;cursor:pointer}
+.mobile-nav .mobile-contact-trigger:hover,.mobile-nav .mobile-contact-trigger:focus-visible{color:var(--green);background:#f4f5f2}
+footer .footer-contact-trigger{display:block;font:inherit;font-size:14px;color:inherit;cursor:pointer;background:transparent;border:0;padding:5px 0;text-align:left}
+footer .footer-contact-trigger:hover,footer .footer-contact-trigger:focus-visible{color:var(--green);text-decoration:underline;text-underline-offset:3px}
+@media(max-width:760px){footer .footer-contact-trigger{font-size:13px;padding:7px 0}}
