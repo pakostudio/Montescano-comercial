@@ -50,7 +50,7 @@ export default function CatalogExperience({
   const reduced = useReducedMotion();
   const tabsRef=useRef<HTMLDivElement>(null);
   const [section,setSection]=useState('inicio');
-  const [selection,setSelection]=useState('all');
+  const [selection,setSelection]=useState<'edition'|'all'|'new'|'promo'>('edition');
   const [sort,setSort]=useState<'catalog'|'price-asc'|'price-desc'|'newest'>('catalog');
   const {scrollY}=useScroll();
   useMotionValueEvent(scrollY,'change',value=>setScrolled(value>24));
@@ -83,12 +83,13 @@ export default function CatalogExperience({
   useEffect(() => {
     setVisible(24);
   }, [active, query, filters, selection, sort]);
+  const editionCount=useMemo(()=>products.filter(p=>p.edition==='2026-10').length,[products]);
   const filtered = useMemo(
     () =>
       products.filter(
         (p) =>
           (active === "todos" || p.family === active) &&
-          (selection === 'all' || (selection === 'new' ? p.is_new : hasPromotion(p))) &&
+          (selection === 'all' || (selection === 'edition' ? p.edition==='2026-10' : selection==='new' ? p.is_new : hasPromotion(p))) &&
           (!query ||
             `${p.sku} ${p.brand} ${p.description} ${p.collections.join(" ")}`
               .toLocaleLowerCase("es")
@@ -114,14 +115,14 @@ export default function CatalogExperience({
   const filterCount = Object.values(filters).filter(Boolean).length;
   const corporateProduct = products.find((p) => p.family === "sets");
   const clear = () => {
-    setSelection('all');
+    setSelection('edition');
     setSort('catalog');
     setFilters(initialFilters);
     setActive("todos");
     setQuery("");
   };
   const choose = (family: string) => {
-    setSelection('all');
+    setSelection(['todos','montescano','vizanti','kids'].includes(family)?'edition':'all');
     setActive(family);
     setFilters(initialFilters);
     setQuery("");
@@ -193,18 +194,18 @@ export default function CatalogExperience({
         <section id="catalogo" className="catalog-section">
           <motion.div {...reveal} className="section-intro">
             <div>
-              <p className="kicker">EXPLORA LAS COLECCIONES</p>
-              <h2>Encuentra tu próximo modelo.</h2>
+              <p className="kicker">CATÁLOGO ACTUALIZADO · OCTUBRE 2026</p>
+              <h2>Montescano y Vizanti · Colección 2026.</h2>
             </div>
             <p className="section-note">
-              Colecciones actualizadas · Octubre 2026.
+              {editionCount} modelos con fotografía aprobada del catálogo oficial de octubre 2026.
               <br />
-              Precios en MXN. Disponibilidad sujeta a confirmación.
+              Precios públicos en MXN según el archivo recibido. Disponibilidad sujeta a confirmación.
             </p>
           </motion.div>
           <div className="controls">
             <div className="catalog-selections" aria-label="Selección de productos">
-              {([['all','Todos los modelos'],['new','Novedades'],['promo','Promociones']] as const).map(([id,label]) =>
+              {([['edition',`Catálogo octubre 2026 · ${editionCount}`],['all',`Ver todo el catálogo · ${products.length}`],['new','Novedades'],['promo','Promociones']] as const).map(([id,label]) =>
                 <button key={id} aria-pressed={selection===id} onClick={()=>setSelection(id)}>{label}</button>)}
             </div>
             <motion.div layoutScroll ref={tabsRef} className="category-tabs" aria-label="Categoría">
@@ -214,14 +215,12 @@ export default function CatalogExperience({
                   whileTap={{ scale: 0.97 }}
                   whileHover={{backgroundColor:'#edf0e8'}}
                   className={active === id ? "active" : ""}
-                  onClick={() => setActive(id)}
+                  onClick={() => selection==='edition'&&!['todos','montescano','vizanti','kids'].includes(id)?choose(id):setActive(id)}
                   aria-pressed={active === id}
                 >
                   <span>{name}</span>
                   <small>
-                    {id === "todos"
-                      ? products.length
-                      : products.filter((p) => p.family === id).length}
+                    {products.filter(p=>(id==='todos'||p.family===id)&&(selection!=='edition'||p.edition==='2026-10')).length}
                   </small>
                   {active === id && (
                     <motion.i
@@ -692,7 +691,7 @@ export default function CatalogExperience({
                 <p>Relojería mexicana · Desde 1998</p>
               </div>
               <a href="#inicio" onClick={() => setMenu(false)}><NavIcon kind="inicio"/> Inicio</a>
-              <a className="mobile-nav-catalog" href="#catalogo" onClick={() => {choose('todos');setMenu(false)}}><NavIcon kind="catalog"/> Catálogo completo</a>
+              <a className="mobile-nav-catalog" href="#catalogo" onClick={() => {choose('todos');setMenu(false)}}><NavIcon kind="catalog"/> Catálogo octubre 2026</a>
               {families.slice(1).map(([id, name]) => (
                 <a key={id} href="#catalogo" onClick={() => choose(id)}><NavIcon kind={id}/>
                   {name === "Kids" ? "Vizanti Kids" : name}
