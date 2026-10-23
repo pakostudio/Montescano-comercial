@@ -6,6 +6,7 @@ import { availabilityLabels } from "../../../lib/catalog-types";
 import LeadForm from "../../../components/LeadForm";
 import ContactActions from '../../../components/ContactActions';
 import QuoteLink from '../../../components/QuoteLink';
+import CommercialCtas from '../../../components/CommercialCtas';
 import ProductPrice from '../../../components/ProductPrice';
 import ProductGallery from '../../../components/ProductGallery';
 import {Reveal,ActionLink} from '../../../components/MotionUI';
@@ -48,9 +49,8 @@ export default async function ProductPage({
             height="53"
           />
         </Link>
-        <Link className="text-link" href={`/?coleccion=${p.family}#catalogo`}>
-          ← VOLVER A LA COLECCIÓN
-        </Link>
+        <Link className="text-link" href={`/?coleccion=${p.family}#catalogo`}>← VOLVER A LA COLECCIÓN</Link>
+        <CommercialCtas sku={p.sku}/>
       </header>
       <main>
         <section className="product-detail">
@@ -108,6 +108,7 @@ export default async function ProductPage({
       <footer>
         <Link href="/">Montescano · Catálogo comercial</Link>
         <Link href="/privacidad">Información del formulario</Link>
+        <CommercialCtas variant="footer" sku={p.sku}/>
       </footer>
       <ContactActions sku={p.sku} floating/>
     </>
