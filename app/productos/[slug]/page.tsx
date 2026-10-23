@@ -5,6 +5,7 @@ import { getCatalog } from "../../../lib/catalog";
 import { availabilityLabels } from "../../../lib/catalog-types";
 import LeadForm from "../../../components/LeadForm";
 import ContactActions from '../../../components/ContactActions';
+import CommercialCtas from '../../../components/CommercialCtas';
 import QuoteLink from '../../../components/QuoteLink';
 import ProductPrice from '../../../components/ProductPrice';
 import ProductGallery from '../../../components/ProductGallery';
@@ -48,7 +49,7 @@ export default async function ProductPage({
             height="53"
           />
         </Link>
-        <Link className="text-link" href={`/?coleccion=${p.family}#catalogo`}>
+        <CommercialCtas sku={p.sku}/><Link className="text-link" href={`/?coleccion=${p.family}#catalogo`}>
           ← VOLVER A LA COLECCIÓN
         </Link>
       </header>
@@ -106,6 +107,7 @@ export default async function ProductPage({
         </section>
       </main>
       <footer>
+        <CommercialCtas sku={p.sku} compact/>
         <Link href="/">Montescano · Catálogo comercial</Link>
         <Link href="/privacidad">Información del formulario</Link>
       </footer>
