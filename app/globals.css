@@ -1371,8 +1371,8 @@ dd {
 .corporate .contact-actions .button{margin:0}
 .contact-actions .button{gap:18px}
 .quick-info>.button,.detail-copy>.button{margin-top:10px}
-footer a:not(.button){width:fit-content;background:linear-gradient(var(--green),var(--green)) 0 100%/0 1px no-repeat;transition:background-size var(--motion-normal) var(--motion-ease),color var(--motion-fast)}
-footer a:not(.button):hover{background-size:100% 1px;text-decoration:none;color:var(--green)}
+footer a:not(.button):not(.commercial-quote){width:fit-content;background:linear-gradient(var(--green),var(--green)) 0 100%/0 1px no-repeat;transition:background-size var(--motion-normal) var(--motion-ease),color var(--motion-fast)}
+footer a:not(.button):not(.commercial-quote):hover{background-size:100% 1px;text-decoration:none;color:var(--green)}
 footer .contact-actions .button{font-size:10px;padding:12px 15px;min-height:44px}
 .mobile-nav a{transition:padding var(--motion-normal) var(--motion-ease),color var(--motion-fast),background var(--motion-fast)}
 .mobile-nav a:hover,.mobile-nav a:focus-visible{padding-left:9px;color:var(--green);background:#f4f5f2}
@@ -1456,3 +1456,8 @@ footer .contact-actions .button{font-size:10px;padding:12px 15px;min-height:44px
  .detail-header>.commercial-ctas{gap:2px}
  .detail-header>.commercial-ctas .commercial-quote{font-size:9px;padding:6px}
 }
+
+/* CTA footer: preserve terracotta button surface and readable white text. */
+footer .commercial-ctas a.commercial-quote{background:#a44d37!important;color:#ffffff!important;border:1px solid #a44d37!important;padding:12px 17px;min-height:46px;transition:background-color .2s,color .2s,box-shadow .2s}
+footer .commercial-ctas a.commercial-quote:hover{background:#84351f!important;color:#ffffff!important;border-color:#84351f!important;text-decoration:none;box-shadow:0 8px 20px rgba(132,53,31,.15)}
+footer .commercial-ctas a.commercial-quote:focus-visible{outline:3px solid #225f47;outline-offset:3px}
