@@ -13,7 +13,7 @@ export default function ContactActions({sku,corporate=false,floating=false}:{sku
   observer.observe(controls);
   return ()=>observer.disconnect();
  },[floating]);
- if(floating)return links.whatsapp&&!carouselVisible?<ActionLink className="floating-contact" href={links.whatsapp} target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp"><span className="contact-symbol" aria-hidden="true">↗</span><span>WhatsApp</span></ActionLink>:null;
+ if(floating)return links.whatsapp&&!carouselVisible?<ActionLink className="floating-contact" href={links.whatsapp} target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp"><span>WhatsApp</span></ActionLink>:null;
  if(!links.whatsapp&&!links.email)return null;
- return <div className="contact-actions">{links.whatsapp&&<ActionLink className="button primary" href={links.whatsapp} target="_blank" rel="noopener noreferrer">WHATSAPP <span aria-hidden="true">↗</span></ActionLink>}{links.email&&<ActionLink className="button secondary" href={links.email}>CORREO <span aria-hidden="true">→</span></ActionLink>}</div>;
+ return <div className="contact-actions">{links.whatsapp&&<ActionLink className="button primary" href={links.whatsapp} target="_blank" rel="noopener noreferrer">WHATSAPP</ActionLink>}{links.email&&<ActionLink className="button secondary" href={links.email}>CORREO</ActionLink>}</div>;
 }
