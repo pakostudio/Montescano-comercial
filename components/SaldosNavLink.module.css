@@ -8,7 +8,7 @@
   font:800 10px/1 Arial,Helvetica,sans-serif;letter-spacing:.07em!important;
   box-shadow:none;transition:background .25s,border-color .25s,transform .25s;
 }
-.desktop::before{content:"";width:6px;height:6px;flex:none;border-radius:50%;background:#b6cda9;}
+.desktop::before{content:none;}\n.desktop svg{width:18px;height:18px;flex:none;}
 .desktop:hover,.desktop:focus-visible{
   background:rgba(223,239,219,.18);border-color:rgba(221,237,217,.55);
   color:#fff!important;transform:translateY(-1px);box-shadow:none;
