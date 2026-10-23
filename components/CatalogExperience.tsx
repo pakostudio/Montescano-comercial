@@ -100,12 +100,6 @@ export default function CatalogExperience({
     [products,active,query,filters,selection,sort],
   );
   const filterCount = Object.values(filters).filter(Boolean).length;
-  // Piezas REALES y aprobadas del catálogo: la escena visual cambia de reloj, no sólo de fondo.
-  const heroProducts = [
-    products.find(p => p.sku === "TASAC3521" && p.image),
-    products.find(p => p.sku === "ASCB5626" && p.image),
-    products.find(p => p.sku === "AB5341" && p.image),
-  ].filter((p): p is Product => Boolean(p));
   const corporateProduct = products.find((p) => p.family === "sets");
   const clear = () => {
     setSelection('all');
@@ -180,7 +174,7 @@ export default function CatalogExperience({
         </Action>
       </motion.header>
       <main>
-        <CinematicHero products={heroProducts} />
+        <CinematicHero />
         <section id="catalogo" className="catalog-section">
           <motion.div {...reveal} className="section-intro">
             <div>
