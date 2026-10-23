@@ -24,6 +24,10 @@ export default function CinematicHero() {
           <strong>MONTESCANO</strong>
           <p>Precisión con personalidad.</p>
         </div>
+        <Link className="cinema-mobile-catalog-cta" href="/#catalogo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M4 5.5c2.8-.9 5.5-.5 8 1.2v12c-2.5-1.7-5.2-2.1-8-1.2v-12ZM20 5.5c-2.8-.9-5.5-.5-8 1.2v12c2.5-1.7 5.2-2.1 8-1.2v-12Z"/></svg>
+          Explorar catálogo
+        </Link>
       </div>
       <div className="cinema-stage cinema-stage-single">
         <div className="cinema-orbit cinema-orbit-one" aria-hidden="true"/>
