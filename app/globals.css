@@ -1457,9 +1457,9 @@ footer .contact-actions .button{font-size:10px;padding:12px 15px;min-height:44px
  .detail-header>.commercial-ctas .commercial-quote{font-size:9px;padding:6px}
 }
 
-/* CTA footer: preserve terracotta button surface and readable white text. */
-footer .commercial-ctas a.commercial-quote{background:#596F4C!important;color:#ffffff!important;border:1px solid #596F4C!important;padding:12px 17px;min-height:46px;transition:background-color .25s,color .25s,box-shadow .25s,transform .25s}
-footer .commercial-ctas a.commercial-quote:hover{background:#536747!important;color:#ffffff!important;border-color:#536747!important;text-decoration:none;box-shadow:0 8px 20px rgba(23,61,42,.2);transform:translateY(-2px)}
+/* Match footer quotation CTA to new green navigation system. */
+footer .commercial-ctas a.commercial-quote{background:linear-gradient(130deg,#607c63,#526d56)!important;color:#ffffff!important;border:1px solid #6f8b72!important;border-radius:9px;padding:12px 18px;min-height:46px;transition:background .25s,box-shadow .25s,transform .25s}
+footer .commercial-ctas a.commercial-quote:hover{background:linear-gradient(130deg,#526d56,#435e48)!important;color:#ffffff!important;border-color:#86a287!important;text-decoration:none;box-shadow:0 10px 22px rgba(10,30,17,.2);transform:translateY(-2px)}
 footer .commercial-ctas a.commercial-quote:focus-visible{outline:3px solid #225f47;outline-offset:3px}
 
 /* Contact is a dialog, not a permanent page section. Keep its navigation entry accessible. */
