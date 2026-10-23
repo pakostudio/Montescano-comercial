@@ -1,5 +1,6 @@
 export type Product = {
  id:string; sku:string; slug:string; brand:string; family:string; description:string;
+ edition?:'2026-10'|null;
  gender:string|null; material:string|null; movement:string|null; water_resistance:string|null;
  availability:'available'|'limited'|'on_request'|'unavailable'; image:string; images:string[];
  price?:number|null; promo_price?:number|null; is_new?:boolean; is_saldo?:boolean;
