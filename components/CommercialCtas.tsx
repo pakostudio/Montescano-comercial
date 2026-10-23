@@ -22,7 +22,8 @@ export default function CommercialCtas({variant='header',sku,saldo=false,showQuo
    </button>
    {showQuote&&<Link href={quote} className={styles.quote} aria-label={sku?`Solicitar cotización del modelo ${sku}`:'Solicitar cotización'}>
     <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round"><path d="M5 3h11l4 4v14H5z"/><path d="M16 3v5h4M8 12h9M8 16h7"/></svg>
-    <span>{variant==='detail'?'COTIZAR MODELO':'SOLICITAR COTIZACIÓN'}</span>
+    <span className={styles.quoteFull}>{variant==='detail'?'COTIZAR MODELO':'SOLICITAR COTIZACIÓN'}</span>
+    <span className={styles.quoteShort}>COTIZAR</span>
     <b aria-hidden="true">↗</b>
    </Link>}
   </div>
