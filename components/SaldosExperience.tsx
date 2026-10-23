@@ -5,6 +5,7 @@ import type {CSSProperties} from 'react';
 import type {Product} from '../lib/catalog-types';
 import {availabilityLabels} from '../lib/catalog-types';
 import ProductPrice,{hasPromotion} from './ProductPrice';
+import CommercialCtas from './CommercialCtas';
 import styles from './SaldosExperience.module.css';
 
 type Sort='featured'|'price-asc'|'price-desc';
@@ -35,6 +36,7 @@ export default function SaldosExperience({products}:{products:Product[]}){
       <Link href="/" className={styles.logo}><img src="/brand/montescano.png" alt="Montescano" width="170" height="55"/></Link>
       <div className={styles.title}><span>COLECCIÓN ESPECIAL</span><strong>VENTA DE SALDOS</strong></div>
       <Link className={styles.back} href="/">← CATÁLOGO COMERCIAL</Link>
+      <CommercialCtas/>
     </header>
     <main>
       <section className={styles.hero} aria-label="Venta de Saldos Montescano">
@@ -78,6 +80,6 @@ export default function SaldosExperience({products}:{products:Product[]}){
         {visible<filtered.length&&<button type="button" className={styles.more} onClick={()=>setVisible(v=>v+16)}>MOSTRAR MÁS RELOJES <span aria-hidden="true">↓</span></button>}
       </section>
     </main>
-    <footer className={styles.footer}><Link href="/">MONTESCANO · CATÁLOGO COMERCIAL</Link><Link href="/privacidad">PRIVACIDAD Y CONTACTO</Link></footer>
+    <footer className={styles.footer}><Link href="/">MONTESCANO · CATÁLOGO COMERCIAL</Link><Link href="/privacidad">PRIVACIDAD Y CONTACTO</Link><CommercialCtas variant="footer"/></footer>
   </div>;
 }
