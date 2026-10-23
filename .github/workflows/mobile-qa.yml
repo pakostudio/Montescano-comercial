@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 14
     env:
-      MOBILE_QA_URL: 'https://montescano-catalogo-comercial.vercel.app'
+      MOBILE_QA_URL: 'https://montescano.vercel.app'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
