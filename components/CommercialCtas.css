@@ -4,3 +4,24 @@
 @media(max-width:1100px){.site-header .commercial-ctas{margin-left:auto}.site-header .commercial-whatsapp span,.site-header .commercial-mail span{display:none}.site-header .commercial-quote{font-size:9px}}
 @media(max-width:700px){.site-header .commercial-ctas{gap:5px}.site-header .commercial-whatsapp,.site-header .commercial-mail{padding:7px 3px;min-width:30px}.site-header .commercial-quote{font-size:9px;padding:7px 9px;letter-spacing:0;min-height:40px}.commercial-ctas-compact{gap:10px}.commercial-ctas-compact .commercial-whatsapp span,.commercial-ctas-compact .commercial-mail span{display:inline}}
 @media(max-width:370px){.site-header .commercial-quote{font-size:8px;padding:6px}.site-header .commercial-mail{display:none}}
+
+.commercial-quote-short{display:none}
+@media(max-width:1350px){
+ .cinematic-header .desktop-nav{display:none}
+ .cinematic-header .menu-toggle{display:block;flex-shrink:0}
+ .cinematic-header .commercial-ctas{margin-left:auto}
+}
+@media(max-width:700px){
+ .cinematic-header .logo img{width:110px}
+ .cinematic-header .commercial-quote-full{display:none}
+ .cinematic-header .commercial-quote-short{display:inline}
+ .cinematic-header .commercial-ctas{flex-wrap:nowrap;gap:4px}
+ .cinematic-header .commercial-quote{font-size:11px;padding:8px 12px;min-height:42px}
+ .cinematic-header .commercial-whatsapp,.cinematic-header .commercial-mail{min-width:32px;min-height:42px}
+ .cinematic-header .menu-toggle{margin-left:0}
+}
+@media(max-width:390px){
+ .cinematic-header .logo img{width:96px}
+ .cinematic-header .commercial-quote{padding:8px 9px}
+ .cinematic-header .commercial-ctas{gap:2px}
+}
