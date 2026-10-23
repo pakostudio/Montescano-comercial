@@ -35,7 +35,16 @@ export default function SaldosExperience({products}:{products:Product[]}){
     <header className={styles.header}>
       <Link href="/" className={styles.logo}><img src="/brand/montescano.png" alt="Montescano" width="170" height="55"/></Link>
       <div className={styles.title}><span>COLECCIÓN ESPECIAL</span><strong>VENTA DE SALDOS</strong></div>
-      <CommercialCtas/><Link className={styles.back} href="/">← CATÁLOGO COMERCIAL</Link>
+      <div className={styles.headerActions}>
+        <CommercialCtas/>
+        <Link className={styles.back} href="/" aria-label="Volver al catálogo comercial">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <path d="M4 5.5c2.8-.9 5.5-.5 8 1.2v12c-2.5-1.7-5.2-2.1-8-1.2v-12Z"/>
+            <path d="M20 5.5c-2.8-.9-5.5-.5-8 1.2v12c2.5-1.7 5.2-2.1 8-1.2v-12Z"/>
+          </svg>
+          <span>CATÁLOGO COMERCIAL</span>
+        </Link>
+      </div>
     </header>
     <main>
       <section className={styles.hero} aria-label="Venta de Saldos Montescano">
