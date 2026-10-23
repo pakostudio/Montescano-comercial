@@ -93,11 +93,11 @@ export default async function ProductPage({
             <ContactActions sku={p.sku}/>
             <QuoteLink sku={p.sku}/>
             <ActionLink href="#solicitud" className="button secondary">
-              SOLICITAR INFORMACIÓN ↗
+              SOLICITAR INFORMACIÓN
             </ActionLink>
             {["sets", "plumas"].includes(p.family) && (
               <Link href={`/cotizador?sku=${encodeURIComponent(p.sku)}`} className="text-link">
-                COTIZAR PROYECTO →
+                COTIZAR PROYECTO
               </Link>
             )}
           </Reveal>
