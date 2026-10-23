@@ -10,7 +10,7 @@ export default function ProductGallery({images,brand,sku}:{images:string[];brand
  const label=`${brand} ${sku}`;
  return <div className={styles.gallery}>
   <button type="button" className={styles.main} aria-label={`Ampliar fotografía ${active+1} de ${photos.length} del modelo ${sku}`} onClick={()=>modal.current?.showModal()}>
-   <img src={photos[active]} alt={`${label}, fotografía ${active+1}`} width="600" height="700" loading="eager"/>
+   <img src={photos[active]} alt={`${label}, fotografía ${active+1}`} width="600" height="700" loading="eager" onLoad={e=>{e.currentTarget.style.maxWidth=`${e.currentTarget.naturalWidth}px`;}}/>
    <span className={styles.zoom}>AMPLIAR ↗</span>
   </button>
   {photos.length>1&&<div className={styles.thumbs} role="group" aria-label={`Fotografías de ${sku}`}>
@@ -21,7 +21,7 @@ export default function ProductGallery({images,brand,sku}:{images:string[];brand
   <p className={styles.caption}>FOTOGRAFÍAS REALES DEL CATÁLOGO · {sku}</p>
   <dialog ref={modal} className={styles.modal} aria-label={`Vista ampliada: ${label}`} onClick={e=>{if(e.target===e.currentTarget)modal.current?.close();}}>
    <button type="button" className={styles.close} onClick={()=>modal.current?.close()}>CERRAR ×</button>
-   <img src={photos[active]} alt={`Vista ampliada de ${label}, fotografía ${active+1}`} width="950" height="1100"/>
+   <img src={photos[active]} alt={`Vista ampliada de ${label}, fotografía ${active+1}`} width="950" height="1100" onLoad={e=>{e.currentTarget.style.maxWidth=`${e.currentTarget.naturalWidth}px`;}}/>
   </dialog>
  </div>;
 }
