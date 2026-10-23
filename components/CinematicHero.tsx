@@ -43,7 +43,6 @@ export default function CinematicHero({products}:{products:Product[]}) {
       x.set(((event.clientX-bounds.left)/bounds.width-.5)*23);
       y.set(((event.clientY-bounds.top)/bounds.height-.5)*15);
     }}
-    onPointerEnter={()=>{ if(window.matchMedia('(hover:hover)').matches)setInteracting(true); }}
     onPointerLeave={reset}
     onFocusCapture={()=>setInteracting(true)}
     onBlurCapture={event=>{if(!event.currentTarget.contains(event.relatedTarget as Node))setInteracting(false);}}
@@ -78,9 +77,9 @@ export default function CinematicHero({products}:{products:Product[]}) {
       {available>1&&<button className="cinema-pause" type="button" onClick={()=>{setPaused(value=>!value);setInteracting(false);}} aria-label={paused?'Reanudar carrusel':'Pausar carrusel'}>{paused?'REANUDAR':'PAUSAR'} <span aria-hidden="true">{paused?'▶':'Ⅱ'}</span></button>}
     </div>
 
-    <div id="hero-active-watch" className="cinema-stage" role="tabpanel" aria-labelledby={`hero-tab-${index}`}
+    <div id="hero-active-watch" className="cinema-stage" role="group" aria-label="Reloj destacado Montescano"
       onPointerDown={event=>{dragStart.current=event.clientX;}}
-      onPointerUp={event=>{if(dragStart.current!==null&&Math.abs(event.clientX-dragStart.current)>55){change(event.clientX<dragStart.current?1:-1);setPaused(true);}dragStart.current=null;}}
+      onPointerUp={event=>{if(dragStart.current!==null&&Math.abs(event.clientX-dragStart.current)>55){change(event.clientX<dragStart.current?1:-1);setPaused(false);}dragStart.current=null;}}
       onPointerCancel={()=>{dragStart.current=null;}}>
       <div className="cinema-orbit cinema-orbit-one" aria-hidden="true"/>
       <div className="cinema-orbit cinema-orbit-two" aria-hidden="true"/>
