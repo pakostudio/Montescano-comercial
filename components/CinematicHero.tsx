@@ -5,6 +5,7 @@ import {AnimatePresence,motion,useInView,useReducedMotion,useSpring} from 'motio
 import Link from 'next/link';
 import Image from 'next/image';
 import type {Product} from '../lib/catalog-types';
+import {heroMasks} from '../lib/hero-masks';
 import './CinematicHero.css';
 
 const art = [
@@ -20,7 +21,6 @@ export default function CinematicHero({products}:{products:Product[]}) {
   const reduced=useReducedMotion();
   const [scene,setScene]=useState(0);
   const [paused,setPaused]=useState(false);
-  const [interacting,setInteracting]=useState(false);
   const x=useSpring(0,{stiffness:65,damping:24});
   const y=useSpring(0,{stiffness:65,damping:24});
   const available=products.length;
@@ -30,11 +30,11 @@ export default function CinematicHero({products}:{products:Product[]}) {
   const canAnimate=visible&&!reduced;
   const change=(direction:number)=>{if(available<2)return;setScene(value=>(value+direction+available)%available);};
   useEffect(()=>{
-    if(!canAnimate||paused||interacting||available<2)return;
-    const id=window.setInterval(()=>setScene(value=>(value+1)%available),6400);
+    if(!canAnimate||paused||available<2)return;
+    const id=window.setInterval(()=>setScene(value=>(value+1)%available),5400);
     return()=>window.clearInterval(id);
-  },[canAnimate,paused,interacting,available]);
-  const reset=()=>{x.set(0);y.set(0);setInteracting(false);};
+  },[canAnimate,paused,available]);
+  const reset=()=>{x.set(0);y.set(0);};
   return <section ref={root} id="inicio" className="cinema"
     aria-label="Montescano. Relojería mexicana desde 1998"
     onPointerMove={event=>{
@@ -43,10 +43,7 @@ export default function CinematicHero({products}:{products:Product[]}) {
       x.set(((event.clientX-bounds.left)/bounds.width-.5)*23);
       y.set(((event.clientY-bounds.top)/bounds.height-.5)*15);
     }}
-    onPointerEnter={()=>setInteracting(true)}
     onPointerLeave={reset}
-    onFocusCapture={()=>setInteracting(true)}
-    onBlurCapture={event=>{if(!event.currentTarget.contains(event.relatedTarget as Node))setInteracting(false);}}
   >
     <motion.div className="cinema-atmosphere" aria-hidden="true" animate={{backgroundColor:current.glow}} transition={{duration:reduced?0:1.1}}/>
     <div className="cinema-grid" aria-hidden="true"/>
@@ -68,19 +65,19 @@ export default function CinematicHero({products}:{products:Product[]}) {
         <a className="cinema-cta" href="#catalogo">EXPLORAR COLECCIONES <span aria-hidden="true">↗</span></a>
         <a className="cinema-secondary" href="#corporativo">Proyectos corporativos <span aria-hidden="true">↗</span></a>
       </div>
-      {available>1&&<div className="cinema-tabs" role="tablist" aria-label="Relojes destacados">
-        {products.map((p,i)=><button key={p.id} role="tab" type="button" id={`hero-tab-${i}`} aria-selected={index===i} aria-controls="hero-active-watch" tabIndex={index===i?0:-1}
-          onKeyDown={e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();const next=(index+(e.key==='ArrowRight'?1:-1)+available)%available;setScene(next);setPaused(true);document.getElementById(`hero-tab-${next}`)?.focus();}}}
-          onClick={()=>{setScene(i);setPaused(true);}}>
-          <span>0{i+1}</span><b>{art[i]?.name||p.brand}</b><i aria-hidden="true"><motion.span animate={{scaleX:index===i?1:0}} transition={{duration:reduced?0:.35}}/></i>
-        </button>)}
+      {available>1&&<div className="cinema-carousel-controls" aria-label="Carrusel automático de tres relojes">
+        <div className="cinema-tabs" role="group" aria-label="Seleccionar reloj destacado">
+          {products.map((p,i)=><button key={p.id} type="button" aria-label={`Mostrar reloj ${i+1}: ${p.sku}`} aria-pressed={index===i} onClick={()=>setScene(i)}>
+            <span aria-hidden="true" className="cinema-dot"/>
+          </button>)}
+        </div>
+        <button className="cinema-pause" type="button" onClick={()=>setPaused(value=>!value)} aria-label={paused?'Reanudar rotación automática':'Pausar rotación automática'} title={paused?'Reanudar':'Pausar'}><span aria-hidden="true">{paused?'▶':'Ⅱ'}</span></button>
       </div>}
-      {available>1&&<button className="cinema-pause" type="button" onClick={()=>setPaused(value=>!value)} aria-label={paused?'Reanudar carrusel':'Pausar carrusel'}>{paused?'REANUDAR':'PAUSAR'} <span aria-hidden="true">{paused?'▶':'Ⅱ'}</span></button>}
     </div>
 
-    <div id="hero-active-watch" className="cinema-stage" role="tabpanel" aria-labelledby={`hero-tab-${index}`}
+    <div id="hero-active-watch" className="cinema-stage" role="group" aria-label={`Reloj destacado ${product?.sku??''}`}
       onPointerDown={event=>{dragStart.current=event.clientX;}}
-      onPointerUp={event=>{if(dragStart.current!==null&&Math.abs(event.clientX-dragStart.current)>55){change(event.clientX<dragStart.current?1:-1);setPaused(true);}dragStart.current=null;}}
+      onPointerUp={event=>{if(dragStart.current!==null&&Math.abs(event.clientX-dragStart.current)>55){change(event.clientX<dragStart.current?1:-1);}dragStart.current=null;}}
       onPointerCancel={()=>{dragStart.current=null;}}>
       <div className="cinema-orbit cinema-orbit-one" aria-hidden="true"/>
       <div className="cinema-orbit cinema-orbit-two" aria-hidden="true"/>
@@ -93,7 +90,12 @@ export default function CinematicHero({products}:{products:Product[]}) {
             <div className="cinema-product-float">
               {product.sku==='TASAC3521'
                 ?<Image className="cinema-watch" src="/hero/tasac3521-cutout.png" alt={`Reloj real Montescano ${product.sku}`} width={1104} height={1425} sizes="(max-width:700px) 85vw,45vw" priority draggable={false}/>
-                :<img className="cinema-watch cinema-watch-photo" src={product.image} alt={`Reloj ${product.brand} ${product.sku}, fotografía del catálogo`} width="480" height="580" loading="eager" draggable={false}/>}
+                :heroMasks[product.sku as keyof typeof heroMasks]
+                  ?<svg className="cinema-watch cinema-watch-cutout" viewBox={heroMasks[product.sku as keyof typeof heroMasks].viewBox} role="img" aria-label={`Reloj real ${product.brand} ${product.sku}`} preserveAspectRatio="xMidYMid meet">
+                    <defs><clipPath id={`real-watch-${product.sku}`}><path d={heroMasks[product.sku as keyof typeof heroMasks].d}/></clipPath></defs>
+                    <image href={product.image} width={heroMasks[product.sku as keyof typeof heroMasks].width} height={heroMasks[product.sku as keyof typeof heroMasks].height} clipPath={`url(#real-watch-${product.sku})`}/>
+                   </svg>
+                  :<img className="cinema-watch cinema-watch-photo" src={product.image} alt={`Reloj ${product.brand} ${product.sku}`} width="480" height="580" loading="eager" draggable={false}/>}
             </div>
           </motion.div>}
         </AnimatePresence>
