@@ -146,8 +146,7 @@ export default function LeadForm({
         className="button primary"
         disabled={status === "loading"}
       >
-        {status === "loading" ? "ENVIANDO…" : "ENVIAR SOLICITUD"}{" "}
-        <span aria-hidden="true">↗</span>
+        {status === "loading" ? "ENVIANDO…" : "ENVIAR SOLICITUD"}
       </motion.button>
       <p className="required-note">* Campos obligatorios</p>
     </form>
