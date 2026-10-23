@@ -30,3 +30,7 @@
  .more{font-size:11px}
  .back{min-height:44px;display:inline-flex;align-items:center}
 }
+
+/* Commercial CTA safe areas on compact Saldos screens. The logo returns home. */
+@media(max-width:900px){.header{flex-wrap:wrap;justify-content:space-between}.header :global(.commercial-ctas){margin-left:auto}.header .back{order:3}}
+@media(max-width:540px){.header{gap:6px;flex-wrap:nowrap}.header .logo img{width:100px}.header .back{display:none}.header :global(.commercial-quote-full){display:none}.header :global(.commercial-quote-short){display:inline}.header :global(.commercial-ctas){flex-wrap:nowrap;gap:5px}.header :global(.commercial-whatsapp),.header :global(.commercial-mail){min-width:32px}.header :global(.commercial-quote){padding:8px;font-size:10px}}
