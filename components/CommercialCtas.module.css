@@ -20,3 +20,11 @@
 @media(max-width:450px){.header{gap:6px}.header .quote{padding:10px 8px}.header .quote span{font-size:9px;letter-spacing:0}.header .quote svg{display:none}.footer{align-items:stretch;flex-direction:column}.footer a,.footer button{width:100%;justify-content:center}}
 @media(max-width:360px){.header .quote span{font-size:9px}}
 @media(prefers-reduced-motion:reduce){.group a,.group button{transition:none}.group a:hover,.group button:hover{transform:none}}
+
+/* Contrast on the light home/footer and white product/quote/legal headers. */
+.footer .whatsapp,.footer .contact{background:#204334;color:#fff!important;border-color:#204334}
+.footer .whatsapp:hover,.footer .contact:hover{background:#315d45;border-color:#315d45}
+:global(.site-header:not(.cinematic-header)) .header .whatsapp,
+:global(.site-header:not(.cinematic-header)) .header .contact{color:#1c5135!important;border-color:#8ea995;background:#fff}
+:global(.site-header:not(.cinematic-header)) .header .whatsapp:hover,
+:global(.site-header:not(.cinematic-header)) .header .contact:hover{color:#123a26!important;background:#e9f1eb}
