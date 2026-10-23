@@ -181,8 +181,9 @@ export default function CatalogExperience({
           className="menu-toggle"
           onClick={() => setMenu(true)}
           aria-expanded={menu}
-          aria-label="Abrir menú"
+          aria-label="Abrir menú principal"
         >
+          <strong className="mobile-menu-label">MENÚ</strong>
           <span />
           <span />
         </Action>
@@ -685,20 +686,23 @@ export default function CatalogExperience({
             onClose={() => setMenu(false)}
           >
             <nav className="mobile-nav" aria-label="Menú móvil">
-              <a href="#inicio" onClick={() => setMenu(false)}>
-                Inicio
-              </a>
+              <div className="mobile-nav-heading">
+                <span>MONTESCANO</span>
+                <strong>Explorar el catálogo</strong>
+                <p>Relojería mexicana · Desde 1998</p>
+              </div>
+              <a href="#inicio" onClick={() => setMenu(false)}><NavIcon kind="inicio"/> Inicio</a>
+              <a className="mobile-nav-catalog" href="#catalogo" onClick={() => {choose('todos');setMenu(false)}}><NavIcon kind="catalog"/> Catálogo completo</a>
               {families.slice(1).map(([id, name]) => (
-                <a key={id} href="#catalogo" onClick={() => choose(id)}>
+                <a key={id} href="#catalogo" onClick={() => choose(id)}><NavIcon kind={id}/>
                   {name === "Kids" ? "Vizanti Kids" : name}
                 </a>
               ))}
-              <Link className={saldosStyles.mobile} href="/saldos" onClick={() => setMenu(false)}>VENTA DE SALDOS</Link>
-              <a href="#corporativo" onClick={() => setMenu(false)}>
-                Corporativo
-              </a>
-              <button type="button" className="mobile-contact-trigger" onClick={()=>{setMenu(false);setLead({context:'menu-contacto'});}}>Contacto</button>
-              <CommercialCtas onContact={()=>{setMenu(false);setLead({context:"menu-contacto"});}} compact/>
+              <Link className={saldosStyles.mobile} href="/saldos" onClick={() => setMenu(false)}><NavIcon kind="saldos"/> Venta de Saldos</Link>
+              <a href="#corporativo" onClick={() => setMenu(false)}><NavIcon kind="corporativo"/> Corporativo</a>
+              <div className="mobile-nav-actions"><p>CONTACTO COMERCIAL</p>
+                <CommercialCtas onContact={()=>{setMenu(false);setLead({context:"menu-contacto"});}} compact/>
+              </div>
             </nav>
           </Dialog>
         )}
