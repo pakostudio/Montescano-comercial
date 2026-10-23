@@ -175,7 +175,7 @@ export default function CatalogExperience({
         </nav>
         <div className="header-commercial-cluster">
           <CommercialCtas onContact={()=>setLead({context:'header-contacto'})}/>
-          <a className="catalog-context-link" href="#catalogo" aria-label="Ir al catálogo comercial"><NavIcon kind="catalog"/><span>Catálogo comercial</span></a>
+          
         </div>
         <Action
           className="menu-toggle"
