@@ -24,3 +24,5 @@ jobs:
         run: npm run typecheck
       - name: Run contract tests
         run: npm run test:contracts
+      - name: Probe public security boundaries (no valid submissions)
+        run: node scripts/security-boundary-qa.mjs
