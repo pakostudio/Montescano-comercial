@@ -1,7 +1,7 @@
 name: Montescano mobile responsive QA
 on:
   push:
-    branches: [benchmark-auditoria-2026]
+    branches: [main, benchmark-auditoria-2026]
     paths:
       - 'scripts/mobile-qa.mjs'
       - '.github/workflows/mobile-qa.yml'
@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 14
     env:
-      MOBILE_QA_URL: 'https://montescano-catalogo-comercial-vznex9iln-sm-soluciones-projects.vercel.app/?_vercel_share=sqZ43J0cwgBi4DNr9HJEQkZyYBMSwJbu'
+      MOBILE_QA_URL: 'https://montescano-catalogo-comercial.vercel.app'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
