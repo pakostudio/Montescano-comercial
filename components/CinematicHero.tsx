@@ -43,7 +43,7 @@ export default function CinematicHero({products}:{products:Product[]}) {
       x.set(((event.clientX-bounds.left)/bounds.width-.5)*23);
       y.set(((event.clientY-bounds.top)/bounds.height-.5)*15);
     }}
-    onPointerEnter={()=>setInteracting(true)}
+    onPointerEnter={()=>{ if(window.matchMedia('(hover:hover)').matches)setInteracting(true); }}
     onPointerLeave={reset}
     onFocusCapture={()=>setInteracting(true)}
     onBlurCapture={event=>{if(!event.currentTarget.contains(event.relatedTarget as Node))setInteracting(false);}}
@@ -68,14 +68,14 @@ export default function CinematicHero({products}:{products:Product[]}) {
         <a className="cinema-cta" href="#catalogo">EXPLORAR COLECCIONES <span aria-hidden="true">↗</span></a>
         <a className="cinema-secondary" href="#corporativo">Proyectos corporativos <span aria-hidden="true">↗</span></a>
       </div>
-      {available>1&&<div className="cinema-tabs" role="tablist" aria-label="Relojes destacados">
+      {false&&available>1&&<div className="cinema-tabs" role="tablist" aria-label="Relojes destacados">
         {products.map((p,i)=><button key={p.id} role="tab" type="button" id={`hero-tab-${i}`} aria-selected={index===i} aria-controls="hero-active-watch" tabIndex={index===i?0:-1}
           onKeyDown={e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();const next=(index+(e.key==='ArrowRight'?1:-1)+available)%available;setScene(next);setPaused(true);document.getElementById(`hero-tab-${next}`)?.focus();}}}
           onClick={()=>{setScene(i);setPaused(true);}}>
           <span>0{i+1}</span><b>{art[i]?.name||p.brand}</b><i aria-hidden="true"><motion.span animate={{scaleX:index===i?1:0}} transition={{duration:reduced?0:.35}}/></i>
         </button>)}
       </div>}
-      {available>1&&<button className="cinema-pause" type="button" onClick={()=>setPaused(value=>!value)} aria-label={paused?'Reanudar carrusel':'Pausar carrusel'}>{paused?'REANUDAR':'PAUSAR'} <span aria-hidden="true">{paused?'▶':'Ⅱ'}</span></button>}
+      {available>1&&<button className="cinema-pause" type="button" onClick={()=>{setPaused(value=>!value);setInteracting(false);}} aria-label={paused?'Reanudar carrusel':'Pausar carrusel'}>{paused?'REANUDAR':'PAUSAR'} <span aria-hidden="true">{paused?'▶':'Ⅱ'}</span></button>}
     </div>
 
     <div id="hero-active-watch" className="cinema-stage" role="tabpanel" aria-labelledby={`hero-tab-${index}`}
