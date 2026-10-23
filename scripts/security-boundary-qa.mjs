@@ -3,7 +3,7 @@
  * It checks rejected HTTP methods, cross-site origins, body limits and response headers.
  */
 import assert from 'node:assert/strict';
-const origin=process.env.SECURITY_QA_URL??'https://montescano-catalogo-comercial.vercel.app';
+const origin=process.env.SECURITY_QA_URL??'https://montescano.vercel.app';
 const u=new URL(origin);
 assert.equal(u.protocol,'https:','Production security checks require HTTPS');
 const checks=[];
