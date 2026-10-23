@@ -93,7 +93,7 @@ export default function CinematicHero({products}:{products:Product[]}) {
             <div className="cinema-product-float">
               {product.sku==='TASAC3521'
                 ?<Image className="cinema-watch" src="/hero/tasac3521-cutout.png" alt={`Reloj real Montescano ${product.sku}`} width={1104} height={1425} sizes="(max-width:700px) 85vw,45vw" priority draggable={false}/>
-                :<img className="cinema-watch cinema-watch-photo" src={product.image} alt={`Reloj ${product.brand} ${product.sku}, fotografía del catálogo`} width="480" height="580" loading="eager" draggable={false}/>}
+                :<img className="cinema-watch cinema-watch-photo" src={`/hero-assets/${product.sku.toLowerCase()}`} alt={`Reloj original ${product.brand} ${product.sku} sin fondo fotográfico`} width="480" height="580" loading="eager" draggable={false}/>}
             </div>
           </motion.div>}
         </AnimatePresence>
