@@ -2,7 +2,7 @@ import {readFileSync} from 'node:fs';
 import {parseEnv} from 'node:util';
 import {spawnSync} from 'node:child_process';
 const env=parseEnv(readFileSync('.env.local','utf8'));
-env.SITE_URL='https://montescano-catalogo-comercial.vercel.app';
+env.SITE_URL='https://montescano.vercel.app';
 for(const name of ['SUPABASE_URL','SUPABASE_PUBLISHABLE_KEY','MONTESCANO_LEAD_TOKEN','SITE_URL']){
  if(!env[name])throw new Error(`Missing ${name}`);
  const args=['env','add',name,'production','--yes'];
