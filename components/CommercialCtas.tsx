@@ -6,7 +6,7 @@ import LeadForm from './LeadForm';
 import {contactLinks} from '../lib/contact';
 import styles from './CommercialCtas.module.css';
 
-export default function CommercialCtas({variant='header',sku,saldo=false}:{variant?:'header'|'footer'|'detail';sku?:string;saldo?:boolean}){
+export default function CommercialCtas({variant='header',sku,saldo=false,showQuote=true}:{variant?:'header'|'footer'|'detail';sku?:string;saldo?:boolean;showQuote?:boolean}){
  const [open,setOpen]=useState(false);
  const links=contactLinks(sku);
  const quote=sku?`/cotizador?${saldo?'saldo':'sku'}=${encodeURIComponent(sku)}`:'/cotizador';
@@ -20,11 +20,11 @@ export default function CommercialCtas({variant='header',sku,saldo=false}:{varia
     <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3 6 9 7 9-7"/></svg>
     <span>CONTACTO</span>
    </button>
-   <Link href={quote} className={styles.quote} aria-label={sku?`Solicitar cotización del modelo ${sku}`:'Solicitar cotización'}>
+   {showQuote&&<Link href={quote} className={styles.quote} aria-label={sku?`Solicitar cotización del modelo ${sku}`:'Solicitar cotización'}>
     <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round"><path d="M5 3h11l4 4v14H5z"/><path d="M16 3v5h4M8 12h9M8 16h7"/></svg>
     <span>{variant==='detail'?'COTIZAR MODELO':'SOLICITAR COTIZACIÓN'}</span>
     <b aria-hidden="true">↗</b>
-   </Link>
+   </Link>}
   </div>
   {open&&<Dialog label={sku?`Solicitar información sobre ${sku}`:'Formulario de contacto comercial'} onClose={()=>setOpen(false)}>
    <div className={styles.dialogContent}>
