@@ -525,7 +525,6 @@ export default function CatalogExperience({
         </div>
         <div className="footer-bottom">Montescano · Catálogo comercial</div>
       </footer>
-      {section!=='inicio'&&!quick&&!lead&&!filterOpen&&!menu&&<ContactActions floating/>}
       <AnimatePresence>
         {quick && (
           <Dialog
