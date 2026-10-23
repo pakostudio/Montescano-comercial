@@ -43,7 +43,7 @@ export default function SaldosExperience({products}:{products:Product[]}){
           <p className={styles.eyebrow}><span/> EDICIÓN COMERCIAL · MONTESCANO</p>
           <h1>Venta de <strong>Saldos.</strong></h1>
           <p className={styles.deck}>Una selección independiente de relojes disponibles para consulta comercial. Modelos reales, precios publicados en MXN y disponibilidad por confirmar.</p>
-          <a href="#modelos" className={styles.heroButton}>EXPLORAR LOS MODELOS <span aria-hidden="true">↗</span></a>
+          <a href="#modelos" className={styles.heroButton}>EXPLORAR LOS MODELOS </a>
           <p className={styles.disclaimer}>Hasta agotar existencias. La cotización final está sujeta a confirmación.</p>
         </div>
         <div className={styles.heroStack} aria-label="Tres relojes reales de Venta de Saldos">
@@ -68,11 +68,11 @@ export default function SaldosExperience({products}:{products:Product[]}){
         <div className={styles.grid}>{filtered.slice(0,visible).map(p=><article key={p.id} className={styles.card}>
           <Link href={`/saldos/${p.slug}`} className={styles.media} aria-label={`Ver saldo ${p.brand} ${p.sku}`}>
             {p.image?<img src={p.image} alt={`${p.brand} ${p.sku}`} width="300" height="350" loading="lazy"/>:<span>Imagen por confirmar</span>}
-            <span className={styles.openArrow} aria-hidden="true">↗</span><b>SALDO</b>
+            <b>SALDO</b>
           </Link>
           <div className={styles.info}><p>{p.family==='kids'?'Vizanti Kids':p.brand}</p><h3><Link href={`/saldos/${p.slug}`}>{p.sku}</Link></h3>
             <p className={styles.desc}>{p.description}</p><ProductPrice product={p}/>
-            <span className={styles.availability}>{availabilityLabels[p.availability]}</span><Link className={styles.detail} href={`/saldos/${p.slug}`}>VER DETALLES <span aria-hidden="true">↗</span></Link>
+            <span className={styles.availability}>{availabilityLabels[p.availability]}</span><Link className={styles.detail} href={`/saldos/${p.slug}`}>VER DETALLES </Link>
           </div>
         </article>)}</div>
         {filtered.length===0&&<div className={styles.empty}>No hay modelos que coincidan con la búsqueda. <button type="button" onClick={clear}>Ver todos los Saldos</button></div>}
