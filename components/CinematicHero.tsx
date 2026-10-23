@@ -8,9 +8,9 @@ import type {Product} from '../lib/catalog-types';
 import './CinematicHero.css';
 
 const art = [
-  {eyebrow:'MONTESCANO',title:'Precisión con personalidad.',accent:'#d7e6cf',glow:'#245444',name:'LA COLECCIÓN',rotation:-10},
-  {eyebrow:'DISEÑO',title:'Un reloj para hacer presencia.',accent:'#eee0c2',glow:'#335951',name:'NUESTRA ESENCIA',rotation:-6},
-  {eyebrow:'VIZANTI',title:'Otro estilo. La misma actitud.',accent:'#bed6df',glow:'#2f5260',name:'DESCUBRE VIZANTI',rotation:-4},
+  {eyebrow:'MONTESCANO',title:'Precisión con personalidad.',accent:'#d7e6cf',glow:'#245444'},
+  {eyebrow:'DISEÑO',title:'Un reloj para hacer presencia.',accent:'#eee0c2',glow:'#335951'},
+  {eyebrow:'VIZANTI',title:'Otro estilo. La misma actitud.',accent:'#bed6df',glow:'#2f5260'},
 ];
 
 export default function CinematicHero({products}:{products:Product[]}) {
@@ -63,18 +63,6 @@ export default function CinematicHero({products}:{products:Product[]}) {
           </motion.div>
         </AnimatePresence>
       </div>
-      <div className="cinema-actions">
-        <a className="cinema-cta" href="#catalogo">EXPLORAR COLECCIONES <span aria-hidden="true">↗</span></a>
-        <a className="cinema-secondary" href="#corporativo">Proyectos corporativos <span aria-hidden="true">↗</span></a>
-      </div>
-      {false&&available>1&&<div className="cinema-tabs" role="tablist" aria-label="Relojes destacados">
-        {products.map((p,i)=><button key={p.id} role="tab" type="button" id={`hero-tab-${i}`} aria-selected={index===i} aria-controls="hero-active-watch" tabIndex={index===i?0:-1}
-          onKeyDown={e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();const next=(index+(e.key==='ArrowRight'?1:-1)+available)%available;setScene(next);setPaused(true);document.getElementById(`hero-tab-${next}`)?.focus();}}}
-          onClick={()=>{setScene(i);setPaused(true);}}>
-          <span>0{i+1}</span><b>{art[i]?.name||p.brand}</b><i aria-hidden="true"><motion.span animate={{scaleX:index===i?1:0}} transition={{duration:reduced?0:.35}}/></i>
-        </button>)}
-      </div>}
-      {available>1&&<button className="cinema-pause" type="button" onClick={()=>{setPaused(value=>!value);setInteracting(false);}} aria-label={paused?'Reanudar carrusel':'Pausar carrusel'}>{paused?'REANUDAR':'PAUSAR'} <span aria-hidden="true">{paused?'▶':'Ⅱ'}</span></button>}
     </div>
 
     <div id="hero-active-watch" className="cinema-stage" role="group" aria-label="Reloj destacado Montescano"
@@ -100,6 +88,14 @@ export default function CinematicHero({products}:{products:Product[]}) {
       {product&&<div className="cinema-model"><span>{product.brand.toUpperCase()}</span><strong>{product.sku}</strong>
         <Link href={`/productos/${product.slug}`}>VER ESTE MODELO <span aria-hidden="true">↗</span></Link>
       </div>}
+      {available>1&&<button
+        className="cinema-motion-toggle"
+        type="button"
+        aria-label={paused?'Reanudar movimiento de los relojes':'Pausar movimiento de los relojes'}
+        title={paused?'Reanudar animación':'Pausar animación'}
+        aria-pressed={paused}
+        onClick={()=>{setPaused(value=>!value);setInteracting(false);}}
+      ><span aria-hidden="true">{paused?'▶':'Ⅱ'}</span></button>}
       <div className="cinema-swipe" aria-hidden="true">DESLIZA PARA DESCUBRIR</div>
     </div>
   </section>;
