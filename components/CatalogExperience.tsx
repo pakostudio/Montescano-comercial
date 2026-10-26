@@ -36,6 +36,13 @@ function NavIcon({kind}:{kind:string}){
   if(kind==='saldos')return <svg {...common}><path d="M20 13 13 20l-9-9V4h7l9 9Z"/><circle cx="8.5" cy="8.5" r="1.2"/></svg>;
   return <svg {...common}><path d="M4 5.5c2.8-.9 5.5-.5 8 1.2v12c-2.5-1.7-5.2-2.1-8-1.2v-12ZM20 5.5c-2.8-.9-5.5-.5-8 1.2v12c2.5-1.7 5.2-2.1 8-1.2v-12Z"/></svg>;
 }
+const normalizedGender = (value:string|null|undefined) => (value || '').trim().toLocaleUpperCase('es');
+const genderMatches = (productGender:string|null, filterGender:string) => {
+  if (!filterGender) return true;
+  const p=normalizedGender(productGender), f=normalizedGender(filterGender);
+  if (f==='NIÑOS') return ['NIÑO','NIÑA','NIÑOS','NIÑAS'].includes(p);
+  return p===f;
+};
 const initialFilters = {
   brand: "",
   gender: "",
@@ -95,7 +102,7 @@ export default function CatalogExperience({
               .toLocaleLowerCase("es")
               .includes(query.toLocaleLowerCase("es"))) &&
           (!filters.brand || p.brand === filters.brand) &&
-          (!filters.gender || p.gender === filters.gender) &&
+          genderMatches(p.gender,filters.gender) &&
           (!filters.collection || p.collections.includes(filters.collection)) &&
           (!filters.availability || p.availability === filters.availability),
       ).sort((a,b)=>{
@@ -408,7 +415,7 @@ export default function CatalogExperience({
               const p = products.find((p) =>
                 target === "corporativo"
                   ? p.family === "sets"
-                  : p.gender === target,
+                  : genderMatches(p.gender,target),
               );
               return (
                 <motion.a
@@ -638,8 +645,9 @@ export default function CatalogExperience({
                         ? [
                             ...new Set(
                               products
-                                .map((p) => p.gender)
-                                .filter((x): x is string => Boolean(x)),
+                                .map((p) => normalizedGender(p.gender))
+                                .filter(Boolean)
+                                .map(x=>['NIÑO','NIÑA','NIÑOS','NIÑAS'].includes(x)?'Niños':x==='DAMA'?'Dama':x==='CABALLERO'?'Caballero':x),
                             ),
                           ]
                         : key === "collection"
