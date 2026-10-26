@@ -38,6 +38,24 @@ function NavIcon({kind}:{kind:string}){
 }
 // Commercial display sequence follows the approved 23 October 2026 workbook.
 const workbookOrder = new Map(`TASAC3521,TASAD3521,TASPC3521,TASPD3521,TASTC3521,TASTD3521,TASPC3520,TASPD3520,TASTC3520,TASTD3520,TASRC3520,TASRD3520,TACB3525,TADB3525,TACB3525D,TADB3525D,TTCB3525,TTDB3525,TAGC3525,TAGD3525,TACB3519,TADB3519,TACB3519D,TADB3519D,TTCB3519,TTDB3519,TAGC3519,TAGD3519,TAICB64,TAIDB64,TACB7088,TADB7088,TACB9002,TADB9002,TACB9002A,TADP9002A,TTCB6985,TTDB6985,ASCB5626,ASDB5626,TACB3519A,TACB3519C,TACB3519E,TACB3519F,TACB3525A,TACB3525B,TACB3525C,TACB3525E,TACB3525F,TACB3525G,TTCB3519A,TTCB3519B,TTCB3519C,TTCB3519D,TAGC3519A,TAGC3519B,TAGC3519C,TAGC3519D,TAGC3525A,TAGC3525B,TAGC3525C,TAGC3525D,TADB3519B,TADB3519C,TADB3525A,TADB3525B,TTDB3519A,TTDB3519B,TTDB3519C,TTDB3519D,TTDB3525A,TTDB3525B,TTDB3525C,TTDB3525D,TASRD3521,TTRGD3519,TTRGD3519A,TTRGD3519B,TTRGD3519C,TTRGD3519D,TTRGD3525,TTRGD3525A,TTRGD3525B,TTRGD3525C,TTRGD3525D,TAGD3519A,TAGD3519B,TAGD3519C,TAGD3519D,TAGD3525A,TAGD3525B,TAGD3525C,TACN1035,TAIC6134,TAICB1396,TAFC5333,TAFC5036,TAIC1231,TAFC5332,TAFCB2311,TACA2312,TACA1016,TACB1016,TAFCA1005,TACG1021,TACR9010,TAFC45,TAFC50,TACR9017,TAFCB60,TACB2310,TAIB01,TACC2317,TAN6982B,TAN6982,TACN7090,TACN7090C,TACN2201,RAS002N,RAS002P,RAS002A,RAS003P,RAS003N,RAS003C,RAS004P,RAS004C,RAS004A,WF01,WF02,TAIDB64A,TADA2323,TAID0836,TADA2321,TAID6937,TAID6333,TAIDP4167A,TAIDP8004A,TAID6131,TAIDA2206,TAID9025,TAID6032,TADR1060,TAIDB76,TAID4634,TADR2320,TAIDR1016,TADB2322,TADB5626,TADA2325,TAIDB1090,TAID42,TTDB6985A,TATDP6052A,TATDP2506,TATDP6052,TATD2327,TADB9006A,TAIGD6068A,TAGD2328,TAGD1060,TAIGD6068,TAGB2209,TAGD06,TAGDB2205,TAGDD1083,TADR2020A,TADR2207,TAIB2202,TAIB7038,TAIB7038A,TARD2204,TARD5008,TARD8005,ASDB7197,RVD06,RVD2302,RVD2663,RVDB6203,RVDD6203,RVDB6201,RVD3549,RVDA3468,RVD3454,RVDC3751,RVDD3751,RVDD5301,RVD3495,RVD3469,RVDC3749,RVD2664,RVDC3494,RVDB3494,RVD2678,RVD2689,RVD2693,RVTD3494,RVT3495,RVTD3468,RVT3469,RVTC3384,RVTB3384,RVTD3384,RVTB3751,RVTB3749,RVTD3749,RVPV3549,RVPA3549,RVV5301,RVA5301,RVPR3495,RVPA3495,RVP3454,RVA3384,RVP2687,RVR15,RVB15,RVB 2642,RVB 04,RVTR3494,RVTR2101,RVRB6202,RVR3469,RVR3549,RVR2664,RVR3454,RVRR2681,RVR2689,RVR2201,VC4403G,VC4403A,VC4403D,VN5588,VC4331A,VC4331V,VC4331N,AB5341,AN5341,VC4405P,VC4405G,VC4405A,VC2202,V3779NE,V3779AZ,V3779CN,VADN9810,VC4404N,VC4404A,VA2201,VC2895GA,VC2895G,VC2895A,VC2895N,VC3599N,VC3599C,VC3599A,VC4002C,VC4002G,VC4059NP,VC4056VD,VC4056CF,VC4056AZ,V3872AM,V3872AZ,V3872RO,V3872GR,V3872NA,V3247AZ,V3247RO,V3247NE,V3247VO,V3731MG,V3731RO,V3731AZ,V3731NA,VR5900,VA9047,VG9045,VA9055,VD2203,VN2203,VADA9809,VAD2202AZ,VAD2202VD,VAD2303PT,VAD2304TQ,VSW54N,VSW54P,VSW54V,VSW54R,VKO8217FR,VKO8206AS,VKO8217AF,VKO8206BS,VKO2247MV,VKO2247MT,VKNO8217,VKCA8217,VKFT8225,VKAM8217,VKCH8217,VK8225OST,VKSP8217,VKSPE8217,VK221,VKONE8225,VK8225OSN,VKFU8220,VK8225OSV,VKN8556,VKA8206,VK2207OGN,VKA8217CV,VKA8217LC,VKA8217CB,VKA8217SC,VKA8207FL,VKPR8215R,VKDL8217,VKAAR8217,VK2122AR,VKNA8217,VKL8217,VK2207AMP,VK2207AFL`.split(',').map((sku,index)=>[sku,index] as const));
+
+// Sections match Linda's colored workbook blocks (23 October 2026).
+const catalogSections=[
+  ['Parejas · Acero sólido','TASAC3521','TAICB64'],
+  ['Parejas · Acero convencional','TAICB64','TACB3519A'],
+  ['Caballero · Acero sólido','TACB3519A','TADB3519B'],
+  ['Dama · Acero sólido','TADB3519B','TACN1035'],
+  ['Caballero · Acero convencional','TACN1035','RAS002N'],
+  ['Caballero · Piel genuina','RAS002N','WF01'],
+  ['Caballero · Nylon','WF01','TAIDB64A'],
+  ['Dama · Acero convencional','TAIDB64A','RVD06'],
+  ['Vizanti · Dama','RVD06','VC4403G'],
+  ['Vizanti · Caballero','VC4403G','VSW54N'],
+  ['Smart Watch','VSW54N','VKO8217FR'],
+  ['Kids · Niño','VKO8217FR','VKA8217CV'],
+  ['Kids · Niña','VKA8217CV',null],
+] as const;
+const sectionFor=(sku:string)=>{const i=workbookOrder.get(sku);if(i===undefined)return null;return catalogSections.find(([_,start,end])=>i>=(workbookOrder.get(start)??0)&&(end===null||i<(workbookOrder.get(end)??Infinity)))?.[0]??null;};
 const normalizedGender = (value:string|null|undefined) => (value || '').trim().toLocaleUpperCase('es');
 const genderMatches = (productGender:string|null, filterGender:string) => {
   if (!filterGender) return true;
@@ -60,6 +78,7 @@ export default function CatalogExperience({
   const tabsRef=useRef<HTMLDivElement>(null);
   const [section,setSection]=useState('inicio');
   const [selection,setSelection]=useState<'edition'|'all'|'new'|'promo'>('all');
+  const [commercialSection,setCommercialSection]=useState('');
   const [sort,setSort]=useState<'catalog'|'price-asc'|'price-desc'|'newest'>('catalog');
   const {scrollY}=useScroll();
   useMotionValueEvent(scrollY,'change',value=>setScrolled(value>24));
@@ -91,13 +110,14 @@ export default function CatalogExperience({
   }, []);
   useEffect(() => {
     setVisible(24);
-  }, [active, query, filters, selection, sort]);
+  }, [active, query, filters, selection, sort, commercialSection]);
   const editionCount=useMemo(()=>products.filter(p=>p.edition==='2026-10').length,[products]);
   const filtered = useMemo(
     () =>
       products.filter(
         (p) =>
           (active === "todos" || p.family === active) &&
+          (!commercialSection || sectionFor(p.sku)===commercialSection) &&
           (selection === 'all' || (selection === 'edition' ? p.edition==='2026-10' : selection==='new' ? p.is_new : hasPromotion(p))) &&
           (!query ||
             `${p.sku} ${p.brand} ${p.description} ${p.collections.join(" ")}`
@@ -123,7 +143,7 @@ export default function CatalogExperience({
         if(sort==='newest')return Number(Boolean(b.is_new))-Number(Boolean(a.is_new))||a.sku.localeCompare(b.sku);
         return 0;
       }),
-    [products,active,query,filters,selection,sort],
+    [products,active,query,filters,selection,sort,commercialSection],
   );
   const filterCount = Object.values(filters).filter(Boolean).length;
   const corporateProduct = products.find((p) => p.family === "sets");
@@ -132,6 +152,7 @@ export default function CatalogExperience({
   const hasPairCollections=featuredPairs.length>0;
   const clear = () => {
     setSelection('all');
+    setCommercialSection('');
     setSort('catalog');
     setFilters(initialFilters);
     setActive("todos");
@@ -140,6 +161,7 @@ export default function CatalogExperience({
   const choose = (family: string) => {
     setSelection(['todos','montescano','vizanti','kids'].includes(family)?'edition':'all');
     setActive(family);
+    setCommercialSection('');
     setFilters(initialFilters);
     setQuery("");
     setMenu(false);
@@ -220,7 +242,14 @@ export default function CatalogExperience({
             </p>
           </motion.div>
           <div className="controls">
-            {hasPairCollections && <div className="catalog-selections" aria-label="Relojes en pareja">{[['Parejas · Acero sólido','parejas-acero-solido'],['Parejas · Acero convencional','parejas-acero-convencional']].map(([label,id])=><button key={id} onClick={()=>{setSelection('all');setActive('todos');setFilters({...initialFilters,collection:label});setQuery('')}}>{label}</button>)}<button onClick={()=>{setSelection('all');setActive('sets');setFilters(initialFilters);setQuery('')}}>SETS Y REGALOS</button></div>}
+            <div className="workbook-sections" aria-label="Líneas comerciales del catálogo">
+              <p className="kicker">EXPLORA POR LÍNEA · COMO EN EL CATÁLOGO OFICIAL</p>
+              <div className="workbook-sections-scroll">
+                {catalogSections.map(([label])=><button key={label} aria-pressed={commercialSection===label} onClick={()=>{setCommercialSection(label);setSelection('all');setActive('todos');setFilters(initialFilters);setQuery('')}}>{label}</button>)}
+                {commercialSection&&<button onClick={()=>setCommercialSection('')}>TODAS LAS LÍNEAS ×</button>}
+              </div>
+            </div>
+            {hasPairCollections && <div className="catalog-selections" aria-label="Relojes en pareja">{[['Parejas · Acero sólido','parejas-acero-solido'],['Parejas · Acero convencional','parejas-acero-convencional']].map(([label,id])=><button key={id} onClick={()=>{setSelection('all');setActive('todos');setCommercialSection(label);setFilters(initialFilters);setQuery('')}}>{label}</button>)}<button onClick={()=>{setSelection('all');setActive('sets');setCommercialSection('');setFilters(initialFilters);setQuery('')}}>SETS Y REGALOS</button></div>}
             <div className="catalog-selections" aria-label="Selección de productos">
               {([['edition',`Catálogo octubre 2026 · ${editionCount}`],['all',`Ver todo el catálogo · ${products.length}`],['new','Novedades'],['promo','Promociones']] as const).map(([id,label]) =>
                 <button key={id} aria-pressed={selection===id} onClick={()=>setSelection(id)}>{label}</button>)}
