@@ -218,7 +218,7 @@ export default function CatalogExperience({
             </p>
           </motion.div>
           <div className="controls">
-            {hasPairCollections && <div className="catalog-selections" aria-label="Relojes en pareja"><button onClick={()=>{setSelection('all');setActive('todos');setFilters({...initialFilters,collection:featuredPairs[0].collections.find(c=>/parejas|en pareja/i.test(c))||''});setQuery('')}}>RELOJES EN PAREJA · {featuredPairs.length}</button><button onClick={()=>{setSelection('all');setActive('sets');setFilters(initialFilters);setQuery('')}}>SETS Y REGALOS</button></div>}
+            {hasPairCollections && <div className="catalog-selections" aria-label="Relojes en pareja">{[['Parejas · Acero sólido','parejas-acero-solido'],['Parejas · Acero convencional','parejas-acero-convencional']].map(([label,id])=><button key={id} onClick={()=>{setSelection('all');setActive('todos');setFilters({...initialFilters,collection:label});setQuery('')}}>{label}</button>)}<button onClick={()=>{setSelection('all');setActive('sets');setFilters(initialFilters);setQuery('')}}>SETS Y REGALOS</button></div>}
             <div className="catalog-selections" aria-label="Selección de productos">
               {([['edition',`Catálogo octubre 2026 · ${editionCount}`],['all',`Ver todo el catálogo · ${products.length}`],['new','Novedades'],['promo','Promociones']] as const).map(([id,label]) =>
                 <button key={id} aria-pressed={selection===id} onClick={()=>setSelection(id)}>{label}</button>)}
