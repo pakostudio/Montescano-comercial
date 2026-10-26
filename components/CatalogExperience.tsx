@@ -55,7 +55,7 @@ const catalogSections=[
   ['Kids · Niño','VKO8217FR','VKA8217CV'],
   ['Kids · Niña','VKA8217CV',null],
 ] as const;
-const sectionFor=(sku:string)=>{const i=workbookOrder.get(sku);if(i===undefined)return null;return catalogSections.find(([_,start,end])=>i>=(workbookOrder.get(start)??0)&&(end===null||i<(workbookOrder.get(end)??Infinity)))?.[0]??null;};
+const sectionFor=(sku:string)=>{const i=workbookOrder.get(sku);if(i===undefined)return null;return catalogSections.find(([,start,end])=>i>=(workbookOrder.get(start)??0)&&(end===null||i<(workbookOrder.get(end)??Infinity)))?.[0]??null;};
 const normalizedGender = (value:string|null|undefined) => (value || '').trim().toLocaleUpperCase('es');
 const genderMatches = (productGender:string|null, filterGender:string) => {
   if (!filterGender) return true;
