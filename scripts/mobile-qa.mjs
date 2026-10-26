@@ -53,6 +53,20 @@ for(const width of widths){
         assert(await leadDialog.getByRole('textbox',{name:/Nombre/i}).count()>0,'Contact dialog has no form');
         await page.keyboard.press('Escape');
         await leadDialog.waitFor({state:'detached',timeout:5000});
+        if(width===390){
+          const lines=page.locator('.workbook-sections-scroll button');
+          assert(await lines.count()>=13,'Linda workbook section navigation missing');
+          for(const label of ['Parejas · Acero sólido','Parejas · Acero convencional','Caballero · Acero sólido','Dama · Acero sólido','Caballero · Acero convencional','Caballero · Piel genuina','Caballero · Nylon','Dama · Acero convencional','Vizanti · Dama','Vizanti · Caballero','Smart Watch','Kids · Niño','Kids · Niña']){
+            await lines.filter({hasText:label}).first().click();
+            await page.waitForTimeout(130);
+            const count=await page.locator('.result-count').innerText();
+            assert(!count.startsWith('0 '),'Empty workbook commercial line '+label);
+          }
+          await page.getByRole('button',{name:/TODAS LAS LÍNEAS/i}).click();
+          await page.getByRole('button',{name:'Promociones',exact:true}).click();
+          assert(Number((await page.locator('.result-count').innerText()).match(/\\d+/)?.[0])>=131,'Missing promotional models');
+          await page.getByRole('button',{name:/Ver todo el catálogo/i}).click();
+        }
         assert(met.hamburger?.w>=40,'Mobile menu target less than 40px');
         await page.locator('.menu-toggle').click({timeout:10000});
         const mobile=page.locator('.mobile-nav');await mobile.waitFor({state:'visible',timeout:7000});
