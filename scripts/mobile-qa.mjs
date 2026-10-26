@@ -64,7 +64,7 @@ for(const width of widths){
           }
           await page.getByRole('button',{name:/TODAS LAS LÍNEAS/i}).click();
           await page.getByRole('button',{name:'Promociones',exact:true}).click();
-          assert(Number((await page.locator('.result-count').innerText()).match(/\\d+/)?.[0])>=131,'Missing promotional models');
+          assert(Number((await page.locator('.result-count').innerText()).match(/[0-9]+/)?.[0])>=131,'Missing promotional models');
           await page.getByRole('button',{name:/Ver todo el catálogo/i}).click();
         }
         assert(met.hamburger?.w>=40,'Mobile menu target less than 40px');
