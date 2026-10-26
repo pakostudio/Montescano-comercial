@@ -78,7 +78,7 @@ export default function CatalogExperience({
     const f = p.get("coleccion");
     if (f && families.some(([id]) => id === f)) {setActive(f);if(!['todos','montescano','vizanti','kids'].includes(f))setSelection('all');}
     const g = p.get("genero");
-    if (g) setFilters((v) => ({ ...v, gender: g }));
+    if (g) {setSelection('all');setFilters((v) => ({ ...v, gender: g }));}
   }, []);
   useEffect(() => {
     setVisible(24);
@@ -114,8 +114,9 @@ export default function CatalogExperience({
   );
   const filterCount = Object.values(filters).filter(Boolean).length;
   const corporateProduct = products.find((p) => p.family === "sets");
+  const corporateModels = products.filter(p => p.family === 'sets' || p.collections.some(c => /parejas|en set|corporativ/i.test(c)));
   const clear = () => {
-    setSelection('edition');
+    setSelection('all');
     setSort('catalog');
     setFilters(initialFilters);
     setActive("todos");
@@ -419,6 +420,7 @@ export default function CatalogExperience({
                   onClick={() => {
                     if (target !== "corporativo") {
                       clear();
+                      setSelection('all');
                       setFilters({ ...initialFilters, gender: target });
                     }
                   }}
@@ -477,6 +479,7 @@ export default function CatalogExperience({
             >
               COTIZAR PROYECTO
             </motion.button>
+            <a className="button secondary" href="#catalogo" onClick={() => {setSelection('all');setActive('sets');setFilters(initialFilters);setQuery('');}}>VER SETS DISPONIBLES</a>
             <Action
               className="text-link"
               onClick={() => setLead({interest:'Personalización',context:'personalizacion'})}
@@ -485,6 +488,7 @@ export default function CatalogExperience({
             </Action></Reveal>
           </div>
         </section>
+        {corporateModels.length > 0 && <section className="catalog-section" aria-label="Modelos para proyectos corporativos"><div className="section-intro"><div><p className="kicker">PORTAFOLIO CORPORATIVO</p><h2>Modelos disponibles para proyectos corporativos</h2></div><p className="section-note">Sets y modelos identificados para parejas o proyectos empresariales. Consulta disponibilidad con un asesor.</p></div><div className="product-grid">{corporateModels.map(p=><article className="product-card" key={`corporate-${p.id}`}><Link className="product-open" href={`/productos/${p.slug}`}><div className="product-media"><img src={p.image} alt={`${p.brand} ${p.sku}`} loading="lazy" width="240" height="280"/></div><div className="product-info"><p className="product-brand">{p.brand}</p><h3>{p.sku}</h3><p className="product-description">{p.description}</p><span className="card-cta">VER DETALLES</span></div></Link></article>)}</div></section>}
       </main>
       <footer>
         <div className="footer-brand">
