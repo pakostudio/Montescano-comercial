@@ -1640,3 +1640,19 @@ footer .footer-contact-trigger:hover,footer .footer-contact-trigger:focus-visibl
  .cinema-mobile-catalog-cta{transition:none!important}
  .cinema-mobile-catalog-cta:hover{transform:none}
 }
+
+
+/* Responsive tablet QA: prevent desktop-width controls forcing the 768px canvas wider. */
+@media (min-width: 761px) and (max-width: 900px) {
+  .catalog-section, .looking, .controls, .category-tabs {min-width:0;max-width:100%}
+  .section-intro {flex-wrap:wrap}
+  .section-intro > * {min-width:0}
+  .section-note {text-align:left;flex-shrink:1}
+  .search-row {flex-wrap:wrap;gap:12px}
+  .search-box {min-width:0;flex:1 1 280px}
+  .result-count {margin-left:0}
+  .cinematic-header {min-width:0;max-width:100%;gap:8px}
+  .cinematic-header .logo {min-width:0;flex-shrink:1}
+  .cinematic-header .header-commercial-cluster {min-width:0}
+  .cinema, .cinema-stage, .cinema-copy {min-width:0;max-width:100%}
+}
