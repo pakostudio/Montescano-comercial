@@ -121,7 +121,7 @@ export default function CatalogExperience({
   );
   const filterCount = Object.values(filters).filter(Boolean).length;
   const corporateProduct = products.find((p) => p.family === "sets");
-  const corporateModels = products.filter(p => p.family === 'sets' || p.collections.some(c => /parejas|en set|corporativ/i.test(c)));
+  const corporateModels = products.filter(p => p.family === 'sets' || p.collections.some(c => /parejas|en set|corporativ|regalos/i.test(c)));
   const clear = () => {
     setSelection('all');
     setSort('catalog');
