@@ -1656,3 +1656,12 @@ footer .footer-contact-trigger:hover,footer .footer-contact-trigger:focus-visibl
   .cinematic-header .header-commercial-cluster {min-width:0}
   .cinema, .cinema-stage, .cinema-copy {min-width:0;max-width:100%}
 }
+
+
+.workbook-sections{padding:20px 0 18px;border-bottom:1px solid #e1e5df;margin-bottom:15px}
+.workbook-sections .kicker{font-size:11px;letter-spacing:.12em;color:#56675a;margin:0 0 12px}
+.workbook-sections-scroll{display:flex;flex-wrap:wrap;gap:8px;max-width:100%}
+.workbook-sections-scroll button{background:#f5f7f2;border:1px solid #dae2d5;color:#193328;border-radius:6px;padding:10px 13px;font:600 12px Arial,Helvetica,sans-serif;cursor:pointer;min-height:42px}
+.workbook-sections-scroll button[aria-pressed="true"]{background:#17392d;color:#fff;border-color:#17392d}
+.workbook-sections-scroll button:focus-visible{outline:3px solid #a2b999;outline-offset:2px}
+@media(max-width:900px){.workbook-sections-scroll{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:thin;overscroll-behavior-x:contain}.workbook-sections-scroll button{flex:0 0 auto;max-width:80vw}}
