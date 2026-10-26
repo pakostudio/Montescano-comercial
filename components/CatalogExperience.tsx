@@ -57,7 +57,7 @@ export default function CatalogExperience({
   const reduced = useReducedMotion();
   const tabsRef=useRef<HTMLDivElement>(null);
   const [section,setSection]=useState('inicio');
-  const [selection,setSelection]=useState<'edition'|'all'|'new'|'promo'>('edition');
+  const [selection,setSelection]=useState<'edition'|'all'|'new'|'promo'>('all');
   const [sort,setSort]=useState<'catalog'|'price-asc'|'price-desc'|'newest'>('catalog');
   const {scrollY}=useScroll();
   useMotionValueEvent(scrollY,'change',value=>setScrolled(value>24));
@@ -107,6 +107,10 @@ export default function CatalogExperience({
           (!filters.availability || p.availability === filters.availability),
       ).sort((a,b)=>{
         const price=(p:Product)=>{const v=hasPromotion(p)?p.promo_price:p.price;return typeof v==='number'&&v>0?v:null;};
+        if(sort==='catalog'){
+          const score=(p:Product)=>p.collections.some(c=>/parejas|en pareja/i.test(c))?0:p.family==='sets'?1:p.family==='montescano'?2:p.family==='vizanti'?3:p.family==='kids'?4:5;
+          return score(a)-score(b)||a.sku.localeCompare(b.sku);
+        }
         if(sort==='price-asc'||sort==='price-desc'){
           const av=price(a),bv=price(b);
           if(av===null&&bv!==null)return 1;
@@ -122,6 +126,8 @@ export default function CatalogExperience({
   const filterCount = Object.values(filters).filter(Boolean).length;
   const corporateProduct = products.find((p) => p.family === "sets");
   const corporateModels = products.filter(p => p.family === 'sets' || p.collections.some(c => /parejas|en set|corporativ|regalos/i.test(c)));
+  const featuredPairs = products.filter(p=>p.collections.some(c=>/parejas|en pareja/i.test(c)));
+  const hasPairCollections=featuredPairs.length>0;
   const clear = () => {
     setSelection('all');
     setSort('catalog');
@@ -202,8 +208,8 @@ export default function CatalogExperience({
         <section id="catalogo" className="catalog-section">
           <motion.div {...reveal} className="section-intro">
             <div>
-              <p className="kicker">{selection==='edition'?'CATÁLOGO ACTUALIZADO · OCTUBRE 2026':'CATÁLOGO GENERAL MONTESCANO'}</p>
-              <h2>{selection==='edition'?'Montescano y Vizanti · Colección 2026.':'Explora todas nuestras colecciones.'}</h2>
+              <p className="kicker">{selection==='edition'?'CATÁLOGO ACTUALIZADO · OCTUBRE 2026':'CATÁLOGO COMERCIAL MONTESCANO'}</p>
+              <h2>{selection==='edition'?'Montescano y Vizanti · Colección 2026.':'Relojes para cada ocasión y proyectos corporativos.'}</h2>
             </div>
             <p className="section-note">
               {selection==='edition'?<>{editionCount} modelos con fotografía aprobada del catálogo oficial de octubre 2026.</>:<>Colecciones generales de Montescano, Vizanti, Kids, Sets y Plumas.</>}
@@ -212,6 +218,7 @@ export default function CatalogExperience({
             </p>
           </motion.div>
           <div className="controls">
+            {hasPairCollections && <div className="catalog-selections" aria-label="Relojes en pareja"><button onClick={()=>{setSelection('all');setActive('todos');setFilters({...initialFilters,collection:featuredPairs[0].collections.find(c=>/parejas|en pareja/i.test(c))||''});setQuery('')}}>RELOJES EN PAREJA · {featuredPairs.length}</button><button onClick={()=>{setSelection('all');setActive('sets');setFilters(initialFilters);setQuery('')}}>SETS Y REGALOS</button></div>}
             <div className="catalog-selections" aria-label="Selección de productos">
               {([['edition',`Catálogo octubre 2026 · ${editionCount}`],['all',`Ver todo el catálogo · ${products.length}`],['new','Novedades'],['promo','Promociones']] as const).map(([id,label]) =>
                 <button key={id} aria-pressed={selection===id} onClick={()=>setSelection(id)}>{label}</button>)}
